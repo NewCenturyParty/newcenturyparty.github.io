@@ -103,6 +103,21 @@ h1 {
   margin-top: 2rem;
 }
 
+.house-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 140px solid transparent;
+  border-right: 140px solid transparent;
+  border-bottom: 180px solid var(--emerald-green);
+}
+
 .links a {
   display: inline-block;
   padding: .9rem 1.8rem;
