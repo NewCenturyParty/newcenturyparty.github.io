@@ -113,8 +113,8 @@ h1 {
 .triangle {
   width: 0;
   height: 0;
-  border-left: clamp(60px, 25vw, 140px) solid transparent;
-  border-right: clamp(60px, 25vw, 140px) solid transparent;
+  border-left: clamp(70px, 35vw, 140px) solid transparent;
+  border-right: clamp(70px, 35vw, 140px) solid transparent;
   border-bottom: clamp(80px, 30vw, 180px) solid var(--emerald-green);
 }
 
@@ -127,7 +127,7 @@ h1 {
   text-decoration: none;
   font-weight: 600;
   transition: transform .15s ease;
-  min-width: clamp(150px, 80vw, 200px);
+  min-width: clamp(140px, 70vw, 180px);
   text-align: center;
 }
 
@@ -166,8 +166,8 @@ footer {
   }
   
   .triangle {
-    border-left: clamp(80px, 30vw, 120px) solid transparent;
-    border-right: clamp(80px, 30vw, 120px) solid transparent;
+    border-left: clamp(90px, 40vw, 130px) solid transparent;
+    border-right: clamp(90px, 40vw, 130px) solid transparent;
     border-bottom: clamp(100px, 35vw, 150px) solid var(--emerald-green);
   }
 }
