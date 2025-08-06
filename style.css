@@ -113,9 +113,9 @@ h1 {
 .triangle {
   width: 0;
   height: 0;
-  border-left: clamp(40px, 15vw, 140px) solid transparent;
-  border-right: clamp(40px, 15vw, 140px) solid transparent;
-  border-bottom: clamp(50px, 20vw, 180px) solid var(--emerald-green);
+  border-left: clamp(60px, 25vw, 140px) solid transparent;
+  border-right: clamp(60px, 25vw, 140px) solid transparent;
+  border-bottom: clamp(80px, 30vw, 180px) solid var(--emerald-green);
 }
 
 .links a {
@@ -163,6 +163,12 @@ footer {
   
   .tagline {
     font-size: clamp(1rem, 2.5vw, 1.4rem);
+  }
+  
+  .triangle {
+    border-left: clamp(80px, 30vw, 120px) solid transparent;
+    border-right: clamp(80px, 30vw, 120px) solid transparent;
+    border-bottom: clamp(100px, 35vw, 150px) solid var(--emerald-green);
   }
 }
 
