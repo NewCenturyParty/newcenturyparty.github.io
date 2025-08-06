@@ -75,7 +75,7 @@ h1 {
 }
 
 .logo {
-  max-width: clamp(200px, 40vw, 200px);
+  max-width: clamp(200px, 40vw, 300px);
   height: auto;
   display: block;
   margin: 0 auto;
