@@ -1,0 +1,7 @@
+
+# Allow all crawlers to access everything
+User-agent: *
+Allow: /
+
+# Provide the location of the sitemap so search engines can find it quickly
+Sitemap: https://newcenturyparty.ca/sitemap.xml
