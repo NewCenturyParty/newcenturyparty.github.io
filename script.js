@@ -15,7 +15,7 @@ const BILL_DETAILS = {
       lead: 'Turns human dignity into a binding duty for every ministry and Crown corporation.',
       sections: [
         {
-          heading: 'Key moves',
+          heading: 'Overview',
           type: 'list',
           items: [
             'Declares an enforceable duty on the Crown to uphold human dignity in every program.',
@@ -54,7 +54,7 @@ const BILL_DETAILS = {
       lead: 'Implements landback, FPIC, and living treaty relationships with Indigenous nations.',
       sections: [
         {
-          heading: 'Key moves',
+          heading: 'Overview',
           type: 'list',
           items: [
             'Operationalizes Free, Prior, and Informed Consent through registries and capacity funding.',
@@ -207,38 +207,63 @@ const BILL_DETAILS = {
 
   'bill-06': {
       title: 'Bill 06 — The Saskatchewan Fair Labour & Just Transition Act',
-      lead: 'Secures a four-day week, fair wages, and worker-led transitions.',
+      lead: 'Delivers decent pay, predictable hours, and voluntary pathways into future-proof work.',
       sections: [
         {
           heading: 'Key moves',
           type: 'list',
           items: [
-            'Raises the minimum wage to $25/hour and transitions public schedules to a 4-day, 6-hour day.',
-            'Guarantees just-cause protections, severance, equal pay, and anti-scab rules.',
-            'Mobilizes SCC, SaskJobs, and SCDA for retraining, co-op conversions, and worker-led industry.'
+            'Worker Bill of Rights locks in a $25/hour wage floor, 30-hour workweek options, predictable schedules, and wage-theft enforcement through the Fair Work Authority.',
+            'Just Transition Office offers retire, retrain, and redeploy pathways with bridges like pension top-ups, tuition, wage insurance, and relocation supports.',
+            'Builds public capacity through SaskJobs, SCC, SCDA, and SMC so quality jobs, training, and manufacturing stay in Saskatchewan.'
           ]
         },
         {
-          heading: 'Implementation priorities',
+          heading: 'Worker Bill of Rights highlights',
           type: 'list',
           items: [
-            'Legislate the 4-day, 6-hour public schedule with transition toolkits.',
-            'Create SCC intake prioritizing fossil-fuel workers and relocation supports.',
-            'Draft just-cause, severance, and anti-scab regulations for provincial sectors.'
+            '$25/hour minimum wage indexed to CPI and employer payroll credits to fund 15 paid sick days.',
+            'Standard scheduling patterns (5×6hr, 4×7.5hr, 3×10hr), 48-hour rest windows, meal and rest breaks, and equal pay for equal work.',
+            'Fair termination: 3-month probation cap, mandatory severance (1.5 weeks/year), WARN-protected mass layoffs, and bans on non-competes and off-hours contact.'
           ]
         },
         {
-          heading: 'What to watch',
+          heading: 'Just Transition pathways',
           type: 'list',
           items: [
-            'Minimum wage indexation schedule and wage grid updates.',
-            'Worker buyout financing uptake through SaskFinancial.',
-            'Union engagement on transition supports and SCC placements.'
+            'Retire: Unreduced pension bridge (up to six years) and honours benefits for workers ready to step back.',
+            'Retrain: Full tuition/fees at public institutions, 70% weekly income support (floor $1,000/week), childcare, transport, and stipends.',
+            'Redeploy: Guaranteed SCC offers in 30 days, wage insurance, relocation grants, housing stipends, PPE support, and exit bonuses.'
           ]
         },
         {
-          heading: 'Full text',
-          body: 'Full bill download coming soon.'
+          heading: 'Institutions & enforcement',
+          type: 'list',
+          items: [
+            'Just Transition Office: coordinates retire/retrain/redeploy pathways, audits compliance, and levies penalties when employers fall short.',
+            'Fair Work Authority: independent inspectorate enforcing the Worker Bill of Rights with orders, AMPs, debarment, and a public registry.',
+            'SaskJobs: no-wrong-door intake with career navigators, training vouchers, employer scorecards, and targeted subsidies.',
+            'Saskatchewan Century Corps (SCC): paid public service corps that trains and places people in care, infrastructure, climate, digital, and agri projects.',
+            'Saskatchewan Co-operative Development Agency (SCDA): one-stop co-op support with templates, shared services, and a right-of-first-refusal for worker buyouts.',
+            'Saskatchewan Manufacturing Corporation (SMC): Crown manufacturer licensing, staffing, and powering green factories for housing, heat pumps, solar, and storage.'
+          ]
+        },
+        {
+          heading: 'Highlights',
+          type: 'list',
+          items: [
+            'FPIC embedded wherever Indigenous rights, lands, or waters are affected.',
+            'Transparency dashboards publish outputs, training metrics, safety, costs, and climate impacts.',
+            'Timeline: Day 1 wage floor + FWA launch; within 6–12 months scheduling standards and EQS dashboard; 12–24 months SCC/SMC operating and co-op ROFR live.'
+          ]
+        },
+        {
+          heading: 'Downloads',
+          type: 'links',
+          items: [
+            { label: 'One Pager (PDF)', href: 'One%20Pager%20Docs/PDFs/06%20%7C%20One%20Pager%20%7C%20The%20Saskatchewan%20Fair%20Labour%20and%20Just%20Transition%20Act.pdf' },
+            { label: 'Full Act (PDF)', href: 'Full%20Acts/PDFs/06%20%7C%20The%20Saskatchewan%20Fair%20Labour%20and%20Just%20Transition%20Act.pdf' }
+          ]
         }
       ]
     },
@@ -524,8 +549,23 @@ const closeButton = modal ? modal.querySelector('[data-close-modal]') : null;
 const billTriggers = document.querySelectorAll('[data-bill]');
 let activeTrigger = null;
 
+document.querySelectorAll('.bill-card__downloads a').forEach((link) => {
+  link.addEventListener('click', (event) => {
+    event.stopPropagation();
+  });
+});
+
 const renderSection = (section) => {
   const heading = section.heading ? `<h3>${section.heading}</h3>` : '';
+  if (section.type === 'links' && Array.isArray(section.items)) {
+    const links = section.items
+      .map((item) => {
+      const downloadAttr = item.download ? " download" : "";
+      return `<a class="modal-download" href="${item.href}" target="_blank" rel="noopener"${downloadAttr}>${item.label}</a>`;
+    })
+      .join('');
+    return `${heading}<div class="bill-modal__downloads">${links}</div>`;
+  }
   if (section.items && section.items.length) {
     const items = section.items.map((item) => `<li>${item}</li>`).join('');
     return `${heading}<ul class="bill-modal__list">${items}</ul>`;
