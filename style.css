@@ -38,6 +38,11 @@ body {
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   position: relative;
+  overflow-x: hidden;
+}
+
+body.nav-open {
+  overflow: hidden;
 }
 
 body::before {
@@ -163,6 +168,47 @@ h4 {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   font-size: 0.8rem;
+}
+
+.nav-toggle__icon {
+  position: relative;
+  width: 1.25rem;
+  height: 2px;
+  background-color: currentColor;
+  border-radius: 999px;
+  transition: transform 180ms ease, background-color 180ms ease;
+}
+
+.nav-toggle__icon::before,
+.nav-toggle__icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+  border-radius: inherit;
+  transition: transform 180ms ease, opacity 180ms ease;
+}
+
+.nav-toggle__icon::before {
+  transform: translateY(-6px);
+}
+
+.nav-toggle__icon::after {
+  transform: translateY(6px);
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle__icon {
+  background-color: transparent;
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle__icon::before {
+  transform: translateY(0) rotate(45deg);
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle__icon::after {
+  transform: translateY(0) rotate(-45deg);
 }
 
 .site-nav {
@@ -1010,11 +1056,13 @@ body.modal-open {
   .site-nav {
     position: absolute;
     top: calc(100% + 0.5rem);
-    right: clamp(1.5rem, 4vw, 3rem);
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.75rem;
-    padding: 1.2rem 1.4rem;
+    right: clamp(0.75rem, 4vw, 1.5rem);
+    width: min(360px, calc(100vw - 2 * clamp(1.2rem, 6vw, 2rem)));
+    display: grid;
+    align-items: start;
+    justify-items: stretch;
+    gap: 0.5rem;
+    padding: clamp(1rem, 4vw, 1.4rem);
     border-radius: 1.4rem;
     background: rgba(5, 11, 9, 0.95);
     border: 1px solid rgba(197, 215, 204, 0.18);
@@ -1023,12 +1071,24 @@ body.modal-open {
     visibility: hidden;
     transform: translateY(-10px);
     transition: opacity 180ms ease, transform 180ms ease;
+    pointer-events: none;
+    z-index: 100;
   }
 
   .site-nav.site-nav--open {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .site-nav a {
+    width: 100%;
+    padding: 0.4rem 0;
+  }
+
+  .site-nav__cta {
+    text-align: center;
   }
 }
 
@@ -1040,20 +1100,113 @@ body.modal-open {
 
 @media (max-width: 720px) {
   main {
-    gap: 4rem;
+    gap: 3.5rem;
+    padding: 2.5rem 0 4rem;
+  }
+
+  .site-header {
+    padding: 0.75rem clamp(1rem, 6vw, 1.5rem);
+    gap: 0.75rem;
+  }
+
+  .brand {
+    gap: clamp(0.4rem, 3vw, 0.75rem);
+  }
+
+  .brand img {
+    width: clamp(64px, 22vw, 80px);
+  }
+
+  .brand__wordmark {
+    font-size: clamp(1.05rem, 5vw, 1.35rem);
+    letter-spacing: 0.06em;
+    white-space: normal;
+    line-height: 1.2;
+  }
+
+  .nav-toggle {
+    padding: 0.45rem 0.8rem;
+    gap: 0.35rem;
+  }
+
+  .nav-toggle__label {
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+  }
+
+  .hero {
+    width: min(var(--max-width-wide), 96vw);
+    padding: clamp(1.6rem, 6vw, 1.8rem);
+    gap: clamp(1.4rem, 5vw, 1.8rem);
+  }
+
+  .hero__media img {
+    width: clamp(180px, 56vw, 240px);
+  }
+
+  .hero__content h1 {
+    font-size: clamp(2rem, 7vw, 2.6rem);
+  }
+
+  .hero__lead {
+    font-size: 1rem;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+
+  .hero__actions .button {
+    width: 100%;
+  }
+
+  .initiative,
+  .bill-gallery,
+  .institutions,
+  .cta {
+    width: min(var(--max-width), 94vw);
+    padding: clamp(1.4rem, 6vw, 1.8rem);
+  }
+
+  .initiative__stats {
+    grid-template-columns: 1fr;
+  }
+
+  .bill-track {
+    gap: 1.4rem;
+    padding: 1rem clamp(0.75rem, 5vw, 1.2rem) 1.4rem;
   }
 
   .bill-card {
-    min-width: 88vw;
+    min-width: min(100%, 22rem);
+    padding: clamp(1.4rem, 6vw, 1.8rem);
+  }
+
+  .bill-card h3 {
+    font-size: clamp(1.6rem, 6vw, 2rem);
+  }
+
+  .bill-card__lead {
+    font-size: 1rem;
   }
 
   ul {
     padding-left: 1rem;
   }
 
+  .institution-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta__actions {
+    flex-direction: column;
+  }
+
   .page-hero,
   .page-section {
-    padding: clamp(1.6rem, 6vw, 2.2rem);
+    padding: clamp(1.6rem, 6vw, 2rem);
   }
 
   .page-hero {
@@ -1061,7 +1214,7 @@ body.modal-open {
   }
 
   .bill-modal__content {
-    padding: clamp(1.2rem, 5vw, 1.8rem);
+    padding: clamp(1.2rem, 5vw, 1.6rem);
   }
 
   .bill-modal__body {
