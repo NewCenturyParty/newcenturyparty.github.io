@@ -1,0 +1,965 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The Saskatchewan Financial Sovereignty Act 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+New Century Party - 2025
+
+Part I — Interpretation and Purpose
+
+1-1 Short title
+This Act may be cited as The Saskatchewan Financial Sovereignty Act.
+
+1-2 Purposes
+
+The purposes of this Act are to:
+(a) secure Saskatchewan’s long-term financial sovereignty and stability;
+(b) transform resource wealth and Crown enterprise returns into broad-based, intergenerational prosperity;
+(c) establish an arm’s-length Saskatchewan Sovereignty Fund with ring-fenced sub-funds for the Dignity Dividend, resilience/transition, and reconciliation;
+(d) deliver a permanent, additive Saskatchewan Dignity Dividend that reduces income volatility without penalizing work;
+(e) create a public, prudentially sound Saskatchewan Financial Group to expand inclusive, climate-aligned finance;
+(f) modernize royalty, dividend, and windfall policies to stabilize the General Revenue Fund and save windfalls;
+(g) maintain fair Marginal Effective Tax Rates (METRs) through coordinated tax/benefit design; and
+(h) ensure transparency, accountability, and the protection of privacy in administering this Act.
+
+1-3 Guiding principles
+
+All persons exercising powers under this Act shall be guided by:
+(a) Intergenerational equity — safeguarding real wealth for current and future residents;
+(b) Stability and prudence — conservative liquidity for obligations and prudent-investor standards;
+(c) Additivity — the Dignity Dividend is additive and should not claw back or displace other core supports unless expressly authorized by law;
+(d) Transparency and accountability — timely public dashboards, audited reports, and intelligible disclosures;
+(e) Indigenous partnership — co-development and consent for measures financed by the Reconciliation Fund, consistent with Aboriginal and Treaty rights;
+(f) Climate alignment — investment and financing consistent with a timely transition to a low-carbon economy;
+(g) Competitiveness and fairness — predictable rules that attract productive investment while ensuring a fair public share of rents;
+(h) Substance over form — arrangements are assessed by their economic substance, not label or structure.
+
+1-4 Application; Crown bound
+
+(1) This Act binds the Crown in right of Saskatchewan and all Crown corporations, agencies, and publicly controlled entities.
+(2) To the extent of any conflict between this Act and another provincial enactment, this Act prevails, except in relation to the Saskatchewan Human Rights Code and constitutional enactments.
+(3) Nothing in this Act abrogates or derogates from the Aboriginal and Treaty rights of Indigenous peoples recognized and affirmed by section 35 of the Constitution Act, 1982.
+
+1-5 Interpretation
+
+(1) This Act shall be given a large and liberal construction to best achieve its purposes and principles in section 1-2 and 1-3.
+(2) In determining tax, royalty, distribution, or eligibility consequences, economic substance prevails over legal form; anti-avoidance provisions are to be interpreted in light of the object, spirit, and purpose of this Act.
+(3) References to another Act, regulation, standard, or body include a reference to any successor.
+
+1-6 Definitions
+
+In this Act, unless the context otherwise requires:
+(a) “Authority” means the Saskatchewan Sovereignty Fund Authority responsible for the SSF;
+(b) “Dignity Dividend” or “SDD” means the refundable, non-taxable monthly benefit established under Part IV;
+(c) “Fund” or “SSF” means the Saskatchewan Sovereignty Fund established under Part II, comprising ring-fenced sub-funds;
+(d) “Dignity Fund,” “Resilience Fund,” “Reconciliation Fund” mean, respectively, the ring-fenced accounts within the SSF dedicated to SDD buffering, resilience/transition purposes, and reconciliation purposes;
+(e) “General Revenue Fund” or “GRF” means the fund established under The Financial Administration Act, 1993;
+(f) “Indigenous Nations of Saskatchewan” means First Nations and Métis governing bodies in Saskatchewan recognized at law or by agreement;
+(g) “METR” means combined marginal effective tax rate considering provincial taxes, levies, and income-tested benefits as published under Part VII;
+(h) “Minister” means the member of the Executive Council charged with administering this Act or the relevant Part;
+(i) “resource royalty” includes royalties, production taxes, rentals, bonuses, and like payments arising from the disposition or production of Crown resources;
+(j) “Same-Business Group” has the meaning given in Part VII;
+(k) “Saskatchewan Financial Group” or “SFG” means the Crown financial institution established under Part V;
+(l) “Sovereignty Surcharge” means the temporary royalty surcharge provided in Part III;
+(m) “windfall revenue” means revenue that exceeds prescribed reference thresholds determined under Part III.
+Note: Parts II–VII may add or refine definitions specific to those Parts.
+
+1-7 Duties of decision-makers
+
+(1) Prudent-investor duty (Authority): The board and officers of the Authority shall act honestly and in good faith, with the care, diligence, and skill that a prudent investor would exercise in managing comparable funds, and in accordance with section 1-3.
+(2) Arm’s-length duty (SFG): SFG’s board and officers shall operate at arm’s length; no Minister or official shall direct SFG in any individual credit decision.
+(3) Conflict of interest: Regulations shall prescribe robust conflict-of-interest rules for the Authority, SFG, and all other entities acting under this Act.
+(4) Climate and reconciliation duties: The Authority and SFG shall maintain published policies implementing section 1-3(f) and 1-3(e), including fossil-fuel exclusions for the SSF and co-governance arrangements for the Reconciliation Fund.
+
+1-8 Transparency and public reporting
+
+(1) The Authority, SFG, and the Minister shall publish dashboards and reports at intervals prescribed by regulation, which may include: assets and liabilities, flows, stress-tests, METR curves, royalty and Crown-dividend allocations, SDD distribution statistics, program uptake, and performance against risk limits.
+(2) The Provincial Auditor shall audit the Authority annually and may conduct examinations of SFG and program areas under this Act as authorized by law.
+(3) Machine-readable, de-identified datasets shall be published where feasible, subject to privacy and confidentiality protections.
+
+1-9 Privacy, data protection, and information-sharing
+
+(1) Personal information used to administer this Act shall be collected, used, disclosed, and retained in accordance with applicable privacy laws and regulations made under this Act.
+(2) The Minister may enter information-sharing agreements with the Government of Canada and other bodies to verify income, residency, or eligibility, subject to safeguards prescribed by regulation.
+(3) No automated decision system shall be the sole basis for an adverse decision under this Act; individuals are entitled to a human review with an explanation of material factors.
+
+1-10 General regulation-making power
+
+In addition to regulation-making powers in Parts II–VII, the Lieutenant Governor in Council may make regulations:
+(a) prescribing additional or clarifying definitions;
+(b) setting baseline transparency, privacy, cyber-security, and record-retention standards;
+(c) prescribing conflict-of-interest and ethics rules;
+(d) prescribing administrative monetary penalties and appeal mechanisms for cross-cutting requirements; and
+(e) generally for carrying out the purposes of this Part.
+
+1-11 Severability
+
+If any provision of this Act or its application is held invalid, the invalidity does not affect the remaining provisions or applications that can be given effect without the invalid provision.
+
+1-12 No operating-cost backdoor
+
+Nothing in this Act authorizes the use of the SSF or its sub-funds for general operating expenditures of the Government, except as expressly provided in this Act.
+
+Part II — The Saskatchewan Sovereignty Fund
+
+2-1 Additional definitions
+
+In this Part:
+(a) “Authority” means the Saskatchewan Sovereignty Fund Authority continued or established under section 2-3.
+(b) “Buffer” means liquid and near-liquid assets reserved within the Dignity Fund sufficient to cover 36 months of projected Saskatchewan Dignity Dividend (SDD) outlays net of forecasted inflows, measured on a rolling basis.
+(c) “Crown Dividend Surplus” means the aggregate dividends paid by Crown corporations to the Province in a fiscal year in excess of the five-year rolling average of such dividends, calculated as prescribed.
+(d) “Fossil exposure” means equity or debt of issuers deriving prescribed thresholds of revenue or production from extraction, processing, transportation, or power generation from coal, oil, or fossil gas; thresholds and taxonomy shall be set by regulation.
+(e) “Liquidity Tranches” means the segmented asset groups for Buffer coverage described in section 2-8(3).
+(f) “Reference Royalty Baseline” means the Province’s five-year rolling average of resource royalty receipts by commodity, calculated as prescribed under Part III.
+(g) “Windfall levy” means the incremental royalty rate applied to receipts above the Reference Royalty Baseline pursuant to Part III.
+(h) “Actuary” means a Fellow of the Canadian Institute of Actuaries engaged by the Authority for certification under this Part.
+
+2-2 Establishment of the Fund
+
+(1) A special purpose, ring-fenced fund is hereby established as the Saskatchewan Sovereignty Fund (SSF), separate from the General Revenue Fund (GRF).
+(2) The SSF consists of three permanently segregated sub-funds (the “ring-fences”):
+(a) the Dignity Fund;
+(b) the Resilience Fund; and
+(c) the Reconciliation Fund.
+(3) Assets of one ring-fence shall not be pledged for, loaned to, or otherwise used to satisfy the obligations of another, except as expressly permitted by regulation for short-term cash management without risk of loss.
+(4) Income, gains, and losses shall accrue to each ring-fence in proportion to its assets unless otherwise prescribed for specific mandates.
+
+2-3 Saskatchewan Sovereignty Fund Authority
+
+(1) The Authority is established as an agent of the Crown to hold, manage, and administer the SSF in accordance with this Act.
+(2) The Authority shall be governed by a board of not fewer than 7 and not more than 21 directors appointed as prescribed, having collective expertise in institutional investment, risk management, accounting/audit, macroeconomics, climate finance, Indigenous relations, and public administration.
+(3) The board shall appoint a Chief Executive Officer and a Chief Investment Officer, and shall establish an independent Risk Committee and Audit & Finance Committee.
+(4) Directors and officers owe a prudent-investor fiduciary duty to the SSF and must comply with conflict-of-interest rules prescribed by regulation.
+(5) The Authority is arm’s length from the Crown in investment and portfolio decisions.
+
+2-4 Purposes and permitted uses of ring-fences
+
+(1) Dignity Fund — to provide a standing, statutory financing source for the Saskatchewan Dignity Dividend under Part IV, including maintenance of the Buffer and associated liquidity management.
+(2) Resilience Fund — to finance, as appropriated or directed by law, programs that enhance Saskatchewan’s economic, social, and climate resilience, including Just Transition measures and disaster preparedness/response, in coordination with other Acts.
+(3) Reconciliation Fund — to finance measures co-developed with Indigenous Nations of Saskatchewan, including but not limited to revenue-sharing, equity participation, community infrastructure, and capacity-building, consistent with applicable reconciliation legislation and consent protocols.
+(4) Prohibition on operating costs: SSF assets shall not be used to fund general operating expenditures of the Government except where expressly authorized by this Act.
+
+2-5 Inflows to the SSF
+
+The SSF shall receive, in accordance with this Act and regulations:
+(a) the shares of resource royalties determined under Part III (including Windfall levy allocations), net of the GRF allocation;
+(b) Crown Dividend Surplus amounts as determined under Part III;
+(c) investment income and realized gains on SSF assets;
+(d) gifts, bequests, and other receipts authorized by law; and
+(e) any additional appropriations or dedicated revenues prescribed by law.
+
+2-6 Outflows from the SSF
+
+(1) From the Dignity Fund: transfers to the Minister responsible for Part IV sufficient to meet monthly SDD obligations and to maintain the Buffer; transfers shall occur on a rolling monthly forecast with true-up as prescribed.
+(2) From the Resilience Fund and Reconciliation Fund: payments or transfers as authorized by Appropriation Act(s), statutory charges, or directives made under enabling statutes, provided such payments conform to the ring-fenced purpose and any co-development or consent requirements.
+(3) No other outflows are permitted, except costs reasonably incurred by the Authority in administering the SSF as prescribed.
+
+2-7 Investment, exclusions, and risk controls
+
+(1) The Authority shall adopt and publish a Statement of Investment Policies and Procedures (SIPP) covering, at minimum, asset classes and ranges, risk limits, benchmarks, liquidity, valuation, stress testing, derivatives/hedging, securities lending, responsible investment, voting, and custody.
+(2) Fossil exclusion: The SSF shall maintain no fossil exposure as defined in regulation, subject to a narrow, time-limited transition per regulation for legacy holdings or index replication, with a plan to eliminate exposure within prescribed timelines.
+(3) Climate alignment: The SIPP shall set a pathway consistent with economy-wide net-zero by 2050 (or earlier if prescribed), including interim targets and stewardship protocols.
+(4) Derivatives may be used only for hedging, rebalancing, or efficient portfolio management as prescribed; speculative leverage is prohibited.
+(5) Securities lending is permitted only against high-quality collateral and prudent limits as prescribed.
+(6) The Authority shall appoint a custodian independent of the investment manager(s) for safekeeping and settlement.
+(7) The Authority shall conduct quarterly stress tests and publish non-confidential summaries.
+
+2-8 Buffer, liquidity tranches, and certification
+
+(1) The Dignity Fund must maintain the Buffer at all times.
+(2) The Authority shall obtain quarterly actuarial certification that the Buffer level is sufficient, using conservative assumptions on benefit take-up, labour income, and market returns.
+(3) Liquidity Tranches for the Buffer shall be structured in the SIPP substantially as follows (or as prescribed):
+(a) 0–12 months of projected SDD outlays: cash and Treasury bills/notes and equivalents;
+(b) 12–24 months: short-duration, high-grade fixed income;
+(c) 24–36 months: low-risk, highly diversified assets with rapid convertibility.
+(4) The Authority shall report any actual or forecast Buffer shortfall immediately to the Minister and publish notice within ten days.
+
+2-9 Buffer Rebuild Protocol
+
+Where the Buffer falls below 36 months for three consecutive month-ends, the following shall apply automatically, subject to Parts III and IV and regulations:
+(a) Crown Dividend Surplus diversion: 100% of Crown Dividend Surplus amounts shall be directed to the Dignity Fund until the Buffer is restored;
+(b) Windfall levy uptick: the Minister responsible for royalties shall, by regulation under Part III, increase the windfall levy by prescribed increments until the Authority certifies restoration of the Buffer; and
+(c) Indexation deferral (guard-railed): an annual SDD indexation may be deferred once in any rolling three-year period, with the foregone indexation banked and applied when the Buffer is restored, as set out in Part IV and regulation.
+The Authority shall publish a Buffer Rebuild Plan within 30 days of the trigger.
+
+2-10 Transparency and disclosures
+
+(1) The Authority shall publish quarterly dashboards for each ring-fence, including contributions, withdrawals, market value, performance vs benchmarks, risk metrics, Buffer status, and climate/reconciliation indicators as prescribed.
+(2) The Authority shall table an annual report to the Assembly, including audited financial statements, SIPP, stewardship/voting records, fossil-exposure compliance, and a holdings list with an appropriate time lag and confidentiality safeguards as prescribed.
+(3) Data releases should be provided in machine-readable formats where feasible.
+
+2-11 Audit, evaluation, and oversight
+
+(1) The Provincial Auditor shall audit the SSF annually.
+(2) The Minister shall cause an independent performance and risk review of the SSF to be conducted at least every five years, tabled in the Assembly.
+(3) The Authority shall maintain internal audit and compliance functions with direct reporting lines to the Audit & Finance Committee.
+
+2-12 Indigenous partnership — Reconciliation Fund
+
+(1) Governance and deployment frameworks for the Reconciliation Fund shall be co-developed with Indigenous Nations of Saskatchewan through structures prescribed by regulation.
+(2) Nothing in this Act abrogates or derogates from Aboriginal and Treaty rights.
+(3) Spending from the Reconciliation Fund must comply with any Consent Protocol established under applicable reconciliation legislation.
+
+2-13 Tax and legal status
+
+(1) The SSF is exempt from taxation within Saskatchewan.
+(2) SSF assets are not subject to seizure or attachment except as expressly provided by law for obligations under this Act.
+(3) The Authority may not borrow or pledge SSF assets except as prescribed for short-term liquidity management within prudent limits.
+
+2-14 Offences and administrative sanctions
+
+(1) Knowingly breaching ring-fence restrictions, investment exclusions, or disclosure duties is an offence punishable as prescribed by regulation.
+(2) The Minister may impose administrative monetary penalties (AMPs) for contraventions of this Part or regulations, with due process and appeal to a designated tribunal.
+
+2-15 Regulations (this Part)
+
+The Lieutenant Governor in Council may make regulations:
+(a) setting or refining fossil-exposure taxonomies, thresholds, and transition rules;
+(b) prescribing SIPP content, asset ranges, risk and liquidity limits, stress-test standards, and eligible collateral;
+(c) defining Buffer calculation methods, actuarial assumptions, reporting, and the Buffer Rebuild Protocol mechanics;
+(d) prescribing Reference Royalty Baseline and Crown Dividend Surplus calculations (coordinated with Part III); prescribing disclosure cadences, holdings-list lags, and confidentiality safeguards;
+(f) establishing governance, co-development, and consent frameworks for the Reconciliation Fund;
+(g) prescribing AMPs, aggravating/mitigating factors, limitation periods, and appeals; and
+(h) generally for carrying out the purposes of this Part.
+
+2-16 Transitional and commencement (this Part)
+
+(1) Upon Royal Assent, the Authority is established and may undertake preparatory acts.
+(2) Within 120 days, the Authority shall publish an interim SIPP, appoint a custodian, and release an initial transparency dashboard format.
+(3) Within 180 days, the Authority shall table a Buffer Build Plan and Fossil Exclusion Policy, and publish a co-development schedule for the Reconciliation Fund governance framework.
+(4) Sections of this Part come into force on Proclamation as necessary to align with Parts III and IV.
+
+Part III — Royalty Reform, Crown Dividends & the Sovereignty Surcharge
+
+3-1 Additional definitions 
+
+In this Part:
+(a) “Covered resource” means a mineral, hydrocarbon, brine, geothermal or other natural resource designated by regulation;
+(b) “Reference Royalty Baseline” means, for each covered resource class, the Province’s five-year rolling average of royalty receipts, excluding one-time settlements and penalties, calculated as prescribed;
+(c) “Royalty schedules” means the price- and margin-sensitive formulas set by regulation for each covered resource class;
+(d) “Windfall levy” means the incremental royalty charge applied when prescribed price, margin, R-factor or pay-out thresholds are exceeded;
+(e) “Royalty period” means a monthly or quarterly reporting period as prescribed;
+(f) “Control group” has the meaning prescribed for combined reporting and anti-avoidance under this Part;
+(g) “Crown Dividend Surplus” has the meaning in section 3-13.
+
+3-2 Purpose and design principles
+
+(1) This Part modernizes Saskatchewan’s resource royalty framework to:
+(a) secure a fair public share across the cycle;
+(b) ensure simple, transparent assessment on verifiable reference prices and audited costs;
+(c) capture windfall rents during high-price or high-margin periods; and
+(d) provide stable funding to the General Revenue Fund (GRF) and growth funding to the Saskatchewan Sovereignty Fund (SSF).
+(2) Royalty schedules shall, by regulation, incorporate both:
+(a) a minimum gross-value royalty (ad valorem) to prevent base erosion; and
+(b) a profit-sensitive top-up using an R-factor, payout ratio, net-margin or similar measure.
+(3) A Windfall levy shall apply in addition to (2) where prescribed thresholds are exceeded.
+(4) Royalty schedules shall be commodity-specific, published, and index-linked as prescribed.
+
+3-3 Coverage and application
+
+(1) This Part applies to all Covered resources produced in Saskatchewan or from Saskatchewan Crown rights, including but not limited to potash, uranium, oil, natural gas, helium, lithium-bearing brines and other designated resources.
+(2) Project ring-fencing, payout accounting, and transition rules shall be prescribed by regulation.
+(3) Nothing in this Part abrogates or derogates from Aboriginal and Treaty rights.
+
+3-4 Reference prices and valuation
+
+(1) For each covered resource class, the Minister shall prescribe a public reference price method (e.g., posted hub price less transparent quality and location differentials), or an exchange-based index, to prevent transfer-pricing abuses.
+(2) Intra-group sales shall be valued at arm’s-length equivalent as prescribed.
+(3) Allowed deductions and cost caps (including marketing, administration, transportation and processing) shall be exhaustive and published.
+
+3-5 Royalty liability and filing
+
+(1) Royalty liability arises on production at the time and in the manner prescribed.
+(2) Each producer (and, where required, its control group on a combined basis) shall file returns for each royalty period, with reconciliations to audited financial statements annually.
+(3) The Minister may require security, including letters of credit or surety bonds, for compliance.
+
+3-6 Windfall levy
+
+(1) A Windfall levy applies when prescribed commodity price and/or net-margin or R-factor thresholds are exceeded.
+(2) The levy rate(s), triggers, and tapering shall be set by regulation and may vary by resource class.
+(3) The levy is additional to the minimum royalty and profit-sensitive top-up.
+
+3-7 Target public share
+
+In setting schedules under sections 3-2 to 3-6, the Lieutenant Governor in Council shall be guided by a target public share of economic rent within a corridor that, on a full-cycle basis, captures no less than one-third of project profits, with greater capture during windfall periods.
+
+3-8 Allocation of receipts between GRF and SSF
+
+(1) For each fiscal year and each covered resource class:
+(a) An amount equal to the Reference Royalty Baseline is credited to the General Revenue Fund.
+(b) All royalty receipts above the Reference Royalty Baseline are credited to the Saskatchewan Sovereignty Fund and allocated as follows:
+i. 66% to the Dignity Fund;
+ii. 16.5% to the Resilience Fund;
+iii. 16.5% to the Reconciliation Fund; and
+iv. 1% to an Administration Account for royalty system operations, audits and data infrastructure.
+(2) Allocations shall be made monthly on an estimated basis with year-end true-up as prescribed.
+(3) One-time settlements, penalties and interest shall be treated as prescribed to prevent distortion of the Baseline.
+
+3-9 Sovereignty Surcharge (time-limited)
+
+(1) For a period of 36 months beginning on a day fixed by Proclamation (the “Surcharge Period”), there is imposed an additional Sovereignty Surcharge equal to 15% of the royalty liability (including any Windfall levy) otherwise payable for the royalty period.
+(2) Surcharge proceeds shall be deposited exclusively to the Dignity Fund until the Authority certifies that the Buffer defined in section 2-1(b) has reached the target set under Part II; upon certification, the Surcharge terminates early on the first day of the next royalty period.
+(3) The Lieutenant Governor in Council may, by regulation, refine the surcharge’s allocation by resource class to reduce volatility or trade-exposure risk, without altering the rate in subsection (1).
+(4) The Minister shall publish a quarterly bulletin showing cumulative Surcharge proceeds and Buffer status.
+
+3-10 Transparency and public reporting
+
+(1) The Minister shall publish monthly dashboards reporting, by resource class and in aggregate: production volumes, reference prices, royalty receipts (by component), allocations to GRF and SSF, and Surcharge proceeds.
+(2) The Minister shall publish an annual royalty report including methodologies, schedules, audits completed, adjustments, and compliance actions, in machine-readable formats.
+(3) The Minister may publish company-level payments by consent or as prescribed, with appropriate confidentiality safeguards.
+
+3-11 Audit, inspection, and records
+
+(1) Royalty payers shall maintain records for seven years and produce them on request.
+(2) The Minister may conduct desk and field audits, require independent engineer or accountant certificates, and enter into information-sharing MOUs with federal or provincial regulators and tax authorities.
+(3) Where a material understatement is found, the Minister may assess penalty interest and administrative monetary penalties (AMPs) as prescribed, in addition to any offence proceedings.
+
+3-12 Anti-avoidance and combined reporting
+
+(1) Transactions or arrangements having as their primary purpose the reduction, deferral, or avoidance of royalties, including artificial splitting, hedging schemes, or non-arm’s-length pricing, are ineffective for the purposes of this Part.
+(2) The Minister may require combined reporting by a control group where necessary to prevent base erosion.
+(3) Parties to an avoidance scheme are jointly and severally liable for unpaid royalties, penalties, and interest.
+
+3-13 Crown corporation dividends — baseline & surplus rule
+
+(1) Each Crown corporation shall, subject to prudent capital adequacy and board fiduciary duties, pay an annual dividend to the Province.
+(2) For each Crown, an amount equal to its five-year rolling average dividend shall be credited to the GRF.
+(3) Any amount above the five-year rolling average (the “Crown Dividend Surplus”) shall be transferred to the SSF and allocated as follows unless otherwise prescribed by statute: 50% to the Dignity Fund, 25% to the Resilience Fund, and 25% to the Reconciliation Fund.
+(4) The Minister may, by regulation, exclude extraordinary, non-recurring items from the rolling-average calculation to preserve prudence.
+
+3-14 Indigenous partnership and revenue measures
+
+(1) Nothing in this Part limits revenue-sharing or benefit agreements co-developed with Indigenous Nations of Saskatchewan; such agreements may be funded from the Reconciliation Fund or as otherwise authorized by law.
+(2) Where projects may affect Indigenous rights, lands, or waters, the Crown shall act consistently with applicable consent protocols and reconciliation legislation.
+
+3-15 Offences, AMPs, and appeals
+
+(1) Knowingly filing false returns, destroying or withholding records, or engaging in wilful avoidance is an offence punishable on summary conviction as prescribed.
+(2) The Minister may impose AMPs for contraventions of this Part or its regulations, with due-process rights and appeal to a designated tribunal.
+(3) Assessment objections and appeals shall follow procedures prescribed by regulation.
+
+3-16 Regulation-making authority (this Part)
+
+The Lieutenant Governor in Council may make regulations:
+(a) designating Covered resources and prescribing royalty schedules, reference prices, allowed deductions, and ring-fencing;
+(b) prescribing Windfall levy triggers and rates;
+(c) defining the Reference Royalty Baseline and treatment of extraordinary items;
+(d) prescribing filing, audit, security, interest, penalties, AMPs, objection and appeal processes;
+(e) prescribing combined-reporting rules and the meaning of control group;
+(f) prescribing dashboards and publication cadences;
+(g) refining the Crown Dividend Surplus methodology; and
+(h) generally for carrying out the purposes of this Part.
+
+3-17 Transitional and commencement (this Part)
+
+(1) New royalty schedules and the Windfall levy shall apply to production from and after dates fixed by Proclamation, with phase-in or grandfathering as prescribed to ensure orderly transition.
+(2) The Sovereignty Surcharge shall commence on Proclamation under section 3-9 and terminate as provided in that section.
+(3) Within 180 days of Royal Assent, the Minister shall publish draft schedules and methodologies for consultation, including indicative public-share outcomes.
+
+Part IV — The Saskatchewan Dignity Dividend
+
+4-1 Definitions (this Part)
+In this Part:
+(a) “Dividend” means the Saskatchewan Dignity Dividend payable under this Part;
+(b) “Applicant” means an individual who applies for the Dividend;
+(c) “Recipient” means an individual approved for the Dividend;
+(d) “Benefit Reduction Income (BRI)” means the annual income used to apply the benefit-reduction rate, as prescribed;
+(e) “Benefit-Reduction Rate (BRR)” means the rate prescribed under section 4-6(2);
+(f) “Dignity Fund” means the ring-fenced fund within the Saskatchewan Sovereignty Fund established under Part II;
+(g) “Minister” means the member of the Executive Council responsible for this Part;
+(h) “Authority” means the Saskatchewan Sovereignty Fund Authority continued under Part II;
+(i) “DDO” means the Dignity Dividend Office designated under section 4-2.
+
+4-2 Administration
+
+(1) The Minister shall designate a Dignity Dividend Office (DDO) within the Ministry or in a prescribed arm’s-length entity to administer this Part.
+(2) The DDO may enter into information-sharing agreements with prescribed bodies (including the Authority, Saskatchewan Health, Saskatchewan Finance, and the Canada Revenue Agency) for the limited purpose of eligibility, payments, reconciliation, integrity and evaluation, subject to privacy law.
+
+4-3 Purpose and principles
+
+(1) The Dividend provides a simple, non-taxable, monthly cash floor that is additive to existing supports and employment income, to advance financial security and human dignity.
+(2) Program design shall:
+(a) avoid poverty traps by using a flat benefit with a single transparent BRR;
+(b) ensure no clawbacks from other provincial programs unless expressly authorized by statute;
+(c) enable real-time adjustments to minimize end-of-year debts; and
+(d) protect recipients from wage suppression, rent gouging, and assignment or set-off.
+
+4-4 Eligibility
+
+(1) An individual is eligible if the individual:
+(a) is 18 years of age or older;
+(b) is ordinarily resident in Saskatchewan as prescribed; and
+(c) holds a status prescribed by regulation (which shall include Canadian citizens, permanent residents, protected persons, and other classes consistent with law).
+(2) Regulations may provide pro-rated eligibility for individuals who move into or out of Saskatchewan, for students and temporary absences, and for periods of incarceration or institutional care.
+(3) No eligibility test may require a means-test beyond the benefit-reduction mechanics of section 4-6.
+
+4-5 Application, renewal and payment
+
+(1) The Dividend is voluntary (opt-in). The DDO shall provide plain-language, digital and paper application channels at no cost.
+(2) A one-time application is followed by annual renewal via provincial income-tax filing or prescribed attestation; reasonable alternatives shall be provided for non-filers.
+(3) Payments are made monthly by direct deposit or another prescribed method.
+(4) Applicants may opt out at any time, and may opt back in as prescribed.
+(5) The DDO shall provide a safe-harbour election allowing recipients to receive a lower monthly advance to avoid potential year-end overpayment.
+
+4-6 Benefit amount and reduction
+
+(1) Base amount. The annual base Dividend is $20,000 (2025 dollars), payable in equal monthly instalments, indexed annually to CPI, subject to section 4-12(3).
+(2) Reduction. The Dividend is reduced by a Benefit-Reduction Rate (BRR) of 0.20 applied to the Recipient’s BRI, such that the annual Dividend equals:
+max{ 0, Base − (BRR × BRI) }.
+(3) Income basis (BRI). Regulations shall define BRI to include earned income (employment T4 and net self-employment) and to exclude: the Dividend itself; child benefits; disability supports; needs-tested provincial benefits; prescribed stipends and scholarships; and other prescribed transfers. Regulations may address treatment of pensions, EI and similar payments.
+(4) Individual, not household. The Dividend is assessed on an individual basis.
+(5) Reconciliation. Annual true-up shall reconcile monthly advances to assessed BRI, with caps on recovery and interest-free repayment plans as prescribed.
+
+4-7 Non-taxable; non-income for provincial programs
+
+(1) The Dividend is non-taxable for provincial tax purposes and shall not be included as income for eligibility, rate-setting, or benefit calculations under any provincial program, unless another Act expressly states otherwise.
+(2) Municipal programs shall treat the Dividend as non-income unless otherwise authorized by law.
+
+4-8 Protection from clawbacks and assignment
+
+(1) No employer, landlord, creditor, financial institution, educational institution, or service provider shall reduce wages, benefits, services, or increase fees or rents on the basis that an individual receives or is eligible to receive the Dividend.
+(2) Any term in a contract purporting to assign, charge, or set-off the Dividend is void, except for:
+(a) a court-ordered family support payment; or
+(b) recovery of overpayments or penalties under this Part as prescribed.
+(3) Contraventions are subject to Administrative Monetary Penalties (AMPs) and debarment from provincial programs as prescribed.
+
+4-9 Interaction with employment and labour
+
+(1) The Dividend shall not be used by an employer to justify lower wage offers or benefit reductions; doing so is an unfair practice subject to AMPs and debarment under regulations made jointly with the Minister responsible for labour.
+(2) The DDO may refer suspected violations to the Fair Work Authority for investigation and enforcement.
+
+4-10 Integrity, audits and overpayments
+
+(1) The DDO may conduct risk-based and random audits.
+(2) Where overpayment occurs without recipient fault, the DDO shall offer an income-based repayment plan not exceeding 10% of the ongoing monthly Dividend; if the recipient is no longer eligible, an instalment plan shall be offered on comparable terms.
+(3) Where misrepresentation or wilful concealment is found, the DDO may assess AMPs and recover amounts due; prosecution is reserved for egregious cases as prescribed.
+(4) Recipients shall have access to reconsideration and appeal processes under section 4-11.
+
+4-11 Reconsideration and appeals
+
+(1) A recipient may request reconsideration within time limits prescribed.
+(2) An adverse reconsideration decision may be appealed to a Dignity Dividend Appeal Board established by regulation, with powers and procedures prescribed.
+(3) Appeal bodies shall apply plain-language, trauma-informed processes and may accept electronic hearings.
+
+4-12 Funding, buffer, and payments certainty
+
+(1) All payments under this Part are a standing charge on the Dignity Fund.
+(2) The Authority shall maintain a 36-month liquidity buffer for projected Dividend outlays, as set in Part II.
+(3) Indexation safeguard. During any period that the buffer is below prescribed thresholds under Part II, annual indexation may be temporarily suspended once in any three-year period, as certified by the Authority and ordered by regulation. Indexation resumes automatically when the buffer is restored.
+(4) The DDO shall not issue approvals that exceed appropriations and the Authority’s certification of available funding.
+
+4-13 Data, privacy, and transparency
+
+(1) The DDO shall collect, use and disclose personal information only as necessary to administer this Part, in accordance with privacy law.
+(2) The DDO shall publish quarterly dashboards (de-identified) including: caseload, uptake by age and region, payment totals, average BRI, reconciliation outcomes, overpayment rates, and appeal statistics.
+(3) The Provincial Auditor may conduct annual audits of the DDO; summary results shall be tabled in the Assembly.
+
+4-14 Accessibility and inclusion
+
+(1) The DDO shall provide accessible service channels, including telephone, in-person by appointment, and outreach through community partners.
+(2) Materials shall be available in plain language and, where feasible, in multiple languages, including Indigenous languages in partnership with Indigenous governing bodies.
+
+4-15 Relationship to other laws
+
+(1) Nothing in this Part limits supports under disability, seniors, housing, or other benefit statutes; the Dividend is in addition to such supports unless another Act expressly provides otherwise.
+(2) Regulations may coordinate with federal benefits to minimize unintended interactions, without reducing the base promise of this Part.
+
+4-16 Offences and AMPs
+
+(1) Knowingly making a false or misleading statement to obtain a payment under this Part is an offence punishable on summary conviction as prescribed.
+(2) The Minister may impose AMPs for: contractual clawbacks contrary to section 4-8; wage suppression contrary to section 4-9; obstruction of an audit; or breach of record-keeping requirements, with due-process rights and appeal.
+
+4-17 Regulation-making authority (this Part)
+
+The Lieutenant Governor in Council may make regulations:
+(a) prescribing residency rules, temporary absences, and pro-rating;
+(b) defining BRI inclusions and exclusions and coordinating with federal slips and provincial data sources;
+(c) prescribing true-up and recovery rules, safe-harbour options, and repayment caps;
+(d) prescribing privacy, data retention and security standards;
+(e) establishing the Appeal Board, procedures, and representation rights;
+(f) prescribing AMPs, aggravating/mitigating factors, and limitation periods; and
+(g) generally for carrying out the purposes and provisions of this Part.
+
+4-18 Transitional and commencement
+
+(1) Within 180 days of Royal Assent, the Minister shall publish draft regulations for consultation covering BRI, indexation, reconciliation, appeals, AMPs, and service standards.
+(2) Initial applications shall open on a day fixed by Proclamation, with first payments to commence no later than six months thereafter, subject to Authority certification under section 4-12.
+(3) The Minister shall table a 12-month implementation report in the Assembly, including uptake, payment timeliness, integrity metrics, and recommendations.
+
+5-1 Definitions (this Part)
+
+In this Part:
+(a) “Group” or “SFG” means the Saskatchewan Financial Group established by section 5-2;
+(b) “Board” means the Board of Directors of the Group;
+(c) “Minister” means the member of the Executive Council charged with the administration of this Part;
+(d) “Superintendent” means the Superintendent of Provincial Financial Institutions designated under section 5-10;
+(e) “eligible deposit” means a deposit eligible for guarantee under section 5-11 and the regulations;
+(f) “Guarantee Fund” means the Saskatchewan Deposit Guarantee Fund established under section 5-11;
+(g) “CRO” means the Chief Risk Officer appointed under section 5-8(6);
+(h) “NAICS Fossil Codes” means NAICS 211, 213, 486, 324110, 221112 and 221210;
+(i) “co-operative” includes worker, producer, consumer, multi-stakeholder and Indigenous co-operatives recognized under provincial law.
+
+5-2 Establishment and status
+
+(1) A Crown financial institution to be known as the Saskatchewan Financial Group is established.
+(2) The Group is an agent of the Crown for the purposes of this Part.
+(3) The Group has the capacity, rights, powers and privileges of a natural person as necessary to carry out its objects.
+(4) The Group is not a bank under federal law and shall operate pursuant to this provincial enactment.
+(5) The Group is an employer for the purposes of provincial labour relations and employment standards legislation.
+
+5-3 Objects
+
+The objects of the Group are to:
+(a) provide accessible, low-fee retail financial services to individuals in Saskatchewan, including underserved and rural communities;
+(b) finance co-operatives, farms, small and medium enterprises, and worker buy-outs in partnership with the Saskatchewan Co-operative Development Agency (SCDA);
+(c) deliver development finance in the public interest, including long-term, patient capital for municipalities and Indigenous governing bodies;
+(d) support household and community decarbonization through on-bill retrofit finance and other prescribed green products;
+(e) uphold strong consumer protection, financial inclusion and digital-access standards;
+(f) operate on a commercially prudent, arm’s-length basis with robust prudential oversight; and
+(g) maintain no fossil-fuel investment exposure and avoid new fossil-fuel credit exposure, subject to narrowly-tailored transition exceptions prescribed by regulation.
+
+5-4 Powers
+
+(1) The Group may, subject to this Part and the regulations:
+(a) accept deposits and maintain accounts;
+(b) make and service loans and lines of credit;
+(c) issue cards and offer payment, cash-management and treasury services;
+(d) provide mortgages and housing finance, including modular-housing and retrofit products;
+(e) finance co-operatives, farms and SMEs, including worker-buyout loans;
+(f) provide development finance to municipalities and Indigenous governing bodies;
+(g) purchase and hold Government of Saskatchewan securities and other prescribed high-quality liquid assets;
+(h) enter co-lending, loan-purchase, liquidity, ATM/branch-sharing, and servicing agreements with credit unions and other institutions;
+(i) establish subsidiaries or special purpose vehicles for risk management as prescribed; and
+(j) do all things necessarily incidental to its objects.
+(2) The Group shall not engage in securities underwriting or merchant banking except as expressly permitted by regulation.
+
+5-5 Lines of business (divisions)
+
+The Group may organize its services into divisions including:
+(a) SaskFinancial Personal — basic accounts (with no NSF fees), payments, savings “pots”, personal loans, and mortgages;
+(b) SaskFinancial Co-op & Enterprise — accounts and credit for co-ops, farms and SMEs; equipment finance; worker-buyout and conversion finance aligned with SCDA;
+(c) SaskFinancial Development — long-term, patient capital; municipal and Indigenous loans; Indigenous equity guarantees and first-loss facilities; programmatic purchase of provincial green/social bonds at market; and other public-interest mandates prescribed.
+
+5-6 Green & transition finance
+
+(1) The Group shall offer on-bill retrofit loans (e.g., heat pumps, insulation, solar, hydronics) recoverable through utility bills with consumer protections prescribed by regulation.
+(2) The Group may finance projects that reduce emissions or enhance resilience.
+(3) Fossil exclusion. The Group shall not hold investments or extend new credit exposure directly to NAICS Fossil Codes, except for decommissioning, remediation or conversion finance as prescribed. Existing legacy exposures shall be wound down on a timetable set by regulation.
+
+5-7 Consumer protection and inclusion
+
+(1) The Group shall provide at least one no-fee basic account, cash access, low-barrier ID alternatives as prescribed, and plain-language disclosures.
+(2) No NSF fees or account-drain practices are permitted; reasonable cost recovery for actual third-party costs may be prescribed.
+(3) Dispute resolution shall include an independent external ombuds scheme prescribed by regulation.
+(4) Digital services shall meet accessibility standards; in-person service points shall be maintained at prescribed minimum coverage.
+(5) The Group shall implement algorithmic fairness controls for credit models and publish an annual fairness statement.
+
+5-8 Governance
+
+(1) The Group is governed by a Board of not fewer than 7 and not more than 21 directors appointed in accordance with the regulations.
+(2) The Lieutenant Governor in Council shall ensure representation and expertise including: institutional investment, risk management, consumer protection, rural/northern perspectives, Indigenous governing bodies, and co-operative finance.
+(3) The Board shall appoint a Chief Executive Officer with the concurrence of the Minister.
+(4) The Board shall establish and maintain the following independent functions: risk management, compliance (including AML/ATF), internal audit, and actuarial/treasury.
+(5) The Board shall adopt and publish a Mandate Letter and Risk Appetite Framework, reviewed annually.
+(6) The Board shall appoint a Chief Risk Officer who reports directly to the Board Risk Committee and is not subordinate to business lines.
+
+5-9 Political non-interference
+
+(1) The Minister may issue broad mandate directives consistent with this Part but shall not direct, influence or attempt to influence any individual credit decision, client relationship, or specific transaction of the Group.
+(2) A person who contravenes subsection (1) commits an offence and is liable to the penalties prescribed by regulation.
+(3) The Group shall maintain a register of ministerial directives published under CodeShare Civics, excluding commercially sensitive details.
+
+5-10 Prudential oversight
+
+(1) The Minister shall designate a Superintendent of Provincial Financial Institutions to oversee prudential safety and soundness of the Group.
+(2) The Superintendent shall, by rule or guideline, adopt Basel-aligned capital, leverage, liquidity, stress-testing and large-exposure limits, including:
+(a) minimum risk-based capital and leverage ratio;
+(b) Liquidity Coverage Ratio (LCR) and Net Stable Funding Ratio (NSFR) analogues;
+(c) quarterly stress tests; and
+(d) a Recovery and Resolution Plan with staged supervisory intervention.
+(3) The Superintendent may conduct examinations, require remedial plans, and issue directives.
+(4) The Group shall publish Pillar-3-style public disclosures as prescribed.
+
+5-11 Saskatchewan Deposit Guarantee Fund
+
+(1) A Saskatchewan Deposit Guarantee Fund is established to guarantee eligible deposits at the Group up to $250,000 per depositor per prescribed category.
+(2) The Fund shall be financed by risk-based premiums levied on the Group and maintained in a segregated account, with a provincial backstop as prescribed.
+(3) The guarantee is not CDIC insurance and shall be disclosed accordingly.
+(4) Categories, coverage limits, exclusions (including brokered or non-resident deposits if prescribed), payout processes and resolution tools shall be set by regulation.
+(5) The Fund may support resolution actions consistent with least-cost principles.
+
+5-12 Partnerships with credit unions and others
+
+(1) The Group may enter agreements with credit unions for ATM and branch sharing, liquidity lines, co-lending, loan-purchases and servicing.
+(2) The Group shall not use public advantages to undercut credit unions; terms must be commercially reasonable and consistent with regulations.
+(3) The Group may purchase green/retrofit loan pools from credit unions at market to support balance-sheet capacity.
+
+5-13 AML/ATF, privacy and cybersecurity
+
+(1) The Group shall maintain an AML/ATF program consistent with federal standards.
+(2) The Group shall comply with provincial privacy law and publish a Data Protection Impact Assessment for major systems.
+(3) Cybersecurity shall align with recognized frameworks; material incidents shall be reported to the Superintendent and privacy commissioner.
+
+5-14 Indigenous partnership
+
+(1) The Group shall co-develop Indigenous finance offerings (including equity and first-loss guarantees) with Indigenous governing bodies.
+(2) Nothing in this Part abrogates or derogates from the rights of Indigenous peoples.
+
+5-15 CodeShare Civics transparency
+
+The Group shall publish dashboards and datasets (subject to commercial confidentiality) including: account access metrics, SME/co-op lending volumes, retrofit uptake, regional service coverage, complaint outcomes, capital and liquidity ratios (high level), and fossil-exposure wind-down progress.
+
+5-16 Treasury and investment constraints
+
+(1) The Group may invest surplus liquidity only in permitted assets prescribed by regulation.
+(2) No fossil-fuel investment exposure is permitted in treasury portfolios.
+(3) ESG, climate and transition risk management policies shall be approved by the Board and published.
+
+5-17 Consumer and small-business remedies
+
+(1) The Group shall maintain an internal complaints process with decision within prescribed timelines.
+(2) Customers may escalate to an independent external ombuds whose decisions are non-binding but must be publicly tracked; systemic recommendations shall be published.
+
+5-18 Reporting and audit
+
+(1) The Group shall table an annual report in the Assembly, including audited financial statements.
+(2) The Provincial Auditor may conduct performance audits.
+(3) Quarterly highlights, including prudential key metrics, shall be published.
+
+5-19 Regulation-making authority (this Part)
+
+The Lieutenant Governor in Council may make regulations:
+(a) respecting governance, Board qualifications and conflicts;
+(b) prescribing permitted and prohibited lines of business;
+(c) setting consumer-protection standards (basic accounts, holds, disclosures, complaints, ombuds);
+(d) prescribing AML/ATF, privacy and cybersecurity standards;
+(e) establishing prudential requirements, reporting, stress testing and intervention stages;
+(f) establishing and administering the Deposit Guarantee Fund, coverage, premiums and resolution tools;
+(g) prescribing fossil-exposure exclusions and transition-finance exceptions and timelines;
+(h) setting terms for on-bill financing with utilities and related consumer protections;
+(i) governing partnerships with credit unions and others; and
+(j) generally for carrying out this Part.
+
+5-20 Transitional and commencement
+
+(1) Within 180 days of Royal Assent, the Minister shall bring forward regulations required to operationalize sections 5-8 to 5-13.
+(2) The Group shall commence operations on a day fixed by Proclamation once the Superintendent certifies readiness and the Deposit Guarantee Fund is capitalized to a prescribed initial level.
+(3) Legacy fossil exposures (if any) shall be inventoried and a wind-down plan published within 12 months of commencement.
+
+Part VI — Saskatchewan Bonds
+
+6-1 Definitions (this Part)
+
+In this Part:
+(a) “Bonds Program” means the Saskatchewan Bonds program established by section 6-2;
+(b) “Bond Office” means the unit designated under section 6-6 to manage the Bonds Program;
+(c) “labeled bond” means a bond issued under a Use-of-Proceeds framework (including Climate, Social or other thematic categories prescribed) with ring-fenced allocations and reporting;
+(d) “Investment Bond” means a non-labeled series intended primarily for retail investors;
+(e) “Use-of-Proceeds Framework” means a published document setting out eligible project categories, process for evaluation and selection, management of proceeds, and allocation/impact reporting;
+(f) “Second-Party Opinion (SPO)” means an external review of a Use-of-Proceeds Framework or labeled bond series;
+(g) “eligible issuer” has the meaning in section 6-3;
+(h) “CodeShare Civics” has the meaning assigned in The Saskatchewan Democratic Renewal Act or successor enactment.
+
+6-2 Establishment of the Saskatchewan Bonds Program
+
+(1) The Saskatchewan Bonds Program is established to provide cost-effective, transparent access to capital for provincial priorities and to enable broad resident participation in financing those priorities.
+(2) Bonds issued under this Part are subject to The Financial Administration Act, The Securities Act, 1988 and the regulations, except as expressly provided by or under this Part.
+
+6-3 Eligible issuers
+
+(1) The following may issue bonds under the Bonds Program, subject to approval of the Minister responsible for finance and applicable borrowing authorities:
+(a) Government of Saskatchewan;
+(b) prescribed Crown corporations and public agencies;
+(c) prescribed municipalities and Indigenous governing bodies, where a provincial guarantee, credit enhancement, or on-lending structure is approved as prescribed.
+(2) The Lieutenant Governor in Council may designate additional eligible issuers and prescribe conditions.
+
+6-4 Program streams
+
+(1) The Bond Office may establish streams, including:
+(a) Sask Climate Bonds — labeled bonds aligned to recognized green bond principles for eligible green investments;
+(b) Sask Social Bonds — labeled bonds aligned to recognized social/sustainability bond principles for housing, health, education and similar projects;
+(c) Sask Investment Bonds — general purpose bonds designed for retail investors resident in Saskatchewan; and
+(d) other streams prescribed by regulation.
+(2) Labeled bonds must conform to a Use-of-Proceeds Framework approved under section 6-5.
+
+6-5 Use-of-Proceeds, ring-fencing and frameworks (labeled bonds)
+
+(1) Net proceeds of labeled bonds shall be credited to segregated accounts and allocated only to eligible expenditures defined in the applicable Use-of-Proceeds Framework, including refinancing look-back periods if prescribed.
+(2) The Minister shall approve and publish one or more Use-of-Proceeds Frameworks; frameworks shall:
+(a) define eligible categories, exclusion lists and avoidance of double counting;
+(b) set processes for evaluation/selection of projects;
+(c) set management of proceeds and temporary investment of unallocated balances; and
+(d) set allocation and impact reporting requirements.
+(3) Each labeled series shall obtain a Second-Party Opinion prior to issuance and an independent assurance of allocation reports as prescribed.
+(4) If a project becomes ineligible, the unallocated or reflowed proceeds shall be re-allocated within prescribed timelines and reported publicly.
+
+6-6 Bond Office
+
+(1) The Minister shall designate a Bond Office within the Ministry of Finance or another prescribed entity to:
+(a) structure and execute bond offerings;
+(b) publish frameworks, SPOs, offering documents and reports;
+(c) maintain a project registry for labeled bonds;
+(d) operate retail access channels under section 6-8; and
+(e) coordinate with eligible issuers.
+(2) The Bond Office may engage dealers, paying agents, trustees and service providers on terms consistent with regulation and procurement law.
+
+6-7 Terms and forms of bonds
+
+(1) Bonds may be issued in such maturities (including 1–100 years), interest forms (fixed, floating, inflation-linked), formats (book-entry, registered, digital), and call/put provisions as prescribed.
+(2) Denominations for retail tranches may be set as low as $100.
+(3) Interest payment frequency and day-count conventions shall be prescribed or disclosed in the offering documents.
+(4) Bonds may be sold by syndicate, direct to investors, or through platforms operated by the Bond Office or approved intermediaries.
+(5) Nothing in this Part authorizes derivatives or structured products beyond prudent interest-rate and currency risk management as prescribed.
+
+6-8 Retail access and participation
+
+(1) The Bond Office shall provide retail access to Investment Bonds and, where feasible, labeled bonds through:
+(a) an online subscription portal;
+(b) payroll deduction arrangements with willing employers; and
+(c) participation via credit unions and the Saskatchewan Financial Group (SFG).
+(2) Payroll deduction is voluntary and shall not be a condition of employment.
+(3) Subscription windows may provide priority allocation to Saskatchewan residents as prescribed.
+
+6-9 Allocation, impact reporting and assurance (labeled bonds)
+
+(1) For each labeled series, the Bond Office shall publish:
+(a) an Allocation Report at least annually until full allocation, and thereafter upon material re-allocations; and
+(b) an Impact Report annually setting out key indicators and methodologies.
+(2) The Allocation Report shall be subject to independent assurance as prescribed.
+(3) Impact indicators shall be evidence-based, avoid double counting, and disclose limitations and baselines.
+
+6-10 Transparency and CodeShare Civics
+
+(1) The Bond Office shall publish under CodeShare Civics: frameworks, SPOs, offering documents, allocation and impact reports, the project registry, and post-issuance updates, subject to commercial and security limitations.
+(2) Fees paid to dealers and advisors shall be disclosed in summary form by series.
+
+6-11 Compliance with securities and consumer law
+
+(1) Offerings under this Part shall comply with The Securities Act, 1988 and its regulations; the Financial and Consumer Affairs Authority may grant or recommend exemptive relief for retail programs consistent with investor protection.
+(2) The Minister may prescribe plain-language disclosures and cooling-off periods for retail tranches.
+
+6-12 Crown and project bonds; guarantees
+
+(1) Prescribed Crowns and public agencies (including the Saskatchewan Transport Corporation for Saskatchewan High-Speed Rail) may issue project bonds under this Program where authorized.
+(2) A provincial guarantee or on-lending may be provided where prescribed, subject to debt-sustainability limits and risk-based fees.
+(3) Guarantees and enhancements shall be disclosed in offering documents.
+
+6-13 Role of the Saskatchewan Financial Group
+
+(1) SFG may participate as a selling group member, provide digital distribution, and (on a market basis) purchase provincial green/social bonds for its treasury or development portfolios.
+(2) SFG’s participation shall be commercially reasonable and shall not disadvantage credit unions.
+
+6-14 Proceeds management and prohibitions
+
+(1) Proceeds of Investment Bonds may be used for general capital financing as authorized by law; proceeds of labeled bonds shall be used only for eligible expenditures.
+(2) Proceeds shall not be used for operating expenses except where explicitly permitted by regulation for refinancing eligible capital expenditures.
+(3) Temporary investment of unallocated proceeds shall be in permitted assets prescribed by regulation.
+
+6-15 Independent review and performance
+
+(1) The Provincial Auditor may review controls over ring-fencing, allocation and reporting.
+(2) Within 24 months of the first issuance under this Part, and at least every 3 years thereafter, the Minister shall table an independent evaluation of program cost-effectiveness, investor access, and integrity of labeled claims.
+
+6-16 Regulation-making authority (this Part)
+
+The Lieutenant Governor in Council may make regulations:
+(a) prescribing eligible issuers, borrowing limits, and approval processes;
+(b) establishing Use-of-Proceeds Frameworks and eligible categories;
+(c) prescribing SPO requirements, assurance standards, and impact metrics;
+(d) prescribing maturities, formats, denominations, selling methods and investor safeguards;
+(e) establishing retail access rules, payroll deduction mechanics, portal standards, KYC/AML controls, and fee caps;
+(f) prescribing project bond and guarantee terms, risk fees, and sustainability limits;
+(g) prescribing proceeds-management rules and permitted temporary investments;
+(h) aligning disclosures with recognized green/social/sustainability bond principles; and
+(i) generally for carrying out this Part.
+
+6-17 Transitional and commencement
+
+(1) Within 120 days of Royal Assent the Minister shall designate the Bond Office and publish at least one Use-of-Proceeds Framework.
+(2) The first series of Sask Investment Bonds shall be offered not later than 12 months after this Part comes into force, subject to market conditions.
+(3) This Part comes into force on Proclamation.
+
+Part VII — Tax Reform
+
+7-1 Definitions (this Part)
+
+In this Part:
+(a) Act means The Saskatchewan Financial Sovereignty Act;
+(b) associated corporation has the meaning assigned by the federal Income Tax Act (Canada);
+(c) co-operative includes a corporation governed by co-operative legislation and taxed as a corporation;
+(d) CPI means the all-items Consumer Price Index for Saskatchewan as published by Statistics Canada;
+(e) METR means the combined marginal effective tax-and-benefit rate faced by individuals, including effects of provincial income tax, provincial credits, payroll levies and the Saskatchewan Dignity Dividend phase-out, together with material federal interactions as prescribed for modelling;
+(f) NAICS means the North American Industry Classification System (latest Canadian edition);
+(g) passive investment income has the meaning assigned by the federal Income Tax Act (Canada) and regulations;
+(h) priority profession means a profession designated by regulation under section 7-6;
+(i) Same-Business Group has the meaning in section 7-7.
+
+7-2 Purpose and scope
+
+(1) The purpose of this Part is to modernize provincial taxation to:
+(a) improve progressivity and fiscal resilience;
+(b) reward real reinvestment in people, skills, and innovation;
+(c) prevent artificial fragmentation of businesses to access lower rates; and
+(d) maintain reasonable METRs across the Dignity Dividend phase-out range.
+(2) This Part amends provincial income tax law as it applies for a taxation year ending after a prescribed date and prevails to the extent of any inconsistency with prior regulations.
+
+Division 1 — Personal Income Tax
+
+7-3 Provincial rate schedule
+
+(1) The provincial individual income tax rates and thresholds are those set out in Schedule 7-A for the first applicable taxation year and shall be indexed annually by CPI unless otherwise prescribed.
+(2) The Minister may make regulations adjusting brackets for rounding and CPI anomalies.
+(3) Nothing in this Part alters eligibility for existing refundable or non-refundable provincial credits except as prescribed.
+
+7-4 Indexation and inflation protection
+
+(1) Beginning January 1 following the first applicable taxation year, all thresholds in Schedule 7-A are indexed by CPI (rounded to the nearest $100).
+(2) The Lieutenant Governor in Council may suspend indexation for one taxation year by regulation only if accompanied by a public fiscal update explaining the necessity.
+
+Division 2 — Priority Professional Tax Credit
+
+7-5 Establishment
+
+(1) A Priority Professional Tax Credit (PPTC) is established to support recruitment and retention in priority professions.
+(2) The PPTC may be refundable or partially refundable as prescribed by regulation.
+
+7-6 Designation and parameters
+
+The Lieutenant Governor in Council may make regulations:
+(a) designating priority professions (which may include physicians, nurses, nurse practitioners, educators, early-childhood educators, dentists, dental hygienists, mental-health clinicians, allied health and other critical occupations);
+(b) setting annual credit amounts, enhanced amounts for priority regions or return-of-service commitments, and proration rules;
+(c) establishing eligibility, including Saskatchewan licensure, minimum service days, and good-standing requirements;
+(d) providing stacking rules with bursaries/scholarships and interactions with federal credits;
+(e) defining administration and verification, including cooperation with regulators and employers; and
+(f) prescribing anti-avoidance and clawback provisions for misrepresentation.
+
+Division 3 — Corporate & Co-operative Income Tax
+
+7-7 Same-Business Group aggregation (who is grouped)
+
+(1) For purposes of applying the provincial corporate rate brackets in Schedule 7-B, two or more corporations are a Same-Business Group (SBG) for a taxation year if, at any time in the year:
+(a) they are under common control (de jure, de facto, or as associated corporations); and
+(b) having regard to all the circumstances, they operate the same or substantially similar business evidenced by one or more of the following non-exhaustive factors:
+(i) same 4-digit NAICS;
+(ii) shared branding, website, phone lines, advertising, or common loyalty program;
+(iii) shared premises or equipment;
+(iv) substantially shared employees or management;
+(v) intra-group sales exceeding 25% of revenue of any member;
+(vi) centralized pricing, booking, POS, or back-office functions.
+(2) Safe harbour (distinct businesses): Corporations under common control are not an SBG solely by reason of ownership where they operate in distinct industries (different 4-digit NAICS), with separate staff, premises, branding and customer bases, and intra-group sales ≤25% of revenue.
+(3) The Minister may designate corporations as an SBG by written notice where, on reasonable grounds, the criteria in subsection (1) are met; a right of objection and appeal shall be prescribed.
+(4) For an SBG, the provincial small/medium/large-rate brackets apply to the group on an aggregated basis, with the group’s bracket amounts allocated among members in proportion to active business income or as prescribed.
+(5) Anti-avoidance: an arrangement whose main purpose is to circumvent SBG aggregation is ineffective for the purposes of this Part.
+
+7-8 Provincial corporate rate schedule
+
+(1) The provincial corporate income tax rates and thresholds are those set out in Schedule 7-B for active business income.
+(2) Passive investment income is taxed at the general provincial rate in Schedule 7-B.
+(3) Co-operatives are subject to this section on their taxable income after permitted patronage deductions under federal law.
+(4) Thresholds in Schedule 7-B are indexed annually by CPI (rounded to the nearest $10,000) unless otherwise prescribed.
+
+7-9 Reinvestment Tax Credit (RITC)
+
+(1) A non-refundable Reinvestment Tax Credit is established to encourage investment in:
+(a) People: verified increases in non-executive payroll exceeding CPI by 15% year-over-year (excluding headcount shifts from contractors to payroll unless duties truly internalize);
+(b) Innovation: R&D conducted in Saskatchewan as defined by federal SR&ED principles (without double-dipping on the same expenditure beyond prescribed stacking rules);
+(c) Skills: portable, accredited training for employees delivered by approved providers.
+(2) Credit rate and caps shall be prescribed by regulation and may vary by size class, region, or sector.
+(3) Carryforward/back: unused RITC may be carried forward 10 years and back 3 years as prescribed.
+(4) Anti-avoidance: expenditures recharacterized from ordinary costs, or booked via related parties without substance, are ineligible; the Minister may deny or reduce claims on reasonable grounds.
+(5) Verification: claimants shall retain records; the Minister may require a report by a CPA or other prescribed assurance.
+
+Division 4 — METR Safeguard and Reporting
+
+7-10 METR publication and ceiling
+
+(1) The Minister of Finance shall, annually with the Budget, publish a provincial METR report, including methodology, showing combined tax-and-benefit rates by income decile and family type, and explicitly modelling interactions with:
+(a) provincial PIT brackets and credits;
+(b) the Saskatchewan Dignity Dividend (Part IV) phase-out;
+(c) material provincial levies and benefits; and
+(d) material federal parameters as prescribed for modelling.
+(2) The Minister shall design and recommend measures such that the METR does not exceed 55% across the Dignity Dividend phase-out range, save temporary exceptions explained in the report and remedied in the next budget cycle.
+
+Division 5 — Administration, Regulations, Transition
+
+7-11 Administration and coordination
+
+(1) The Minister may enter into information-sharing agreements with the Canada Revenue Agency and other public bodies for administration of this Part, subject to privacy law.
+(2) The Minister may issue interpretive bulletins and administrative guidance consistent with this Part.
+
+7-12 Regulations (this Part)
+
+The Lieutenant Governor in Council may make regulations:
+(a) prescribing dates of application and transitional rules;
+(b) prescribing the PPTC designations, amounts, verification and clawbacks;
+(c) prescribing CPI indexation methods and rounding conventions;
+(d) prescribing RITC rates, caps, eligibility, stacking and assurance;
+(e) prescribing definitions, factors and evidentiary rules for Same-Business Groups, allocation methods, and dispute processes;
+(f) prescribing anti-avoidance rules and penalties; and
+(g) generally for carrying out this Part.
+
+7-13 Transition and commencement
+
+(1) Schedules 7-A and 7-B apply for taxation years ending on or after a date prescribed by regulation.
+(2) This Part comes into force on Proclamation.
+
+Schedule 7-A — Provincial Personal Income Tax (Initial Rates)
+
+
+
+Notes:
+	1.	Brackets indexed annually by CPI (s.7-4).
+	2.	Interaction with existing provincial credits continues unless amended by regulation (s.7-3(3)).
+	3.	Priority Professional Tax Credit applies per regs (Div. 2).
+
+Schedule 7-B — Provincial Corporate & Co-operative Income Tax (Initial Rates)
+
+Active Business Income (grouped by Same-Business Group where applicable):
+
+
+
+
+Passive investment income: taxed at the 13.0% general provincial rate.
+
+Notes:
+	1.	Thresholds indexed annually by CPI (s.7-8(4)).
+	2.	Same-Business Group aggregation applies before assigning brackets (s.7-7).
+	3.	Co-ops apply this schedule to taxable income after permitted patronage deductions.
