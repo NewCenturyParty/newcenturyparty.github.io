@@ -1064,7 +1064,7 @@ body.wheat-body button {
 
 .policies-grid-section {
     width: 100%;
-    padding: clamp(5rem, 16vh, 8rem) clamp(1.5rem, 5vw, 3.5rem) clamp(6rem, 18vh, 8rem);
+    padding: clamp(0rem, 18vh, 0rem) clamp(1.5rem, 6vw, 4rem);
     display: flex;
     justify-content: center;
 }
