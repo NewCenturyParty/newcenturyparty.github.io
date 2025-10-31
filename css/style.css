@@ -1134,10 +1134,10 @@ body.wheat-body button {
 }
 
 .policy-card__header {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr;
     align-items: baseline;
-    flex-wrap: wrap;
-    gap: 0.75rem;
+    column-gap: 0.75rem;
 }
 
 .policy-card__number {
@@ -1423,9 +1423,8 @@ body.wheat-body button {
     }
 
     .policy-card__header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.35rem;
+        grid-template-columns: 1fr;
+        row-gap: 0.35rem;
     }
 
     .policies-hero-link {
