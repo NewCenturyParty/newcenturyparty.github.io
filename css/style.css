@@ -358,10 +358,6 @@ body.has-flyover-menu {
     align-items: center;
 }
 
-.policies-page .page-wrap {
-    padding-top: clamp(6rem, 12vw, 7.5rem);
-}
-
 .intro-logo {
     width: min(var(--max-width-xl), 84vw);
     margin-top: clamp(2rem, 4vw, 3.25rem);
@@ -1974,6 +1970,7 @@ body.wheat-body button {
     }
 
     .policies-grid-section {
+        margin-top: -5em;
         padding: clamp(3.5rem, 12vh, 5.5rem) 1.1rem clamp(4rem, 12vh, 5rem);
     }
 
