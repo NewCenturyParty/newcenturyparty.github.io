@@ -11,7 +11,35 @@
     <link rel="apple-touch-icon" href="../images/apple-touch-icon.svg">
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body id="top">
+<body id="top" class="policies-page">
+    <header class="site-flyover site-flyover--static" aria-label="Primary navigation">
+        <div class="site-flyover__inner">
+            <a class="site-flyover__brand" href="../index.html">
+                <img class="site-flyover__logo" src="../images/ncp-logo-transparent-gold.svg" alt="New Century Party logo">
+                <span class="site-flyover__name">New Century Party</span>
+            </a>
+            <button class="site-flyover__close" type="button" aria-hidden="true" tabindex="-1">
+                <span class="visually-hidden">Close navigation</span>
+            </button>
+            <button class="site-flyover__toggle" type="button" aria-expanded="false" aria-controls="site-flyover-nav">
+                <span class="site-flyover__toggle-box" aria-hidden="true">
+                    <span class="site-flyover__toggle-line"></span>
+                    <span class="site-flyover__toggle-line"></span>
+                    <span class="site-flyover__toggle-line"></span>
+                </span>
+                <span class="visually-hidden">Toggle navigation</span>
+            </button>
+            <nav id="site-flyover-nav" class="site-flyover__nav" aria-label="Site links">
+                <a class="site-flyover__link" href="../webpages/about.html">About</a>
+                <a class="site-flyover__link" href="../webpages/FAQ.html">FAQ</a>
+                <a class="site-flyover__link" href="../webpages/21policies.html" aria-current="page">21 Policies</a>
+                <a class="site-flyover__link" href="../webpages/institutions.html">Institutions</a>
+                <a class="site-flyover__link" href="../webpages/How_We_Pay.html">How We Pay</a>
+                <a class="site-flyover__link" href="../webpages/Get_Involved.html">Get Involved</a>
+            </nav>
+        </div>
+        <div class="site-flyover__overlay" data-flyover-overlay aria-hidden="true"></div>
+    </header>
     <div class="page-wrap">
         <div class="intro-logo">
             <a href="../index.html" class="policies-logo-link">
@@ -19,7 +47,7 @@
             </a>
         </div>
 
-        <section class="intro-container policies-hero" aria-labelledby="policies-hero-title">
+        <section class="intro-container policies-hero" aria-labelledby="policies-hero-title" data-flyover-trigger>
             <p class="intro-eyebrow">The Platform</p>
             <h1 class="intro-title" id="policies-hero-title">21 Policies</h1>
             <p class ="intro-eyebrow">For A</p>
@@ -451,100 +479,7 @@
             <a class="policies-footer__top" href="#top">Back to top</a>
         </footer>
     </div>
-    <script>
-        (function () {
-            const modal = document.querySelector('.policy-modal');
-            if (!modal) return;
-
-            const dialog = modal.querySelector('.policy-modal__dialog');
-            const numberEl = document.getElementById('policy-modal-number');
-            const titleEl = document.getElementById('policy-modal-title');
-            const bodyEl = document.getElementById('policy-modal-body');
-            const closeTriggers = modal.querySelectorAll('[data-policy-close]');
-            const cards = document.querySelectorAll('.policy-card');
-            const closeButton = modal.querySelector('.policy-modal__close');
-            let lastFocusedElement = null;
-            let activeCard = null;
-
-            const openModal = (card) => {
-                lastFocusedElement = card;
-                activeCard = card;
-
-                const number = card.querySelector('.policy-card__number');
-                const title = card.querySelector('.policy-card__title');
-                const list = card.querySelector('.policy-card__list');
-
-                numberEl.textContent = number ? number.textContent.trim() : '';
-                titleEl.textContent = title ? title.textContent.trim() : '';
-
-                bodyEl.innerHTML = '';
-                if (list) {
-                    const clonedList = list.cloneNode(true);
-                    bodyEl.appendChild(clonedList);
-                }
-
-                modal.removeAttribute('hidden');
-                modal.dataset.open = 'true';
-                modal.setAttribute('aria-hidden', 'false');
-                card.setAttribute('aria-expanded', 'true');
-                document.body.style.overflow = 'hidden';
-                dialog.focus();
-                if (closeButton) {
-                    if (typeof requestAnimationFrame === 'function') {
-                        requestAnimationFrame(() => closeButton.focus());
-                    } else {
-                        closeButton.focus();
-                    }
-                }
-            };
-
-            const closeModal = () => {
-                modal.dataset.open = 'false';
-                modal.setAttribute('aria-hidden', 'true');
-                modal.setAttribute('hidden', '');
-                document.body.style.overflow = '';
-                bodyEl.innerHTML = '';
-                numberEl.textContent = '';
-                titleEl.textContent = '';
-
-                if (activeCard) {
-                    activeCard.setAttribute('aria-expanded', 'false');
-                    activeCard = null;
-                }
-
-                if (lastFocusedElement && typeof lastFocusedElement.focus === 'function') {
-                    lastFocusedElement.focus();
-                }
-            };
-
-            cards.forEach((card) => {
-                card.setAttribute('aria-haspopup', 'dialog');
-                card.setAttribute('aria-expanded', 'false');
-                card.addEventListener('click', () => openModal(card));
-                card.addEventListener('keydown', (event) => {
-                    if (event.key === 'Enter' || event.key === ' ' || event.key === 'Spacebar') {
-                        event.preventDefault();
-                        openModal(card);
-                    }
-                });
-            });
-
-            closeTriggers.forEach((trigger) => {
-                trigger.addEventListener('click', closeModal);
-            });
-
-            modal.addEventListener('click', (event) => {
-                if (event.target === modal) {
-                    closeModal();
-                }
-            });
-
-            document.addEventListener('keydown', (event) => {
-                if (event.key === 'Escape' && modal.dataset.open === 'true') {
-                    closeModal();
-                }
-            });
-        })();
-    </script>
+    <script src="../js/site-flyover.js" defer></script>
+    <script src="../js/policies-modal.js" defer></script>
 </body>
 </html>

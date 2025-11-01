@@ -12,6 +12,35 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body id="top">
+    <header class="site-flyover" aria-label="Primary navigation">
+        <div class="site-flyover__inner">
+            <a class="site-flyover__brand" href="#top">
+                <img class="site-flyover__logo" src="images/ncp-logo-transparent-gold.svg" alt="New Century Party logo">
+                <span class="site-flyover__name">New Century Party</span>
+            </a>
+            <button class="site-flyover__close" type="button" aria-hidden="true" tabindex="-1">
+                <span class="visually-hidden">Close navigation</span>
+            </button>
+            <button class="site-flyover__toggle" type="button" aria-expanded="false" aria-controls="site-flyover-nav">
+                <span class="site-flyover__toggle-box" aria-hidden="true">
+                    <span class="site-flyover__toggle-line"></span>
+                    <span class="site-flyover__toggle-line"></span>
+                    <span class="site-flyover__toggle-line"></span>
+                </span>
+                <span class="visually-hidden">Toggle navigation</span>
+            </button>
+            <nav id="site-flyover-nav" class="site-flyover__nav" aria-label="Site links">
+                <a class="site-flyover__link" href="webpages/About.html">About</a>
+                <a class="site-flyover__link" href="webpages/FAQ.html">FAQ</a>
+                <a class="site-flyover__link" href="webpages/21policies.html">21 Policies</a>
+                <a class="site-flyover__link" href="webpages/Institutions.html">Institutions</a>
+
+                <a class="site-flyover__link" href="webpages/How_We_Pay.html">How We Pay</a>
+                <a class="site-flyover__link" href="webpages/Get_Involved.html">Get Involved</a>
+            </nav>
+        </div>
+        <div class="site-flyover__overlay" data-flyover-overlay aria-hidden="true"></div>
+    </header>
     <div class="page-wrap">
         <div class="intro-logo">
             <img src="images/ncp-logo-transparent-gold.svg" alt="New Century Party logo in prairie gold">
@@ -32,7 +61,7 @@
 
         <div class="intro-divider" aria-hidden="true"></div>
 
-        <section class="content-landing" aria-label="Main site content preview">
+        <section class="content-landing" aria-label="Main site content preview" data-flyover-trigger>
             <div class="content-wrap">
                 <p class="section-prefix">The</p>
                 <p class="section-eyebrow">New Century Party</p>
@@ -164,5 +193,6 @@
 
         <!-- Future sections intentionally left blank to show background -->
     </div>
+    <script src="js/site-flyover.js" defer></script>
 </body>
 </html>
