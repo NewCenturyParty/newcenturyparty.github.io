@@ -1049,11 +1049,19 @@ nstitutions-intro
     margin: 0;
     text-transform: uppercase;
     letter-spacing: clamp(0.08em, 2vw, 0.14em);
-    font-size: clamp(2.8rem, 12vw, 6rem);
+    font-size: clamp(2.8rem, 12vw, 5.0rem);
     font-weight: bolder;
     color: rgba(243, 246, 251, 0.88);
     text-align: center;
+    
 }
+
+.getinvolved-collaborate .section-eyebrow {
+    font-size: clamp(2.2rem, 10vw, 4.2rem);
+    letter-spacing: clamp(0.06em, 1.6vw, 0.1em);
+    word-break: break-word;
+}
+
 
 .content-landing .placeholder {
     width: min(980px, 100%);
@@ -1655,6 +1663,8 @@ nstitutions-intro
 
 .getinvolved-hero .intro-title {
     line-height: 1.1;
+    max-width: min(60ch, 100%);
+    text-align: center;
 }
 
 .getinvolved-hero__lede {
@@ -1734,7 +1744,7 @@ nstitutions-intro
 
 .funding-section {
     width: 100%;
-    padding: clamp(5.5rem, 17vh, 7.5rem) clamp(1.5rem, 6vw, 3.5rem) clamp(6.5rem, 18vh, 8.5rem);
+    padding: clamp(5.5rem, 17vh, 0.5rem) clamp(1.5rem, 6vw, 3.5rem) clamp(6.5rem, 18vh, 8.5rem);
     display: flex;
     justify-content: center;
 }
@@ -2519,6 +2529,12 @@ nstitutions-intro
     .howpay-pillars .section-grid {
         grid-template-columns: 1fr;
     }
+
+    .getinvolved-collaborate .section-eyebrow {
+        font-size: clamp(1.8rem, 9vw, 2.8rem);
+        letter-spacing: clamp(0.045em, 1.2vw, 0.08em);
+    }
+    
 
     .faq-hero {
         width: min(520px, 94vw);
