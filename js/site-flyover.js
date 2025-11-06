@@ -11,6 +11,7 @@
         const overlay = header.querySelector('.site-flyover__overlay');
         const navLinks = nav ? Array.from(nav.querySelectorAll('a')) : [];
         const mobileQuery = window.matchMedia('(max-width: 720px)');
+        const isStatic = header.classList.contains('site-flyover--static');
 
         if (!nav || !toggleButton) {
             return;
@@ -24,6 +25,11 @@
             document.querySelector('.intro-container');
 
         const updateThreshold = () => {
+            if (isStatic) {
+                threshold = 0;
+                return;
+            }
+
             const trigger = findTrigger();
             const headerHeight = header.offsetHeight;
 
@@ -93,6 +99,11 @@
         };
 
         const toggleHeaderVisibility = () => {
+            if (isStatic) {
+                header.classList.add('is-visible');
+                return;
+            }
+
             if (window.scrollY >= threshold) {
                 header.classList.add('is-visible');
             } else {
@@ -152,6 +163,10 @@
             toggleHeaderVisibility();
             syncMenuState();
         });
+
+        if (isStatic) {
+            header.classList.add('is-visible');
+        }
 
         updateThreshold();
         toggleHeaderVisibility();
