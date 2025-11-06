@@ -1,47 +1,78 @@
 (function () {
-    const policyDetails = {
-        // Policy 01 – add rich HTML describing the Human Dignity policy.
-        '01': ``,
-        // Policy 02 – add detailed content for The Saskatchewan Dignity Dividend.
-        '02': ``,
-        // Policy 03 – add detailed content for Universal Health.
-        '03': ``,
-        // Policy 04 – add detailed content for the policy shown as number 04.
-        '04': ``,
-        // Policy 05 – add detailed content for the policy shown as number 05.
-        '05': ``,
-        // Policy 06 – add detailed content for 21st Century Connected Communities.
-        '06': ``,
-        // Policy 07 – add detailed content for Public Safety.
-        '07': ``,
-        // Policy 08 – add detailed content for the policy shown as number 08.
-        '08': ``,
-        // Policy 09 – add detailed content for the policy shown as number 09.
-        '09': ``,
-        // Policy 10 – add detailed content for the policy shown as number 10.
-        '10': ``,
-        // Policy 11 – add detailed content for the policy shown as number 11.
-        '11': ``,
-        // Policy 12 – add detailed content for the policy shown as number 12.
-        '12': ``,
-        // Policy 13 – add detailed content for the policy shown as number 13.
-        '13': ``,
-        // Policy 14 – add detailed content for the policy shown as number 14.
-        '14': ``,
-        // Policy 15 – add detailed content for the policy shown as number 15.
-        '15': ``,
-        // Policy 16 – add detailed content for the policy shown as number 16.
-        '16': ``,
-        // Policy 17 – add detailed content for the policy shown as number 17.
-        '17': ``,
-        // Policy 18 – add detailed content for the policy shown as number 18.
-        '18': ``,
-        // Policy 19 – add detailed content for the policy shown as number 19.
-        '19': ``,
-        // Policy 20 – add detailed content for Disaster Resilience.
-        '20': ``,
-        // Policy 21 – add detailed content for Funding: Taxes, Royalties, and METR.
-        '21': ``,
+    // Cache fetched policy detail HTML by policy id.
+    const policyCache = new Map();
+    const pendingRequests = new Map();
+
+    const getDetailUrl = (modal, policyId) => {
+        if (!policyId) {
+            return null;
+        }
+
+        if (modal) {
+            const { detailTemplate, detailBase } = modal.dataset;
+
+            if (detailTemplate) {
+                return detailTemplate.includes('{id}')
+                    ? detailTemplate.replace('{id}', policyId)
+                    : detailTemplate;
+            }
+
+            if (detailBase) {
+                const normalizedBase = detailBase.endsWith('/')
+                    ? detailBase.slice(0, -1)
+                    : detailBase;
+
+                return `${normalizedBase}/policy-${policyId}.html`;
+            }
+        }
+
+        return null;
+    };
+
+    const fetchPolicyHTML = async (modal, policyId) => {
+        if (!policyId) {
+            return '';
+        }
+
+        if (policyCache.has(policyId)) {
+            return policyCache.get(policyId);
+        }
+
+        if (pendingRequests.has(policyId)) {
+            return pendingRequests.get(policyId);
+        }
+
+        const url = getDetailUrl(modal, policyId);
+
+        if (!url) {
+            policyCache.set(policyId, '');
+            return '';
+        }
+
+        const request = fetch(url, { credentials: 'same-origin' })
+            .then((response) => {
+                if (response.status === 404) {
+                    return '';
+                }
+
+                if (!response.ok) {
+                    throw new Error(`Unable to load policy ${policyId} details (status ${response.status}).`);
+                }
+
+                return response.text();
+            })
+            .then((html) => {
+                policyCache.set(policyId, html);
+                pendingRequests.delete(policyId);
+                return html;
+            })
+            .catch((error) => {
+                pendingRequests.delete(policyId);
+                throw error;
+            });
+
+        pendingRequests.set(policyId, request);
+        return request;
     };
 
     const getPolicyId = (card) => {
@@ -71,6 +102,10 @@
         const cards = document.querySelectorAll('.policy-card');
         const closeButton = modal.querySelector('.policy-modal__close');
 
+        const loadingMarkup = '<p class="policy-modal__status">Loading full policy...</p>';
+        const fallbackMarkup = '<p class="policy-modal__status">Full policy write-up coming soon.</p>';
+        const errorMarkup = '<p class="policy-modal__status policy-modal__status--error">We could not load that policy right now. Refresh and try again, or make sure you are running a local web server when previewing.</p>';
+
         if (!dialog || !numberEl || !titleEl || !bodyEl || cards.length === 0) {
             return;
         }
@@ -78,7 +113,7 @@
         let lastFocusedElement = null;
         let activeCard = null;
 
-        const openModal = (card) => {
+        const openModal = async (card) => {
             lastFocusedElement = card;
             activeCard = card;
 
@@ -89,8 +124,7 @@
             numberEl.textContent = number ? number.textContent.trim() : '';
             titleEl.textContent = title ? title.textContent.trim() : '';
 
-            const detail = policyId ? policyDetails[policyId] : '';
-            bodyEl.innerHTML = detail ? detail : '';
+            bodyEl.innerHTML = loadingMarkup;
 
             modal.removeAttribute('hidden');
             modal.dataset.open = 'true';
@@ -107,6 +141,19 @@
                 } else {
                     closeButton.focus();
                 }
+            }
+
+            if (!policyId) {
+                bodyEl.innerHTML = fallbackMarkup;
+                return;
+            }
+
+            try {
+                const detailHTML = await fetchPolicyHTML(modal, policyId);
+                bodyEl.innerHTML = detailHTML || fallbackMarkup;
+            } catch (error) {
+                console.error(error);
+                bodyEl.innerHTML = errorMarkup;
             }
         };
 

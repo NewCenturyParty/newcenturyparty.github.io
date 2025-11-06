@@ -2263,7 +2263,7 @@ nstitutions-intro
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: clamp(1.5rem, 4vw, 2.5rem);
+    padding: clamp(2rem, 5vw, 3.5rem);
     background: rgba(4, 16, 12, 0.78);
     opacity: 0;
     pointer-events: none;
@@ -2279,12 +2279,12 @@ nstitutions-intro
 
 .policy-modal__dialog {
     position: relative;
-    width: min(540px, 92vw);
-    max-height: min(90vh, 720px);
+    width: min(760px, 94vw);
+    max-height: min(92vh, 880px);
     display: flex;
     flex-direction: column;
     gap: clamp(0.75rem, 2vw, 1.25rem);
-    padding: clamp(1.8rem, 4vw, 2.3rem);
+    padding: clamp(2rem, 4.5vw, 3rem);
     border-radius: 1.75rem;
     background: rgba(9, 24, 19, 0.96);
     border: 1px solid rgba(255, 255, 255, 0.16);
@@ -2334,6 +2334,60 @@ nstitutions-intro
     overflow-y: auto;
     padding-right: clamp(0rem, 1vw, 0.5rem);
     margin-right: clamp(0rem, 1vw, 0.25rem);
+}
+
+.policy-modal__status {
+    margin: clamp(0.5rem, 1.6vw, 0.9rem) 0;
+    font-size: clamp(0.95rem, 2.4vw, 1.05rem);
+    line-height: 1.65;
+    letter-spacing: 0.02em;
+    color: rgba(243, 246, 251, 0.82);
+}
+
+.policy-modal__status--error {
+    color: #ffaba0;
+}
+
+.policy-modal__body .policy-detail {
+    margin: 0;
+    padding: 0;
+}
+
+.policy-modal__body .policy-detail h3 {
+    margin: clamp(0.9rem, 2.2vw, 1.2rem) 0 clamp(0.4rem, 1vw, 0.6rem);
+    font-size: clamp(1.2rem, 3vw, 1.45rem);
+    text-transform: none;
+    letter-spacing: 0.04em;
+    color: var(--prairie-gold);
+}
+
+.policy-modal__body .policy-detail p {
+    margin: 0 0 clamp(0.9rem, 1.8vw, 1.1rem);
+    color: rgba(243, 246, 251, 0.9);
+    line-height: 1.7;
+}
+
+.policy-modal__body .policy-detail__list {
+    margin: 0 0 clamp(1rem, 1.8vw, 1.2rem);
+
+    color: rgba(243, 246, 251, 0.88);
+    
+}
+
+.policy-modal__body .policy-detail__list li {
+    margin-bottom: clamp(0.3rem, 1vw, 0.45rem);
+}
+
+.policy-modal__body .policy-detail a {
+    color: var(--prairie-gold);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
+.policy-modal__body .policy-detail a:hover,
+.policy-modal__body .policy-detail a:focus-visible {
+    color: #ffd45a;
 }
 
 .policy-modal__body .policy-card__list {
@@ -2696,12 +2750,13 @@ nstitutions-intro
     }
 
     .policy-modal__dialog {
-        width: min(420px, 94vw);
-        padding: clamp(1.4rem, 5vw, 1.9rem);
+        width: min(520px, 95vw);
+        max-height: min(92vh, 780px);
+        padding: clamp(1.5rem, 6vw, 2.2rem);
     }
 
     .policy-modal__body {
-        padding-right: 0.35rem;
+        padding-right: 0.4rem;
     }
 }
 
@@ -2866,8 +2921,9 @@ nstitutions-intro
     }
 
     .policy-modal__dialog {
-        width: min(360px, 94vw);
-        padding: clamp(1.2rem, 6vw, 1.6rem);
+        width: min(94vw, 400px);
+        max-height: min(92vh, 720px);
+        padding: clamp(1.25rem, 7vw, 1.8rem);
     }
 
     .policy-modal__note {
