@@ -2187,6 +2187,7 @@ nstitutions-intro
     flex-direction: column;
     gap: clamp(1rem, 2.6vw, 1.4rem);
     padding: clamp(1.4rem, 3vw, 2rem);
+    padding-bottom: clamp(2.6rem, 4.8vw, 3.3rem);
     background: rgba(7, 17, 14, 0.86);
     border-radius: 1.75rem;
     border: 1px solid rgba(255, 255, 255, 0.08);
