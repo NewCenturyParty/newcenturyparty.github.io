@@ -2650,7 +2650,7 @@ nstitutions-intro
     }
 
     .faq-page .faq-hero .intro-title {
-        font-size: clamp(2rem, 8vw, 2.8rem);
+        font-size: clamp(2rem, 8vw, 1.rem);
         max-width: min(20ch, 100%);
         margin: 0 auto;
         overflow-wrap: anywhere;
@@ -2820,7 +2820,7 @@ nstitutions-intro
     }
 
     .faq-page .faq-hero .intro-title {
-        font-size: clamp(1.8rem, 10vw, 2.4rem);
+      
         max-width: min(20ch, 100%);
         margin: 0 auto;
         overflow-wrap: anywhere;
