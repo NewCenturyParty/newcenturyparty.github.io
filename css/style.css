@@ -76,6 +76,24 @@ body.has-flyover-menu {
     pointer-events: auto;
 }
 
+.home-page {
+    --flyover-height: calc(
+        clamp(62px, 7.5vw, 82px) +
+        (clamp(1.1rem, 2.6vw, 1.9rem) * 2)
+    );
+}
+
+.home-page .site-flyover {
+    position: fixed;
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.home-page .page-wrap {
+    padding-top: var(--flyover-height);
+}
+
 @supports (backdrop-filter: blur(6px)) {
     .site-flyover {
         backdrop-filter: blur(6px);
