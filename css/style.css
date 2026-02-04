@@ -36,15 +36,20 @@ body {
     margin: 0;
     min-height: 100vh;
     overflow-x: hidden;
+    /* Fallback so the page never flashes the browser default (grey) if body bg fails to paint */
+    background-color: var(--evergreen-dark);
 }
 
 body {
     --page-background:
         radial-gradient(circle at 20% 20%, rgba(4, 48, 39, 0.36), transparent 55%),
         radial-gradient(circle at 80% 70%, rgba(16, 60, 45, 0.28), transparent 60%),
-        linear-gradient(190deg, rgba(5, 22, 17, 0.98), rgba(5, 18, 13, 0.92)),
-        var(--evergreen-dark);
-    background: var(--page-background);
+        linear-gradient(190deg, rgba(5, 22, 17, 0.98), rgba(5, 18, 13, 0.92));
+
+    /* Robust fallback + explicit image layer (avoids relying on a shorthand var() parsing perfectly everywhere) */
+    background-color: var(--evergreen-dark);
+    background-image: var(--page-background);
+
     color: var(--text-primary);
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
 }
