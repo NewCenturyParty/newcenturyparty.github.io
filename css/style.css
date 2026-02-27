@@ -3567,8 +3567,14 @@ a:focus-visible {
     }
 }
 
+/* Keep About page five-card groups in a strict 2x2 + 1-wide layout on larger screens. */
+.about-page .howpay-grid--five {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 /* ---------- Responsive overrides ---------- */
 @media (max-width: 720px) {
+    .about-page .howpay-grid--five { grid-template-columns: 1fr; }
     .howpay-principles { grid-template-columns: 1fr; }
     .howpay-bond-grid { grid-template-columns: 1fr; }
     .howpay-gap-grid { grid-template-columns: 1fr; }
