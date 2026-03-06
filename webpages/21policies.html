@@ -41,17 +41,21 @@
         <div class="site-flyover__overlay" data-flyover-overlay aria-hidden="true"></div>
     </header>
     <div class="page-wrap">
-        <div class="intro-logo">
-            <a href="../index.html" class="policies-logo-link">
-                <img src="../images/ncp-logo-transparent-gold.svg" alt="New Century Party logo in prairie gold">
-            </a>
-        </div>
+        <section class="home-section--dark home-hero policies-hero-shell" aria-label="Policies page hero">
+            <div class="home-shell">
+                <div class="intro-logo">
+                    <a href="../index.html" class="policies-logo-link">
+                        <img src="../images/ncp-logo-transparent-gold.svg" alt="New Century Party logo in prairie gold">
+                    </a>
+                </div>
 
-        <section class="intro-container policies-hero" aria-labelledby="policies-hero-title" data-flyover-trigger>
-            <p class="intro-eyebrow">The Platform</p>
-            <h1 class="intro-title" id="policies-hero-title">21 Policies</h1>
-            <p class ="intro-eyebrow">For A</p>
-            <p class="intro-subheadline">21st Century <br> Saskatchewan</p>        
+                <section class="intro-container policies-hero" aria-labelledby="policies-hero-title" data-flyover-trigger>
+                    <p class="intro-eyebrow">The S21P Platform</p>
+                    <h1 class="intro-title" id="policies-hero-title">Saskatchewan <br> 21 Policies</h1>
+                    <p class ="intro-eyebrow">For A</p>
+                    <p class="intro-subheadline">21st Century <br> Saskatchewan</p>        
+                </section>
+            </div>
         </section>
 
         <section class="policies-grid-section" aria-labelledby="policies-grid-heading">
@@ -322,24 +326,44 @@
             </div>
         </section>
 
-        <div class="policy-modal" data-open="false" aria-hidden="true" hidden data-detail-template="../data/policy-details/policy-{id}.html">
-            <div class="policy-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="policy-modal-title" tabindex="-1">
-                <button class="policy-modal__close" type="button" aria-label="Close policy details" data-policy-close>&times;</button>
-                <p class="policy-modal__number" id="policy-modal-number"></p>
-                <h3 class="policy-modal__title" id="policy-modal-title"></h3>
-                <div class="policy-modal__body" id="policy-modal-body"></div>
-
+        <section class="home-section home-section--dark home-cta page-cta" aria-labelledby="policies-cta-heading">
+            <div class="home-shell home-cta__inner">
+                <p class="home-kicker">Join the Movement</p>
+                <h2 class="home-display home-cta__title" id="policies-cta-heading">Ready to Build<br>The<br><span class="home-cta__highlight">New Century?</span></h2>
+                <p class="home-cta__body">If this platform reflects the Saskatchewan you want, help us move it from policy to reality.</p>
+                <a class="home-button home-button--gold" href="../webpages/Get_Involved.html">Get Involved</a>
             </div>
-        </div>
+        </section>
 
-        <div class="policies-return">
-            <a class="policies-hero-link" href="../index.html">Return to the homepage</a>
-        </div>
-
-        <footer class="policies-footer">
-            <p>Built by the New Century Party for a stronger Saskatchewan.</p>
-            <a class="policies-footer__top" href="#top">Back to top</a>
+        <footer class="site-footer" role="contentinfo">
+            <div class="site-footer__inner">
+                <div class="site-footer__brand">
+                    <img src="../images/ncp-logo-transparent-gold.svg" alt="New Century Party" class="site-footer__logo">
+                    <span class="site-footer__name">New Century Party</span>
+                </div>
+                <nav class="site-footer__nav" aria-label="Footer navigation">
+                    <a href="../webpages/About.html">About</a>
+                    <a href="../webpages/FAQ.html">FAQ</a>
+                    <a href="../webpages/21policies.html">21 Policies</a>
+                    <a href="../webpages/Xanatos_Gambit.html">Xanatos Gambit</a>
+                    <a href="../webpages/How_We_Pay.html">How We Pay</a>
+                    <a href="../webpages/Get_Involved.html">Get Involved</a>
+                </nav>
+                <div class="site-footer__contact">
+                    <a href="mailto:newcenturyparty@icloud.com">newcenturyparty@icloud.com</a>
+                    <a href="https://github.com/NewCenturyParty/S21P" target="_blank" rel="noopener">GitHub</a>
+                </div>
+                <p class="site-footer__tagline">Built by the New Century Party for a stronger Saskatchewan.</p>
+            </div>
         </footer>
+    </div>
+    <div class="policy-modal" data-open="false" aria-hidden="true" hidden data-detail-template="../data/policy-details/policy-{id}.html">
+        <div class="policy-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="policy-modal-title" tabindex="-1">
+            <button class="policy-modal__close" type="button" aria-label="Close policy details" data-policy-close>&times;</button>
+            <p class="policy-modal__number" id="policy-modal-number"></p>
+            <h3 class="policy-modal__title" id="policy-modal-title"></h3>
+            <div class="policy-modal__body" id="policy-modal-body"></div>
+        </div>
     </div>
     <script src="../js/privacy-analytics.js" defer></script>
     <script src="../js/site-flyover.js" defer></script>

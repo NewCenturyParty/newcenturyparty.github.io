@@ -1,8 +1,30 @@
 :root {
-    --evergreen-dark: #04100c;
-    --evergreen: #0f3f30;
+    --evergreen-dark: #0b170f;
+    --evergreen: #122417;
     --prairie-gold: #ffb100;
+    --home-cream: #f4efe4;
+    --home-cream-line: rgba(22, 46, 30, 0.14);
+    --home-green: var(--evergreen);
+    --home-green-deep: var(--evergreen-dark);
+    --home-gold: #c49a2a;
+    --home-gold-soft: #ddb94a;
+    --home-ink: #1a1a14;
+    --home-muted: #5a5a44;
     --text-primary: #f3f6fb;
+    --site-green-gradient:
+        radial-gradient(circle at top right, rgba(221, 185, 74, 0.1), transparent 35%),
+        radial-gradient(circle at bottom left, rgba(221, 185, 74, 0.05), transparent 40%),
+        linear-gradient(160deg, var(--evergreen) 0%, var(--evergreen-dark) 100%);
+    --site-green-surface: rgba(18, 36, 23, 0.82);
+    --site-green-surface-strong: rgba(18, 36, 23, 0.94);
+    --site-green-surface-policy-card: rgba(30, 54, 38, 0.9);
+    --site-green-surface-policy-card-hover: rgba(37, 66, 47, 0.95);
+    --site-green-surface-policy-modal: rgba(27, 50, 35, 0.96);
+    --site-green-surface-soft: rgba(18, 36, 23, 0.55);
+    --site-green-surface-soft-hover: rgba(18, 36, 23, 0.68);
+    --site-green-surface-muted: rgba(18, 36, 23, 0.22);
+    --site-green-surface-muted-hover: rgba(18, 36, 23, 0.35);
+    --site-green-overlay: rgba(11, 23, 15, 0.8);
     --layout-scale: 0.85;
     --max-width-xl: calc(960px * var(--layout-scale));
     --max-width-xxl: calc(980px * var(--layout-scale));
@@ -38,13 +60,11 @@ body {
     overflow-x: hidden;
     /* Fallback so the page never flashes the browser default (grey) if body bg fails to paint */
     background-color: var(--evergreen-dark);
+    background-image: var(--site-green-gradient);
 }
 
 body {
-    --page-background:
-        radial-gradient(circle at 20% 20%, rgba(4, 48, 39, 0.36), transparent 55%),
-        radial-gradient(circle at 80% 70%, rgba(16, 60, 45, 0.28), transparent 60%),
-        linear-gradient(190deg, rgba(5, 22, 17, 0.98), rgba(5, 18, 13, 0.92));
+    --page-background: var(--site-green-gradient);
 
     /* Robust fallback + explicit image layer (avoids relying on a shorthand var() parsing perfectly everywhere) */
     background-color: var(--evergreen-dark);
@@ -52,6 +72,36 @@ body {
 
     color: var(--text-primary);
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+}
+
+.policies-page {
+    --page-background:
+        radial-gradient(circle at top right, rgba(221, 185, 74, 0.06), transparent 34%),
+        radial-gradient(circle at bottom left, rgba(221, 185, 74, 0.03), transparent 40%),
+        linear-gradient(160deg, #0e1f14 0%, #07130c 100%);
+    background-color: var(--evergreen-dark);
+    background-image: var(--page-background);
+}
+
+.faq-page {
+    --page-background:
+        radial-gradient(circle at top right, rgba(221, 185, 74, 0.06), transparent 34%),
+        radial-gradient(circle at bottom left, rgba(221, 185, 74, 0.03), transparent 40%),
+        linear-gradient(160deg, #0e1f14 0%, #07130c 100%);
+    background-color: var(--evergreen-dark);
+    background-image: var(--page-background);
+}
+
+.gambit-page {
+    --home-cream: #f4efe4;
+    --home-cream-line: rgba(22, 46, 30, 0.14);
+    --home-ink: #1a1a14;
+    --home-muted: #5a5a44;
+    --home-green: var(--evergreen);
+    --home-green-deep: var(--evergreen-dark);
+    --page-background: var(--site-green-gradient);
+    background-color: var(--evergreen-dark);
+    background-image: var(--page-background);
 }
 
 body.has-flyover-menu {
@@ -68,8 +118,9 @@ body.has-flyover-menu {
     opacity: 0;
     pointer-events: none;
     transition: transform 240ms ease, opacity 240ms ease;
-    background: rgba(4, 16, 12, 0.94);
-    border-bottom: 1px solid rgba(255, 177, 0, 0.3);
+    background-image: var(--page-background);
+    background-color: var(--evergreen-dark);
+    border-bottom: 1px solid rgba(221, 185, 74, 0.16);
     padding: 0 clamp(1.2rem, 4vw, 3.5rem);
     box-shadow: 0 12px 28px rgba(0, 0, 0, 0.24);
     z-index: 999;
@@ -154,7 +205,7 @@ body.has-flyover-menu {
     padding: 0;
     border: 1px solid rgba(255, 177, 0, 0.55);
     border-radius: 999px;
-    background: rgba(4, 16, 12, 0.6);
+    background: var(--site-green-surface-soft);
     color: var(--prairie-gold);
     cursor: pointer;
     transition: border-color 200ms ease, background 200ms ease, transform 200ms ease;
@@ -164,7 +215,7 @@ body.has-flyover-menu {
 
 .site-flyover__toggle:hover {
     border-color: rgba(255, 177, 0, 0.85);
-    background: rgba(4, 16, 12, 0.82);
+    background: var(--site-green-surface);
 }
 
 .site-flyover__toggle:focus-visible {
@@ -211,7 +262,7 @@ body.has-flyover-menu {
     height: clamp(40px, 6vw, 52px);
     border: 1px solid rgba(255, 177, 0, 0.55);
     border-radius: 999px;
-    background: rgba(4, 16, 12, 0.6);
+    background: var(--site-green-surface-soft);
     color: var(--prairie-gold);
     position: absolute;
     top: clamp(1.25rem, 5vw, 2.25rem);
@@ -242,7 +293,7 @@ body.has-flyover-menu {
 
 .site-flyover__close:hover {
     border-color: rgba(255, 177, 0, 0.85);
-    background: rgba(4, 16, 12, 0.82);
+    background: var(--site-green-surface);
 }
 
 .site-flyover__close:focus-visible {
@@ -252,7 +303,7 @@ body.has-flyover-menu {
 }
 
 .site-flyover.is-menu-open .site-flyover__toggle {
-    background: rgba(4, 16, 12, 0.9);
+    background: var(--site-green-surface-strong);
     opacity: 0;
     pointer-events: none;
 }
@@ -334,7 +385,8 @@ body.has-flyover-menu {
         align-items: flex-start;
         justify-content: flex-start;
         gap: clamp(1.5rem, 4vw, 2rem);
-        background: rgba(4, 16, 12, 0.95);
+        background-image: var(--page-background);
+        background-color: var(--evergreen-dark);
         box-shadow: none;
         transform: translateX(100%);
         transition: transform 260ms ease;
@@ -351,7 +403,7 @@ body.has-flyover-menu {
     .site-flyover__overlay {
         position: fixed;
         inset: 0;
-        background: rgba(4, 16, 12, 0.78);
+        background: var(--site-green-overlay);
         opacity: 0;
         pointer-events: none;
         transition: opacity 220ms ease;
@@ -396,6 +448,36 @@ body.has-flyover-menu {
 .gambit-page .page-wrap,
 .howpay-page .page-wrap {
     padding-top: clamp(6rem, 12vw, 7.5rem);
+    position: relative;
+    width: 100%;
+    background-color: var(--evergreen-dark);
+}
+
+.policies-page .page-wrap::before,
+.about-page .page-wrap::before,
+.getinvolved-page .page-wrap::before,
+.faq-page .page-wrap::before,
+.institutions-page .page-wrap::before,
+.gambit-page .page-wrap::before,
+.howpay-page .page-wrap::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--site-green-gradient);
+    background-color: var(--evergreen-dark);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.policies-page .page-wrap > *,
+.about-page .page-wrap > *,
+.getinvolved-page .page-wrap > *,
+.faq-page .page-wrap > *,
+.institutions-page .page-wrap > *,
+.gambit-page .page-wrap > *,
+.howpay-page .page-wrap > * {
+    position: relative;
+    z-index: 1;
 }
 
 .intro-logo {
@@ -540,11 +622,8 @@ body.has-flyover-menu {
     padding: clamp(6rem, 18vh, 8rem) clamp(1.5rem, 6vw, 4rem) clamp(8rem, 20vh, 10rem);
     display: flex;
     justify-content: center;
-    background:
-        radial-gradient(circle at 20% 20%, rgba(255, 209, 77, 0.35), transparent 60%),
-        radial-gradient(circle at 80% 70%, rgba(255, 175, 50, 0.25), transparent 65%),
-        linear-gradient(185deg, rgba(80, 51, 0, 0.9), rgba(61, 36, 0, 0.94)),
-        var(--prairie-gold);
+    background: var(--site-green-gradient);
+    background-color: var(--evergreen-dark);
     color: rgba(255, 255, 255, 0.95);
 }
 
@@ -553,11 +632,8 @@ body.has-flyover-menu {
     padding: clamp(5rem, 17vh, 7.5rem) clamp(1.5rem, 6vw, 4rem) clamp(6rem, 18vh, 8.5rem);
     display: flex;
     justify-content: center;
-    background:
-        radial-gradient(circle at 20% 20%, rgba(255, 209, 77, 0.35), transparent 60%),
-        radial-gradient(circle at 80% 70%, rgba(255, 175, 50, 0.25), transparent 65%),
-        linear-gradient(185deg, rgba(80, 51, 0, 0.9), rgba(61, 36, 0, 0.94)),
-        var(--prairie-gold);
+    background: var(--site-green-gradient);
+    background-color: var(--evergreen-dark);
     color: rgba(255, 255, 255, 0.96);
 }
 
@@ -614,7 +690,7 @@ body.has-flyover-menu {
     align-items: flex-start;
     gap: 0.45rem;
     padding: clamp(1.25rem, 3vw, 1.75rem);
-    background: rgba(7, 17, 14, 0.88);
+    background: var(--site-green-surface);
     border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 1.5rem;
     color: inherit;
@@ -695,7 +771,7 @@ body.has-flyover-menu {
 }
 
 .section-card {
-    background: rgba(8, 12, 10, 0.45);
+    background: var(--site-green-surface-soft);
     border-radius: 1.5rem;
     padding: clamp(1.5rem, 4vw, 2.25rem);
     box-shadow: 0 24px 70px -45px rgba(0, 0, 0, 0.6);
@@ -839,7 +915,7 @@ body.has-flyover-menu {
     padding: clamp(2.25rem, 6vw, 3.5rem);
     border-radius: 1.75rem;
     border: 1px solid rgba(243, 246, 251, 0.15);
-    background: rgba(4, 16, 12, 0.55);
+    background: var(--site-green-surface-soft);
     box-shadow: 0 35px 60px -40px rgba(0, 0, 0, 0.65);
     backdrop-filter: blur(8px);
 }
@@ -957,7 +1033,7 @@ body.has-flyover-menu {
 }
 
 .timeline-card {
-    background: rgba(7, 17, 14, 0.85);
+    background: var(--site-green-surface);
     border-radius: 1.5rem;
     padding: clamp(1.2rem, 3.5vw, 2rem);
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -1363,6 +1439,233 @@ body.has-flyover-menu {
     color: rgba(243, 246, 251, 0.7);
 }
 
+.getinvolved-pullquote {
+    margin: clamp(0.9rem, 2.8vw, 1.6rem) 0;
+    padding: clamp(0.8rem, 2.4vw, 1.2rem) 0 clamp(0.8rem, 2.4vw, 1.2rem) clamp(1rem, 2.8vw, 1.5rem);
+    border-left: 3px solid rgba(255, 177, 0, 0.75);
+    font-size: clamp(1.05rem, 2.4vw, 1.35rem);
+    font-style: italic;
+    line-height: 1.65;
+    color: rgba(243, 246, 251, 0.9);
+}
+
+.getinvolved-note {
+    margin: 0 auto;
+    max-width: 60ch;
+    text-align: center;
+    font-size: clamp(0.98rem, 2.2vw, 1.12rem);
+    line-height: 1.9;
+    color: rgba(243, 246, 251, 0.72);
+}
+
+.getinvolved-policy-grid {
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+}
+
+.getinvolved-policy-link {
+    text-decoration: none;
+    color: inherit;
+    min-height: 100%;
+}
+
+.getinvolved-policy-link h3 {
+    margin: 0;
+    font-size: clamp(0.92rem, 2.1vw, 1.08rem);
+    letter-spacing: 0.22em;
+}
+
+.getinvolved-policy-link p {
+    margin: 0;
+    color: rgba(243, 246, 251, 0.84);
+    line-height: 1.5;
+}
+
+.getinvolved-card-title {
+    margin: 0;
+    font-size: clamp(1.06rem, 2.3vw, 1.22rem);
+    line-height: 1.4;
+    color: rgba(243, 246, 251, 0.96);
+}
+
+.getinvolved-connect .funding-grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.getinvolved-page .getinvolved-band--dark {
+    background: var(--site-green-gradient);
+    background-color: var(--evergreen-dark);
+    color: rgba(243, 246, 251, 0.92);
+}
+
+.getinvolved-page .getinvolved-band--cream {
+    background:
+        radial-gradient(circle at top right, rgba(196, 154, 42, 0.12), transparent 32%),
+        radial-gradient(circle at bottom left, rgba(22, 46, 30, 0.06), transparent 38%),
+        linear-gradient(180deg, #f7f2e8 0%, var(--home-cream) 58%, #efe6d4 100%);
+    background-color: var(--home-cream);
+    color: var(--home-ink);
+    text-shadow: none;
+}
+
+.getinvolved-page .getinvolved-band--cream .section-prefix {
+    color: var(--home-muted);
+}
+
+.getinvolved-page .getinvolved-band--cream .section-eyebrow {
+    color: var(--home-green-deep);
+}
+
+.getinvolved-page .getinvolved-band--cream .section-copy {
+    color: rgba(26, 26, 20, 0.86);
+    text-shadow: none;
+}
+
+.getinvolved-page .getinvolved-band--cream .getinvolved-pullquote {
+    color: var(--home-green-deep);
+}
+
+.getinvolved-page .getinvolved-band--cream .section-card {
+    background: rgba(255, 255, 255, 0.58);
+    border: 1px solid var(--home-cream-line);
+    box-shadow: 0 20px 44px -30px rgba(22, 46, 30, 0.28);
+    backdrop-filter: none;
+}
+
+.getinvolved-page .getinvolved-band--cream .section-card h3 {
+    color: var(--home-green-deep);
+    text-shadow: none;
+}
+
+.getinvolved-page .getinvolved-band--cream .section-card p,
+.getinvolved-page .getinvolved-band--cream .section-card ul,
+.getinvolved-page .getinvolved-band--cream .getinvolved-policy-link p {
+    color: rgba(26, 26, 20, 0.8);
+}
+
+.getinvolved-page .getinvolved-band--cream .howpay-table-wrap {
+    background: rgba(255, 255, 255, 0.58);
+    border: 1px solid var(--home-cream-line);
+    box-shadow: 0 20px 44px -30px rgba(22, 46, 30, 0.28);
+}
+
+.getinvolved-page .getinvolved-band--cream .howpay-data-table thead th {
+    color: var(--home-green);
+    border-bottom: 1px solid rgba(22, 46, 30, 0.2);
+}
+
+.getinvolved-page .getinvolved-band--cream .howpay-data-table tbody td {
+    color: rgba(26, 26, 20, 0.8);
+    border-bottom: 1px solid rgba(22, 46, 30, 0.08);
+}
+
+.getinvolved-page .getinvolved-band--cream .howpay-data-table tbody td:first-child {
+    color: rgba(22, 46, 30, 0.92);
+}
+
+.getinvolved-page .getinvolved-policy-table {
+    line-height: 1.35;
+}
+
+.getinvolved-page .getinvolved-policy-table thead th,
+.getinvolved-page .getinvolved-policy-table tbody td {
+    text-align: left;
+}
+
+.getinvolved-page .getinvolved-policy-table tbody tr {
+    cursor: pointer;
+}
+
+.getinvolved-page .getinvolved-policy-table thead th:last-child,
+.getinvolved-page .getinvolved-policy-table tbody td:last-child {
+    width: 5rem;
+    text-align: center;
+}
+
+.getinvolved-page .getinvolved-policy-table tbody td:first-child {
+    width: 5.5rem;
+    letter-spacing: 0.14em;
+    font-size: clamp(0.7rem, 1.3vw, 0.78rem);
+    text-transform: uppercase;
+}
+
+.getinvolved-page .getinvolved-policy-table tbody tr:last-child td {
+    border-top: none;
+    font-weight: 400;
+}
+
+.getinvolved-page .getinvolved-band--cream .getinvolved-policy-table tbody tr:last-child td {
+    color: rgba(26, 26, 20, 0.8);
+}
+
+.getinvolved-page .getinvolved-band--cream .getinvolved-policy-table tbody tr:hover td {
+    background: rgba(22, 46, 30, 0.045);
+}
+
+.getinvolved-page .getinvolved-policy-table tbody tr:focus-visible td {
+    outline: 2px solid rgba(22, 46, 30, 0.34);
+    outline-offset: -2px;
+}
+
+.getinvolved-external-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.9rem;
+    height: 1.9rem;
+    border-radius: 0.45rem;
+    border: 1px solid rgba(22, 46, 30, 0.28);
+    color: var(--home-green);
+    text-decoration: none;
+    font-size: 0.98rem;
+    line-height: 1;
+    transition: background-color 160ms ease, color 160ms ease, border-color 160ms ease, transform 160ms ease;
+}
+
+.getinvolved-external-link:hover,
+.getinvolved-external-link:focus-visible {
+    background: var(--home-green);
+    border-color: var(--home-green);
+    color: var(--home-cream);
+    transform: translateY(-1px);
+}
+
+.getinvolved-repo-button {
+    background: var(--home-green-deep);
+    border-color: var(--home-green-deep);
+    color: var(--home-cream);
+}
+
+.getinvolved-repo-button:hover,
+.getinvolved-repo-button:focus-visible {
+    background: var(--prairie-gold);
+    border-color: var(--prairie-gold);
+    color: var(--home-green-deep);
+}
+
+.getinvolved-repository .content-wrap {
+    gap: clamp(0.55rem, 1.3vw, 0.95rem);
+}
+
+.getinvolved-repository .section-prefix {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.getinvolved-repository .section-copy {
+    gap: clamp(0.45rem, 1vw, 0.75rem);
+}
+
+.getinvolved-repository .home-button.getinvolved-repo-button {
+    margin-top: 0;
+}
+
+.getinvolved-repository .getinvolved-policy-table-wrap {
+    margin-top: 0.1rem;
+    width: min(var(--max-width-md), 100%);
+    margin-inline: auto;
+}
+
 .howpay-hero {
     width: min(var(--max-width-lg), 86vw);
     margin: 0 auto clamp(2.5rem, 6vw, 3.8rem);
@@ -1392,7 +1695,7 @@ body.has-flyover-menu {
 
 .howpay-hero__lede {
     margin: 0;
-    font-size: clamp(1.2rem, 3.2vw, 1.6rem);
+    font-size: clamp(1.12rem, 3vw, 1.45rem);
     line-height: 1.9;
     color: rgba(243, 246, 251, 0.88);
 }
@@ -1488,7 +1791,7 @@ body.has-flyover-menu {
 }
 
 .funding-card {
-    background: rgba(7, 17, 14, 0.82);
+    background: var(--site-green-surface);
     border-radius: 1.5rem;
     border: 1px solid rgba(255, 177, 0, 0.28);
     padding: clamp(1.4rem, 3.2vw, 2rem);
@@ -1532,7 +1835,7 @@ body.has-flyover-menu {
 }
 
 .investment-card {
-    background: rgba(7, 17, 14, 0.78);
+    background: var(--site-green-surface);
     border-radius: 1.5rem;
     border: 1px solid rgba(255, 177, 0, 0.25);
     padding: clamp(1.5rem, 3.4vw, 2.1rem);
@@ -1584,7 +1887,7 @@ body.has-flyover-menu {
 }
 
 .funding-guardrails__content article {
-    background: rgba(7, 17, 14, 0.78);
+    background: var(--site-green-surface);
     border-radius: 1.35rem;
     border: 1px solid rgba(113, 209, 178, 0.18);
     box-shadow: 0 24px 66px -48px rgba(0, 0, 0, 0.62);
@@ -1619,10 +1922,7 @@ body.has-flyover-menu {
     padding: clamp(1.3rem, 3vw, 1.9rem) clamp(1.1rem, 3vw, 1.8rem);
     border-radius: 1.5rem;
     border: 1px solid rgba(255, 255, 255, 0.12);
-    background:
-        radial-gradient(circle at 12% 18%, rgba(255, 177, 0, 0.16), transparent 62%),
-        radial-gradient(circle at 88% 18%, rgba(10, 48, 38, 0.32), transparent 68%),
-        linear-gradient(185deg, rgba(7, 20, 15, 0.86), rgba(5, 15, 11, 0.96));
+    background: var(--site-green-gradient);
     box-shadow: 0 20px 60px -36px rgba(0, 0, 0, 0.7);
     text-align: center;
 }
@@ -1671,7 +1971,7 @@ body.has-flyover-menu {
 
 .policies-grid-section {
     width: 100%;
-    padding: clamp(0rem, 18vh, 0rem) clamp(1.5rem, 6vw, 4rem);
+    padding: 0 clamp(1.5rem, 6vw, 4rem) clamp(4rem, 10vh, 6rem);
     display: flex;
     justify-content: center;
 }
@@ -1689,6 +1989,14 @@ body.has-flyover-menu {
     display: flex;
     justify-content: center;
     color: rgba(243, 246, 251, 0.92);
+}
+
+.faq-page .home-hero {
+    padding-bottom: clamp(1.25rem, 3vw, 2.25rem);
+}
+
+.faq-page .faq-section {
+    padding-top: clamp(1.25rem, 4vh, 2.5rem);
 }
 
 .faq-wrap {
@@ -1727,7 +2035,7 @@ body.has-flyover-menu {
 .faq-item {
     border: 1px solid rgba(255, 255, 255, 0.14);
     border-radius: 1.15rem;
-    background: rgba(4, 16, 12, 0.82);
+    background: var(--site-green-surface);
     overflow: hidden;
     transition: border-color 200ms ease, transform 200ms ease, box-shadow 200ms ease;
 }
@@ -1812,7 +2120,7 @@ body.has-flyover-menu {
     gap: clamp(0.7rem, 2vw, 1rem);
     color: rgba(243, 246, 251, 0.9);
     border-top: 1px solid rgba(255, 177, 0, 0.16);
-    background: rgba(4, 16, 12, 0.72);
+    background: var(--site-green-surface-soft);
 }
 
 .faq-item__answer p {
@@ -1871,7 +2179,7 @@ body.has-flyover-menu {
     gap: clamp(1rem, 2.6vw, 1.4rem);
     padding: clamp(1.4rem, 3vw, 2rem);
     padding-bottom: clamp(2.6rem, 4.8vw, 3.3rem);
-    background: rgba(7, 17, 14, 0.86);
+    background: var(--site-green-surface-policy-card);
     border-radius: 1.75rem;
     border: 1px solid rgba(255, 255, 255, 0.08);
     box-shadow: 0 22px 60px -48px rgba(0, 0, 0, 0.75);
@@ -1967,16 +2275,21 @@ body.has-flyover-menu {
 .policy-modal {
     position: fixed;
     inset: 0;
+    width: 100vw;
+    min-height: 100vh;
+    min-height: 100dvh;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: clamp(2rem, 5vw, 3.5rem);
-    background: rgba(4, 16, 12, 0.78);
+    background: var(--site-green-overlay);
     opacity: 0;
     pointer-events: none;
     transition: opacity 200ms ease;
     z-index: 2000;
     backdrop-filter: blur(6px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
 }
 
 .policy-modal[data-open="true"] {
@@ -1986,6 +2299,7 @@ body.has-flyover-menu {
 
 .policy-modal__dialog {
     position: relative;
+    margin: auto;
     width: min(760px, 94vw);
     max-height: min(92vh, 880px);
     display: flex;
@@ -1993,7 +2307,7 @@ body.has-flyover-menu {
     gap: clamp(0.75rem, 2vw, 1.25rem);
     padding: clamp(2rem, 4.5vw, 3rem);
     border-radius: 1.75rem;
-    background: rgba(9, 24, 19, 0.96);
+    background: var(--site-green-surface-policy-modal);
     border: 1px solid rgba(255, 255, 255, 0.16);
     box-shadow: 0 40px 100px -36px rgba(0, 0, 0, 0.88);
     color: rgba(243, 246, 251, 0.92);
@@ -2142,7 +2456,7 @@ body.has-flyover-menu {
     width: 100%;
     margin-top: auto;
     padding: clamp(2.8rem, 7vw, 3.6rem) 1.5rem clamp(3.2rem, 8vw, 4rem);
-    background: rgba(4, 16, 12, 0.82);
+    background: var(--site-green-surface);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2340,7 +2654,7 @@ body.has-flyover-menu {
     }
 
     .howpay-hero__lede {
-        font-size: clamp(1.05rem, 3vw, 1.35rem);
+        font-size: clamp(1rem, 2.8vw, 1.28rem);
     }
 
     .about-hero__lede {
@@ -2492,8 +2806,13 @@ body.has-flyover-menu {
     }
 
     .policies-page .policies-hero .intro-title {
-        font-size: clamp(1.5rem, 12vw, 2.4rem);
-        letter-spacing: clamp(0.025em, 1vw, 0.05em);
+        font-size: clamp(1.1rem, 8.8vw, 1.95rem);
+        letter-spacing: clamp(0em, 0.2vw, 0.015em);
+        max-width: 100%;
+        margin: 0 auto;
+        overflow-wrap: normal;
+        word-break: keep-all;
+        hyphens: none;
     }
 
     .policies-page .policies-hero .intro-subheadline {
@@ -2531,7 +2850,7 @@ body.has-flyover-menu {
     }
 
     .howpay-hero__lede {
-        font-size: clamp(1rem, 4vw, 1.22rem);
+        font-size: clamp(0.95rem, 3.7vw, 1.14rem);
     }
 
     .howpay-hero__note {
@@ -2761,7 +3080,7 @@ body.has-flyover-menu {
 .section-card:hover {
     transform: translateY(-3px);
     box-shadow: 0 32px 80px -45px rgba(0, 0, 0, 0.7);
-    background: rgba(8, 12, 10, 0.55);
+    background: var(--site-green-surface-soft-hover);
 }
 
 /* Funding cards - enhanced hover */
@@ -2785,7 +3104,7 @@ body.has-flyover-menu {
     transform: translateY(-5px) scale(1.01);
     box-shadow: 0 40px 90px -45px rgba(0, 0, 0, 0.8);
     border-color: rgba(255, 177, 0, 0.5);
-    background: rgba(6, 18, 14, 0.95);
+    background: var(--site-green-surface-policy-card-hover);
 }
 
 /* CTA buttons - enhanced hover */
@@ -2979,8 +3298,8 @@ a:focus-visible {
 
 .site-footer {
     width: 100%;
-    background: rgba(4, 16, 12, 0.95);
-    border-top: 1px solid rgba(255, 177, 0, 0.2);
+    background: var(--site-green-gradient);
+    border-top: 1px solid rgba(221, 185, 74, 0.16);
     padding: clamp(3rem, 8vw, 4.5rem) clamp(1.5rem, 6vw, 4rem) clamp(2.5rem, 6vw, 3.5rem);
 }
 
@@ -3148,7 +3467,7 @@ a:focus-visible {
 }
 
 .howpay-principle {
-    background: rgba(15, 63, 48, 0.32);
+    background: var(--site-green-surface-muted);
     border: 1px solid rgba(255, 177, 0, 0.13);
     border-radius: 1.25rem;
     padding: clamp(1.5rem, 3.5vw, 2rem);
@@ -3156,7 +3475,7 @@ a:focus-visible {
 }
 
 .howpay-principle:hover {
-    background: rgba(15, 63, 48, 0.45);
+    background: var(--site-green-surface-muted-hover);
     border-color: rgba(255, 177, 0, 0.25);
 }
 
@@ -3224,7 +3543,7 @@ a:focus-visible {
 .howpay-table-wrap {
     width: 100%;
     overflow-x: auto;
-    background: rgba(4, 16, 12, 0.5);
+    background: var(--site-green-surface-soft);
     border: 1px solid rgba(255, 177, 0, 0.14);
     border-radius: 1.25rem;
 }
@@ -3290,7 +3609,7 @@ a:focus-visible {
 }
 
 .howpay-bond-card {
-    background: rgba(7, 17, 14, 0.82);
+    background: var(--site-green-surface);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 1.25rem;
     padding: clamp(1.25rem, 3vw, 1.75rem);
@@ -3353,7 +3672,7 @@ a:focus-visible {
 }
 
 .howpay-gap-card {
-    background: rgba(15, 63, 48, 0.22);
+    background: var(--site-green-surface-muted);
     border: 1px solid rgba(255, 177, 0, 0.1);
     border-radius: 1.25rem;
     padding: clamp(1.25rem, 3vw, 1.75rem);
@@ -3395,7 +3714,7 @@ a:focus-visible {
 }
 
 .howpay-safeguard {
-    background: rgba(7, 17, 14, 0.78);
+    background: var(--site-green-surface);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 1.25rem;
     padding: clamp(1.25rem, 3vw, 1.75rem);
@@ -3439,7 +3758,7 @@ a:focus-visible {
     padding: clamp(5rem, 14vh, 8rem) clamp(1.5rem, 6vw, 4rem) clamp(6rem, 16vh, 9rem);
     display: flex;
     justify-content: center;
-    background: radial-gradient(ellipse at 50% 0%, rgba(15, 63, 48, 0.55) 0%, transparent 68%);
+    background: var(--site-green-gradient);
 }
 
 .howpay-vision__wrap {
@@ -3461,12 +3780,19 @@ a:focus-visible {
 }
 
 .howpay-vision__item {
-    display: flex;
-    align-items: flex-start;
-    gap: 0.85rem;
+    display: block;
+    padding: clamp(1rem, 2.6vw, 1.35rem) clamp(1.1rem, 2.8vw, 1.5rem);
+    border-radius: 1rem;
+    background: var(--site-green-surface-muted);
+    border: 1px solid rgba(255, 177, 0, 0.14);
+    box-shadow: 0 16px 38px -28px rgba(0, 0, 0, 0.45);
     font-size: clamp(0.93rem, 2.3vw, 1.08rem);
     line-height: 1.65;
     color: rgba(255, 255, 255, 0.8);
+}
+
+.howpay-vision__item--placeholder {
+    min-height: clamp(7.5rem, 12vw, 9.5rem);
 }
 
 .howpay-vision__dot {
@@ -3497,7 +3823,7 @@ a:focus-visible {
 }
 
 .howpay-faq__item {
-    background: rgba(15, 63, 48, 0.2);
+    background: var(--site-green-surface-muted);
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 1rem;
     overflow: hidden;
@@ -3567,14 +3893,310 @@ a:focus-visible {
     }
 }
 
-/* Keep About page five-card groups in a strict 2x2 + 1-wide layout on larger screens. */
+/* ---------- About page theme alignment with home page ---------- */
+.about-page {
+    --about-cream: #f4efe4;
+    --about-cream-line: rgba(22, 46, 30, 0.14);
+    --about-ink: #1a1a14;
+    --about-muted: #5a5a44;
+    --about-green: var(--evergreen);
+    --home-cream: var(--about-cream);
+    --home-cream-line: var(--about-cream-line);
+    --home-green: var(--about-green);
+    --home-green-deep: var(--evergreen-dark);
+    --home-gold: #c49a2a;
+    --home-gold-soft: #ddb94a;
+    --home-ink: var(--about-ink);
+    --home-muted: var(--about-muted);
+}
+
+.policies-page .page-wrap,
+.about-page .page-wrap,
+.getinvolved-page .page-wrap,
+.faq-page .page-wrap,
+.institutions-page .page-wrap,
+.gambit-page .page-wrap,
+.howpay-page .page-wrap {
+    background-color: transparent;
+}
+
+.policies-page .page-wrap::before,
+.about-page .page-wrap::before,
+.getinvolved-page .page-wrap::before,
+.faq-page .page-wrap::before,
+.institutions-page .page-wrap::before,
+.gambit-page .page-wrap::before,
+.howpay-page .page-wrap::before {
+    display: none;
+}
+
+/* ---------- How We Pay alternating cream/dark bands ---------- */
+.howpay-page {
+    --howpay-cream: #f4efe4;
+    --howpay-cream-line: rgba(22, 46, 30, 0.14);
+    --howpay-ink: #1a1a14;
+    --howpay-green: var(--evergreen);
+    --howpay-green-deep: var(--evergreen-dark);
+}
+
+.howpay-page .howpay-band--dark {
+    background: var(--site-green-gradient);
+    background-color: var(--evergreen-dark);
+    color: rgba(243, 246, 251, 0.94);
+}
+
+.howpay-page .howpay-band--cream {
+    background:
+        radial-gradient(circle at top right, rgba(196, 154, 42, 0.12), transparent 32%),
+        radial-gradient(circle at bottom left, rgba(22, 46, 30, 0.06), transparent 38%),
+        linear-gradient(180deg, #f7f2e8 0%, var(--howpay-cream) 58%, #efe6d4 100%);
+    background-color: var(--howpay-cream);
+    color: var(--howpay-ink);
+    text-shadow: none;
+}
+
+.howpay-page .howpay-band--cream .howpay-section-prefix,
+.howpay-page .howpay-band--cream .howpay-section-eyebrow,
+.howpay-page .howpay-band--cream .howpay-principle__num,
+.howpay-page .howpay-band--cream .howpay-bond-card__series,
+.howpay-page .howpay-band--cream .section-card__stat-label {
+    color: rgba(26, 26, 20, 0.68);
+}
+
+.howpay-page .howpay-band--cream .howpay-section-title,
+.howpay-page .howpay-band--cream .section-eyebrow,
+.howpay-page .howpay-band--cream .section-card h3,
+.howpay-page .howpay-band--cream .howpay-principle__title,
+.howpay-page .howpay-band--cream .howpay-gap-card__label,
+.howpay-page .howpay-band--cream .howpay-safeguard__title,
+.howpay-page .howpay-band--cream .howpay-bond-card__name {
+    color: var(--howpay-green-deep);
+    text-shadow: none;
+}
+
+.howpay-page .howpay-band--cream .howpay-section-lead,
+.howpay-page .howpay-band--cream .section-copy,
+.howpay-page .howpay-band--cream .section-copy p,
+.howpay-page .howpay-band--cream .section-card p,
+.howpay-page .howpay-band--cream .section-card ul,
+.howpay-page .howpay-band--cream .howpay-principle__body,
+.howpay-page .howpay-band--cream .howpay-gap-card__body,
+.howpay-page .howpay-band--cream .howpay-safeguard__body,
+.howpay-page .howpay-band--cream .howpay-bond-card__detail,
+.howpay-page .howpay-band--cream .howpay-bond-note,
+.howpay-page .howpay-band--cream .howpay-table-note,
+.howpay-page .howpay-band--cream .howpay-vision__item,
+.howpay-page .howpay-band--cream .howpay-faq__body p {
+    color: rgba(26, 26, 20, 0.82);
+    text-shadow: none;
+}
+
+.howpay-page .howpay-band--cream .howpay-philosophy__quote,
+.howpay-page .howpay-band--cream .section-card__stat,
+.howpay-page .howpay-band--cream .howpay-bond-card__amount {
+    color: var(--howpay-green);
+}
+
+.howpay-page .howpay-band--cream .howpay-vision__dot {
+    background: var(--howpay-green);
+}
+
+.howpay-page .howpay-band--cream .section-card,
+.howpay-page .howpay-band--cream .howpay-principle,
+.howpay-page .howpay-band--cream .howpay-bond-card,
+.howpay-page .howpay-band--cream .howpay-gap-card,
+.howpay-page .howpay-band--cream .howpay-safeguard,
+.howpay-page .howpay-band--cream .howpay-vision__item,
+.howpay-page .howpay-band--cream .howpay-faq__item,
+.howpay-page .howpay-band--cream .howpay-table-wrap {
+    background: rgba(255, 255, 255, 0.58);
+    border: 1px solid var(--howpay-cream-line);
+    box-shadow: 0 20px 44px -30px rgba(22, 46, 30, 0.28);
+    backdrop-filter: none;
+}
+
+.howpay-page .howpay-band--cream .howpay-data-table thead th {
+    color: var(--howpay-green);
+    border-bottom: 1px solid rgba(22, 46, 30, 0.2);
+}
+
+.howpay-page .howpay-band--cream .howpay-data-table tbody td {
+    color: rgba(26, 26, 20, 0.78);
+    border-bottom: 1px solid rgba(22, 46, 30, 0.08);
+}
+
+.howpay-page .howpay-band--cream .howpay-data-table tbody td:first-child {
+    color: rgba(22, 46, 30, 0.92);
+}
+
+.howpay-page .howpay-band--cream .howpay-data-table tbody tr:last-child td {
+    color: var(--howpay-green-deep);
+    border-top: 1px solid rgba(22, 46, 30, 0.24);
+}
+
+.howpay-page .howpay-band--cream .howpay-data-table tbody tr:hover td {
+    background: rgba(22, 46, 30, 0.04);
+}
+
+.howpay-page .howpay-band--cream .howpay-faq__item summary {
+    color: var(--howpay-green-deep);
+}
+
+.howpay-page .howpay-band--cream .howpay-faq__item summary::after {
+    border-color: rgba(22, 46, 30, 0.35);
+    color: var(--howpay-green);
+}
+
+/* Subtle gold card outlines to match Xanatos treatment */
+.howpay-page .section-card,
+.howpay-page .howpay-principle,
+.howpay-page .howpay-bond-card,
+.howpay-page .howpay-gap-card,
+.howpay-page .howpay-safeguard,
+.howpay-page .howpay-vision__item {
+    border: 1px solid rgba(255, 177, 0, 0.18);
+}
+
+.howpay-page .howpay-band--cream .section-card,
+.howpay-page .howpay-band--cream .howpay-principle,
+.howpay-page .howpay-band--cream .howpay-bond-card,
+.howpay-page .howpay-band--cream .howpay-gap-card,
+.howpay-page .howpay-band--cream .howpay-safeguard,
+.howpay-page .howpay-band--cream .howpay-vision__item {
+    border-color: rgba(255, 177, 0, 0.18);
+}
+
+.about-page .content-landing,
+.about-page .cta-section {
+    background:
+        radial-gradient(circle at top right, rgba(196, 154, 42, 0.12), transparent 32%),
+        radial-gradient(circle at bottom left, rgba(22, 46, 30, 0.06), transparent 38%),
+        linear-gradient(180deg, #f7f2e8 0%, var(--about-cream) 58%, #efe6d4 100%);
+    background-color: var(--about-cream);
+    color: var(--about-ink);
+    text-shadow: none;
+}
+
+.about-page .about-alternative {
+    background: var(--site-green-gradient);
+    background-color: var(--evergreen-dark);
+    color: rgba(243, 246, 251, 0.92);
+    text-shadow: none;
+}
+
+.about-page .about-alternative .home-who__headline {
+    color: var(--prairie-gold);
+}
+
+.about-page .about-alternative .home-who__bridge {
+    color: rgba(243, 246, 251, 0.86);
+}
+
+.about-page .about-alternative__line {
+    margin-top: clamp(0.3rem, 1vw, 0.6rem);
+}
+
+.about-page .intro-divider {
+    height: 12px;
+    z-index: 2;
+}
+
+.about-page .section-prefix {
+    color: var(--about-muted);
+    margin-bottom: clamp(0.65rem, 1.8vw, 1.05rem);
+    text-decoration: underline;
+    text-decoration-thickness: 0.08em;
+    text-underline-offset: 0.22em;
+}
+
+.about-page .section-eyebrow {
+    color: var(--about-green);
+}
+
+.about-page .section-copy {
+    color: var(--about-ink);
+    text-shadow: none;
+}
+
 .about-page .howpay-grid--five {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1.5rem, 3.5vw, 2.4rem);
+}
+
+.about-page .howpay-grid--five .section-card {
+    width: 100%;
+    max-width: none;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    backdrop-filter: none;
+    text-align: left;
+}
+
+.about-page .howpay-grid--five .section-card h3 {
+    margin: 0;
+    color: var(--about-green);
+    text-shadow: none;
+    font-size: clamp(1.5rem, 3.3vw, 2.3rem);
+    letter-spacing: 0.025em;
+    line-height: 1.12;
+}
+
+.about-page .howpay-grid--five .section-card p {
+    margin: 0;
+    margin-top: clamp(0.7rem, 1.6vw, 1rem);
+    padding-top: clamp(0.9rem, 2.2vw, 1.25rem);
+    border-top: 1px solid rgba(22, 46, 30, 0.2);
+    color: var(--about-muted);
+    font-size: clamp(1.08rem, 2.2vw, 1.45rem);
+    line-height: 1.85;
+    max-width: 72ch;
+}
+
+.about-page .howpay-grid--five .section-card:hover {
+    transform: none;
+    background: transparent;
+    box-shadow: none;
+}
+
+.about-page .cta-section__eyebrow {
+    color: var(--about-muted);
+}
+
+.about-page .cta-wrap {
+    background: rgba(247, 242, 232, 0.85);
+    border: 1px solid var(--about-cream-line);
+    box-shadow: 0 26px 58px -38px rgba(22, 46, 30, 0.35);
+}
+
+.about-page .cta-wrap h2 {
+    color: var(--about-green);
+}
+
+.about-page .cta-wrap p {
+    color: var(--about-muted);
+}
+
+.about-page .cta-button {
+    background: transparent;
+    color: var(--about-green);
+    border: 1px solid rgba(22, 46, 30, 0.28);
+    box-shadow: none;
+}
+
+.about-page .cta-button:hover,
+.about-page .cta-button:focus-visible {
+    background: var(--about-green);
+    color: var(--about-cream);
+    border-color: var(--about-green);
+    box-shadow: 0 14px 30px -18px rgba(22, 46, 30, 0.5);
 }
 
 /* ---------- Responsive overrides ---------- */
 @media (max-width: 720px) {
-    .about-page .howpay-grid--five { grid-template-columns: 1fr; }
     .howpay-principles { grid-template-columns: 1fr; }
     .howpay-bond-grid { grid-template-columns: 1fr; }
     .howpay-gap-grid { grid-template-columns: 1fr; }
@@ -3618,6 +4240,118 @@ a:focus-visible {
    XANATOS GAMBIT PAGE
    ==================================================================== */
 
+/* Gambit follows the same alternating dark/cream rhythm as the home page. */
+.gambit-page .howpay-dark-section,
+.gambit-page .howpay-vision,
+.gambit-page .cta-section {
+    background: var(--site-green-gradient);
+    background-color: var(--evergreen-dark);
+    color: rgba(243, 246, 251, 0.94);
+}
+
+.gambit-page .content-landing {
+    background:
+        radial-gradient(circle at top right, rgba(196, 154, 42, 0.12), transparent 32%),
+        radial-gradient(circle at bottom left, rgba(22, 46, 30, 0.06), transparent 38%),
+        linear-gradient(180deg, #f7f2e8 0%, var(--home-cream) 58%, #efe6d4 100%);
+    background-color: var(--home-cream);
+    color: var(--home-ink);
+}
+
+.gambit-page .gambit-band--dark {
+    background: var(--site-green-gradient);
+    background-color: var(--evergreen-dark);
+    color: rgba(243, 246, 251, 0.94);
+}
+
+.gambit-page .gambit-band--cream {
+    background:
+        radial-gradient(circle at top right, rgba(196, 154, 42, 0.12), transparent 32%),
+        radial-gradient(circle at bottom left, rgba(22, 46, 30, 0.06), transparent 38%),
+        linear-gradient(180deg, #f7f2e8 0%, var(--home-cream) 58%, #efe6d4 100%);
+    background-color: var(--home-cream);
+    color: var(--home-ink);
+}
+
+/* Cream-band typography and card treatment. */
+.gambit-page .content-landing:not(.gambit-band--dark) .howpay-section-prefix,
+.gambit-page .content-landing:not(.gambit-band--dark) .howpay-section-eyebrow,
+.gambit-page .content-landing:not(.gambit-band--dark) .howpay-principle__num,
+.gambit-page .content-landing:not(.gambit-band--dark) .gambit-loop-step__num,
+.gambit-page .gambit-band--cream .howpay-section-prefix,
+.gambit-page .gambit-band--cream .howpay-section-eyebrow,
+.gambit-page .gambit-band--cream .howpay-principle__num,
+.gambit-page .gambit-band--cream .gambit-loop-step__num {
+    color: var(--home-ink);
+}
+
+.gambit-page .gambit-band--cream .howpay-section-eyebrow {
+    font-size: clamp(1.2rem, 3vw, 1.6rem);
+    letter-spacing: 0.12em;
+}
+
+.gambit-page .content-landing:not(.gambit-band--dark) .section-eyebrow,
+.gambit-page .gambit-band--cream .section-eyebrow {
+    color: var(--home-green);
+}
+
+.gambit-page .content-landing:not(.gambit-band--dark) .section-copy,
+.gambit-page .gambit-band--cream .section-copy {
+    color: var(--home-ink);
+    text-shadow: none;
+}
+
+.gambit-page .content-landing:not(.gambit-band--dark) .howpay-section-title,
+.gambit-page .gambit-band--cream .howpay-section-title {
+    color: var(--home-green-deep);
+    text-shadow: none;
+}
+
+.gambit-page .content-landing:not(.gambit-band--dark) .section-card,
+.gambit-page .gambit-band--cream .section-card,
+.gambit-page .content-landing:not(.gambit-band--dark) .howpay-principle,
+.gambit-page .gambit-band--cream .howpay-principle,
+.gambit-page .gambit-band--cream .gambit-outcome {
+    background: rgba(255, 255, 255, 0.58);
+    border: 1px solid var(--home-cream-line);
+    box-shadow: 0 20px 44px -30px rgba(22, 46, 30, 0.28);
+    backdrop-filter: none;
+}
+
+.gambit-page .content-landing:not(.gambit-band--dark) .section-card h3,
+.gambit-page .gambit-band--cream .section-card h3,
+.gambit-page .content-landing:not(.gambit-band--dark) .howpay-principle__title,
+.gambit-page .gambit-band--cream .howpay-principle__title {
+    color: var(--home-green);
+    text-shadow: none;
+}
+
+.gambit-page .content-landing:not(.gambit-band--dark) .section-copy p,
+.gambit-page .content-landing:not(.gambit-band--dark) .section-card p,
+.gambit-page .content-landing:not(.gambit-band--dark) .section-card ul,
+.gambit-page .content-landing:not(.gambit-band--dark) .howpay-section-lead,
+.gambit-page .content-landing:not(.gambit-band--dark) .howpay-principle__body,
+.gambit-page .content-landing:not(.gambit-band--dark) .gambit-prose p,
+.gambit-page .gambit-band--cream .section-copy p,
+.gambit-page .gambit-band--cream .section-card p,
+.gambit-page .gambit-band--cream .section-card ul,
+.gambit-page .gambit-band--cream .howpay-section-lead,
+.gambit-page .gambit-band--cream .howpay-principle__body,
+.gambit-page .gambit-band--cream .gambit-prose p,
+.gambit-page .gambit-band--cream .gambit-outcome__if {
+    color: rgba(26, 26, 20, 0.78);
+}
+
+.gambit-page .gambit-band--cream .gambit-outcome:hover {
+    background: rgba(255, 255, 255, 0.72);
+    border-color: rgba(22, 46, 30, 0.24);
+}
+
+.gambit-page .gambit-band--cream .gambit-outcome__then,
+.gambit-page .gambit-band--cream .gambit-tagline {
+    color: var(--home-green);
+}
+
 .gambit-page .section-copy {
     width: min(68ch, 100%);
     gap: clamp(0.9rem, 2.4vw, 1.4rem);
@@ -3628,9 +4362,286 @@ a:focus-visible {
     line-height: 1.82;
 }
 
+.gambit-paragraph-label {
+    display: block;
+    margin: 0 0 0.45rem;
+    font-size: clamp(0.95rem, 2.2vw, 1.05rem);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--prairie-gold);
+}
+
+.gambit-page .gambit-band--cream .gambit-paragraph-label {
+    color: var(--home-green-deep);
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.18em;
+}
+
 .gambit-page .section-grid {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: clamp(1rem, 2.8vw, 1.5rem);
+}
+
+.gambit-workforce-section .gambit-workforce-baseline {
+    width: min(66ch, 100%);
+    margin: 0 auto;
+    padding: clamp(1rem, 2.5vw, 1.4rem) clamp(1.1rem, 2.8vw, 1.6rem);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 177, 0, 0.35);
+    background: rgba(255, 255, 255, 0.58);
+    box-shadow: 0 16px 34px -26px rgba(22, 46, 30, 0.3);
+    display: grid;
+    gap: 0.7rem;
+}
+
+.gambit-workforce-section .gambit-workforce-baseline__title {
+    margin: 0;
+    font-size: clamp(0.95rem, 2.2vw, 1.08rem);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--home-green-deep);
+}
+
+.gambit-workforce-section .gambit-workforce-baseline__list {
+    margin: 0;
+    padding-left: 1.2rem;
+    display: grid;
+    gap: 0.5rem;
+}
+
+.gambit-workforce-section .gambit-workforce-baseline__list li {
+    color: rgba(26, 26, 20, 0.82);
+    font-size: clamp(1rem, 2.3vw, 1.12rem);
+    line-height: 1.68;
+}
+
+.gambit-workforce-section .gambit-workforce-baseline__list strong {
+    color: var(--home-green-deep);
+}
+
+.gambit-workforce-section .gambit-workforce-pathways-prefix {
+    margin-top: 0.2rem;
+    margin-bottom: -0.35rem;
+    letter-spacing: 0.18em;
+    color: var(--home-green);
+}
+
+.gambit-resource-lock-section .howpay-principle__num {
+    font-size: clamp(1.45rem, 4.4vw, 2.25rem);
+    letter-spacing: 0.04em;
+    line-height: 1;
+    margin-bottom: 0.65rem;
+}
+
+.gambit-ssf-chart__visual {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: center;
+    column-gap: clamp(0.9rem, 2.2vw, 1.4rem);
+    row-gap: 0.9rem;
+    width: fit-content;
+    margin-inline: auto;
+}
+
+.gambit-ssf-pie {
+    width: clamp(150px, 24vw, 200px);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: conic-gradient(
+        #15462c 0 54%,
+        #2c6a45 54% 69%,
+        #4f8a63 69% 84%,
+        #cc9a1a 84% 94%,
+        #a17a15 94% 99%,
+        #5f6368 99% 100%
+    );
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 12px 26px -18px rgba(0, 0, 0, 0.45);
+}
+
+.gambit-ssf-legend {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.4rem;
+}
+
+.gambit-ssf-legend li {
+    display: grid;
+    grid-template-columns: 0.7rem auto 1fr;
+    align-items: center;
+    gap: 0.45rem;
+    font-size: clamp(0.83rem, 2.05vw, 0.95rem);
+    line-height: 1.45;
+}
+
+.gambit-ssf-legend li strong {
+    font-size: 0.86em;
+    letter-spacing: 0.03em;
+}
+
+.gambit-ssf-legend__swatch {
+    width: 0.62rem;
+    height: 0.62rem;
+    border-radius: 2px;
+    border: 1px solid rgba(255, 255, 255, 0.24);
+}
+
+.gambit-ssf-legend__swatch--dividend { background: #15462c; }
+.gambit-ssf-legend__swatch--reconciliation { background: #2c6a45; }
+.gambit-ssf-legend__swatch--resilience { background: #4f8a63; }
+.gambit-ssf-legend__swatch--debt { background: #cc9a1a; }
+.gambit-ssf-legend__swatch--strategic { background: #a17a15; }
+.gambit-ssf-legend__swatch--admin { background: #5f6368; }
+
+.gambit-page .gambit-band--cream .gambit-ssf-legend li {
+    color: rgba(26, 26, 20, 0.82);
+}
+
+.gambit-page .gambit-band--cream .gambit-ssf-legend li strong {
+    color: var(--home-green);
+}
+
+.gambit-finance-lower-grid {
+    margin-top: clamp(0.3rem, 1vw, 0.6rem);
+}
+
+.gambit-quote-placeholder {
+    min-height: clamp(220px, 28vw, 320px);
+}
+
+.gambit-stat-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.gambit-stat-card__text {
+    margin: 0;
+    display: grid;
+    gap: 0.5rem;
+    justify-items: center;
+}
+
+.gambit-stat-card__value {
+    display: block;
+    font-size: clamp(3.4rem, 10vw, 6rem);
+    line-height: 0.95;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: var(--home-green-deep);
+}
+
+.gambit-stat-card__label {
+    display: block;
+    max-width: 22ch;
+    font-size: clamp(1.08rem, 2.8vw, 1.75rem);
+    line-height: 1.25;
+    font-weight: 600;
+    color: var(--home-green-deep);
+}
+
+@media (max-width: 760px) {
+    .gambit-ssf-chart__visual {
+        grid-template-columns: 1fr;
+    }
+}
+
+.gambit-fork-layout {
+    width: min(960px, 100%);
+    display: grid;
+    grid-template-columns: clamp(120px, 18vw, 190px) minmax(0, 1fr);
+    column-gap: clamp(1.25rem, 3vw, 2.6rem);
+    align-items: center;
+}
+
+.gambit-fork-visual {
+    width: 100%;
+    margin: 0;
+    color: rgba(255, 177, 0, 0.86);
+    filter: drop-shadow(0 0 8px rgba(255, 177, 0, 0.2));
+}
+
+.gambit-fork-visual__svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.gambit-fork-visual__line {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.gambit-page .gambit-fork-grid {
+    width: min(960px, 100%);
+    margin-inline: auto;
+    grid-template-columns: 1fr;
+    gap: clamp(0.85rem, 2vw, 1.2rem);
+}
+
+.gambit-page .gambit-fork-grid .section-card strong {
+    color: var(--prairie-gold);
+}
+
+.gambit-page .gambit-fork-grid .section-card {
+    border: 1px solid rgba(255, 177, 0, 0.18);
+}
+
+.gambit-monday-problem {
+    width: min(68ch, 100%);
+    display: grid;
+    gap: clamp(0.8rem, 2vw, 1.05rem);
+    margin-top: clamp(0.9rem, 2.2vw, 1.5rem);
+}
+
+.gambit-monday-problem__title {
+    margin: 0;
+    font-size: clamp(1.2rem, 3.1vw, 1.6rem);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255, 177, 0, 0.92);
+    line-height: 1.25;
+}
+
+.gambit-monday-problem p,
+.gambit-monday-problem ul {
+    margin: 0;
+    color: rgba(243, 246, 251, 0.9);
+    font-size: clamp(1rem, 2.35vw, 1.18rem);
+    line-height: 1.82;
+}
+
+.gambit-win-word {
+    color: var(--prairie-gold);
+}
+
+.gambit-monday-problem ul {
+    padding-left: 1.25rem;
+    display: grid;
+    gap: 0.45rem;
+}
+
+.gambit-page .gambit-band--cream .gambit-fork-visual {
+    color: rgba(255, 177, 0, 0.8);
+}
+
+.gambit-page .gambit-band--cream .gambit-monday-problem p,
+.gambit-page .gambit-band--cream .gambit-monday-problem ul {
+    color: rgba(26, 26, 20, 0.8);
+}
+
+.gambit-page .gambit-band--cream .gambit-monday-problem__title {
+    color: var(--home-ink);
 }
 
 .gambit-page .section-card p,
@@ -3688,7 +4699,7 @@ a:focus-visible {
 }
 
 .gambit-loop-step {
-    background: rgba(7, 17, 14, 0.72);
+    background: var(--site-green-surface);
     border: 1px solid rgba(255, 177, 0, 0.16);
     border-radius: 1rem;
     padding: clamp(1rem, 2.5vw, 1.3rem);
@@ -3741,7 +4752,7 @@ a:focus-visible {
     margin: 0;
     padding: clamp(1.2rem, 3vw, 1.8rem) clamp(1.5rem, 4vw, 2.5rem);
     border-left: 3px solid var(--prairie-gold);
-    background: rgba(15, 63, 48, 0.2);
+    background: var(--site-green-surface-muted);
     border-radius: 0 1rem 1rem 0;
     text-align: left;
 }
@@ -3795,14 +4806,14 @@ a:focus-visible {
     flex-direction: column;
     gap: 0.4rem;
     padding: clamp(1rem, 2.5vw, 1.4rem) clamp(1.2rem, 3vw, 1.6rem);
-    background: rgba(15, 63, 48, 0.2);
+    background: var(--site-green-surface-muted);
     border: 1px solid rgba(255, 177, 0, 0.1);
     border-radius: 1rem;
     transition: border-color 200ms ease, background 200ms ease;
 }
 
 .gambit-outcome:hover {
-    background: rgba(15, 63, 48, 0.35);
+    background: var(--site-green-surface-muted-hover);
     border-color: rgba(255, 177, 0, 0.22);
 }
 
@@ -3812,11 +4823,16 @@ a:focus-visible {
     line-height: 1.5;
 }
 
-.gambit-outcome__then {
+.gambit-outcomes .gambit-outcome__then {
     font-size: clamp(1rem, 2.5vw, 1.15rem);
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+    letter-spacing: 0.02em;
+}
+
+.gambit-outcomes .gambit-outcome .gambit-outcome__then:last-of-type {
     font-weight: 700;
     color: var(--prairie-gold);
-    letter-spacing: 0.02em;
 }
 
 .gambit-tagline {
@@ -3899,6 +4915,18 @@ a:focus-visible {
         grid-template-columns: 1fr;
     }
 
+    .gambit-fork-visual {
+        display: none;
+    }
+
+    .gambit-fork-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .gambit-fork-grid {
+        grid-template-columns: 1fr;
+    }
+
     .gambit-loop-grid {
         grid-template-columns: 1fr;
     }
@@ -3923,5 +4951,670 @@ a:focus-visible {
     .gambit-page .section-card p,
     .gambit-page .howpay-principle__body {
         font-size: clamp(0.94rem, 3.9vw, 1.05rem);
+    }
+}
+
+/* ---------- Home page concept merge ---------- */
+.home-page {
+    --home-cream: #f4efe4;
+    --home-cream-deep: #e6dcc5;
+    --home-cream-line: rgba(22, 46, 30, 0.14);
+    --home-green: var(--evergreen);
+    --home-green-deep: var(--evergreen-dark);
+    --home-gold: #c49a2a;
+    --home-gold-soft: #ddb94a;
+    --home-ink: #1a1a14;
+    --home-muted: #5a5a44;
+    --page-background: var(--site-green-gradient);
+    background-color: var(--home-green-deep);
+}
+
+.home-story {
+    width: 100%;
+    color: var(--home-ink);
+    text-shadow: none;
+}
+
+.home-hero {
+    width: 100%;
+    padding: clamp(1.25rem, 2vw, 2rem) 0 clamp(4rem, 8vw, 6rem);
+}
+
+.home-hero .intro-logo {
+    margin-top: 0;
+}
+
+.home-hero .intro-container {
+    margin-bottom: 0;
+}
+
+.home-page .site-flyover {
+    background-image: var(--page-background);
+    background-color: var(--evergreen-dark);
+    border-bottom-color: rgba(221, 185, 74, 0.08);
+    box-shadow: none;
+}
+
+/* Match the 21 Policies flyover with the page gradient and reduce top seam on mobile scroll. */
+.policies-page .site-flyover {
+    background-image: var(--page-background);
+    background-color: var(--evergreen-dark);
+    border-bottom-color: rgba(221, 185, 74, 0.08);
+    box-shadow: none;
+}
+
+.home-shell {
+    width: min(1100px, 92vw);
+    margin: 0 auto;
+}
+
+.home-section {
+    width: 100%;
+    padding: clamp(4.75rem, 10vw, 8.5rem) clamp(1.25rem, 5vw, 3rem);
+}
+
+.home-section--cream {
+    background:
+        radial-gradient(circle at top right, rgba(196, 154, 42, 0.12), transparent 32%),
+        radial-gradient(circle at bottom left, rgba(22, 46, 30, 0.06), transparent 38%),
+        linear-gradient(180deg, #f7f2e8 0%, var(--home-cream) 58%, #efe6d4 100%);
+    color: var(--home-ink);
+}
+
+.home-section--dark {
+    background: var(--site-green-gradient);
+    color: var(--home-cream);
+}
+
+/* Non-home pages use the page-wide gradient layer; keep hero wrappers transparent to avoid seam lines. */
+.faq-page .home-section--dark,
+.getinvolved-page .home-section--dark,
+.institutions-page .home-section--dark,
+.gambit-page .home-section--dark,
+.howpay-page .home-section--dark {
+    background: transparent;
+    background-color: transparent;
+}
+
+/* Gambit hero matches the homepage dark hero treatment. */
+.gambit-page .home-section--dark {
+    background: var(--site-green-gradient);
+    background-color: var(--evergreen-dark);
+}
+
+/* How We Pay hero should match the homepage dark hero treatment. */
+.howpay-page .home-section--dark {
+    background: var(--site-green-gradient);
+    background-color: var(--evergreen-dark);
+}
+
+/* Get Involved hero should match the homepage dark hero treatment. */
+.getinvolved-page .getinvolved-hero-shell.home-section--dark {
+    background: var(--site-green-gradient);
+    background-color: var(--evergreen-dark);
+}
+
+/* Policies page uses one shared body gradient; keep hero transparent. */
+.policies-page .home-section--dark {
+    background: transparent;
+    background-color: transparent;
+}
+
+.policies-page .home-section--dark.page-cta,
+.faq-page .home-section--dark.page-cta,
+.getinvolved-page .home-section--dark.page-cta,
+.gambit-page .home-section--dark.page-cta,
+.howpay-page .home-section--dark.page-cta {
+    background: var(--site-green-gradient);
+    background-color: var(--evergreen-dark);
+}
+
+/* Keep page-wrap transparent so the shared body gradient remains continuous. */
+.policies-page .page-wrap {
+    background: transparent;
+    background-color: transparent;
+}
+
+.home-display,
+.home-gambit__title,
+.home-policies__title,
+.home-cta__title {
+    font-family: "Cormorant Garamond", "Libre Baskerville", Georgia, serif;
+}
+
+.home-kicker,
+.home-label,
+.home-button,
+.home-policy-card__eyebrow,
+.home-policy-card__tag,
+.home-policies__count {
+    font-family: "DM Mono", "Courier New", monospace;
+}
+
+.home-label,
+.home-kicker {
+    margin: 0;
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--home-gold);
+}
+
+.home-label {
+    font-family: "Century", "Century Schoolbook", Georgia, serif;
+    font-size: clamp(1.5rem, 4.5vw, 3.1rem);
+    font-weight: 400;
+    line-height: 1.05;
+    letter-spacing: 0.08em;
+    color: var(--home-green);
+}
+
+.home-who {
+    padding-top: clamp(6.5rem, 13vw, 10rem);
+    padding-bottom: clamp(6rem, 12vw, 9rem);
+}
+
+.home-who__wrap {
+    display: grid;
+    justify-items: center;
+    gap: clamp(1.5rem, 3vw, 2.4rem);
+    text-align: center;
+}
+
+.home-who__headline {
+    margin: 0;
+    max-width: 20ch;
+    font-family: "Century", "Century Schoolbook", Georgia, serif;
+    font-size: clamp(2.3rem, 5.6vw, 4.8rem);
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.12;
+    letter-spacing: 0.01em;
+    color: var(--home-green);
+}
+
+.home-who__bridge {
+    margin: 0;
+    max-width: 62ch;
+    font-family: "Century", "Century Schoolbook", Georgia, serif;
+    font-size: clamp(1.05rem, 2vw, 1.3rem);
+    font-weight: 400;
+    line-height: 1.85;
+    color: var(--home-ink);
+}
+
+.home-who__grid {
+    display: grid;
+    grid-template-columns: minmax(140px, 0.7fr) minmax(0, 2.3fr);
+    gap: clamp(1.5rem, 4vw, 3.5rem);
+    align-items: start;
+    border-top: none;
+}
+
+.home-copy {
+    display: grid;
+    gap: 1.25rem;
+}
+
+.home-copy p {
+    margin: 0;
+    max-width: 62ch;
+    font-family: "Century", "Century Schoolbook", Georgia, serif;
+    font-size: clamp(1rem, 1.8vw, 1.18rem);
+    font-weight: 400;
+    line-height: 1.85;
+}
+
+.home-copy strong {
+    color: var(--home-green);
+}
+
+.home-text-link {
+    color: var(--home-green);
+    font-family: "Century", "Century Schoolbook", Georgia, serif;
+    font-weight: 400;
+    text-decoration: none;
+    border-bottom: 1px solid var(--home-gold);
+    transition: color 180ms ease, border-color 180ms ease;
+}
+
+.home-text-link:hover,
+.home-text-link:focus-visible {
+    color: var(--home-gold);
+    border-color: var(--home-gold);
+}
+
+.home-gambit {
+    position: relative;
+    overflow: hidden;
+}
+
+.home-gambit::before,
+.home-gambit::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid rgba(221, 185, 74, 0.12);
+    pointer-events: none;
+}
+
+.home-gambit::before {
+    top: -12rem;
+    right: -8rem;
+    width: min(36rem, 60vw);
+    height: min(36rem, 60vw);
+}
+
+.home-gambit::after {
+    bottom: -9rem;
+    left: -5rem;
+    width: min(24rem, 46vw);
+    height: min(24rem, 46vw);
+    border-color: rgba(221, 185, 74, 0.08);
+}
+
+.home-gambit__inner,
+.home-cta__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.home-gambit__title,
+.home-policies__title,
+.home-cta__title {
+    margin: 0;
+    font-size: clamp(2.6rem, 6vw, 5.6rem);
+    line-height: 0.98;
+    letter-spacing: -0.02em;
+}
+
+.home-gambit__title {
+    max-width: none;
+    color: var(--home-cream);
+    margin-top: 1rem;
+}
+
+.home-gambit__title em {
+    color: var(--home-gold-soft);
+    font-style: italic;
+}
+
+.home-gambit__quote {
+    margin: 1.6rem 0 0;
+    max-width: 38rem;
+    font-size: clamp(1.15rem, 2.6vw, 1.8rem);
+    line-height: 1.45;
+    font-style: italic;
+    color: var(--home-gold-soft);
+}
+
+.home-gambit__body {
+    margin: 1.25rem 0 0;
+    max-width: 58ch;
+    font-size: clamp(0.98rem, 1.6vw, 1.08rem);
+    line-height: 1.9;
+    color: rgba(244, 239, 228, 0.82);
+    text-align: center;
+}
+
+.home-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 3.15rem;
+    margin-top: 2.1rem;
+    padding: 0.9rem 1.6rem;
+    border: 1px solid currentColor;
+    border-radius: 999px;
+    font-size: 0.74rem;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color 180ms ease, color 180ms ease, border-color 180ms ease, transform 180ms ease;
+}
+
+.home-button:hover,
+.home-button:focus-visible {
+    transform: translateY(-2px);
+}
+
+.home-button--gold {
+    color: var(--home-gold-soft);
+}
+
+.home-button--gold:hover,
+.home-button--gold:focus-visible {
+    background: var(--home-gold-soft);
+    border-color: var(--home-gold-soft);
+    color: var(--home-green-deep);
+}
+
+.home-button--green {
+    color: var(--home-green);
+}
+
+.home-button--green:hover,
+.home-button--green:focus-visible {
+    background: var(--home-green);
+    border-color: var(--home-green);
+    color: var(--home-cream);
+}
+
+.home-policies__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.75rem;
+    margin-bottom: clamp(2.5rem, 5vw, 4rem);
+    padding-bottom: 0;
+    border-bottom: none;
+    text-align: center;
+}
+
+.home-policies__title {
+    font-family: "Century", "Century Schoolbook", Georgia, serif;
+    font-weight: 400;
+    color: var(--home-green);
+    max-width: none;
+    text-align: center;
+}
+
+.home-policies__title > span {
+    display: block;
+    font-family: "Century", "Century Schoolbook", Georgia, serif;
+    color: var(--home-gold);
+    font-style: normal;
+    font-weight: 400;
+    white-space: nowrap;
+    margin-top: 0.15em;
+}
+
+.home-policies__number {
+    display: inline-block;
+    font-size: 1.22em;
+}
+
+.home-policies__count {
+    margin: 0;
+    font-size: 0.7rem;
+    letter-spacing: 0.16em;
+    line-height: 1.9;
+    text-transform: uppercase;
+    text-align: right;
+    color: var(--home-muted);
+}
+
+.home-policies__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    border: 1px solid var(--home-cream-line);
+}
+
+.home-policy-card {
+    min-height: 100%;
+    padding: clamp(2rem, 4vw, 2.75rem);
+    border-right: 1px solid var(--home-cream-line);
+    transition: background-color 220ms ease, color 220ms ease;
+}
+
+.home-policy-card:last-child {
+    border-right: none;
+}
+
+.home-policy-card:hover {
+    background: var(--home-green);
+    color: var(--home-cream);
+}
+
+.home-policy-card__eyebrow {
+    margin: 0 0 1rem;
+    font-size: 0.64rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--home-gold);
+}
+
+.home-policy-card h3 {
+    margin: 0;
+    font-family: "Century", "Century Schoolbook", Georgia, serif;
+    font-size: clamp(1.45rem, 2.8vw, 2rem);
+    font-weight: 400;
+    line-height: 1.08;
+    color: var(--home-green);
+    transition: color 220ms ease;
+}
+
+.home-policy-card h3 + p {
+    margin: 1rem 0 0;
+    font-family: "Century", "Century Schoolbook", Georgia, serif;
+    font-size: clamp(0.92rem, 1.5vw, 1rem);
+    font-weight: 400;
+    line-height: 1.8;
+    color: var(--home-muted);
+    transition: color 220ms ease;
+}
+
+.home-policy-card__tag {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 1.5rem;
+    padding: 0.28rem 0.65rem;
+    border: 1px solid rgba(22, 46, 30, 0.16);
+    border-radius: 999px;
+    font-family: "Century", "Century Schoolbook", Georgia, serif;
+    font-size: 0.6rem;
+    letter-spacing: 0.12em;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--home-muted);
+    transition: color 220ms ease, border-color 220ms ease;
+}
+
+.home-policy-card__policy-list {
+    margin: 1.45rem 0 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 0.45rem;
+    font-family: "Century", "Century Schoolbook", Georgia, serif;
+    font-size: clamp(0.8rem, 1.2vw, 0.9rem);
+    font-weight: 400;
+    line-height: 1.45;
+    color: var(--home-muted);
+}
+
+.home-policy-card__policy-list li {
+    margin: 0;
+    padding-top: 0.45rem;
+    border-top: 1px solid rgba(22, 46, 30, 0.1);
+}
+
+.home-policy-card:hover h3,
+.home-policy-card:hover h3 + p {
+    color: var(--home-cream);
+}
+
+.home-policy-card:hover .home-policy-card__policy-list {
+    color: rgba(244, 239, 228, 0.82);
+}
+
+.home-policy-card:hover .home-policy-card__policy-list li {
+    border-top-color: rgba(244, 239, 228, 0.14);
+}
+
+.home-policy-card:hover .home-policy-card__tag {
+    color: rgba(244, 239, 228, 0.82);
+    border-color: rgba(244, 239, 228, 0.22);
+}
+
+.home-policies__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+}
+
+.home-policies__footer p {
+    margin: 0;
+    max-width: 34rem;
+    font-family: "Century", "Century Schoolbook", Georgia, serif;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    line-height: 1.6;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--home-muted);
+}
+
+.home-policies .home-button {
+    font-family: "Century", "Century Schoolbook", Georgia, serif;
+    font-weight: 400;
+}
+
+.home-cta__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: min(980px, 92vw);
+    margin: 0 auto;
+}
+
+.home-cta .home-kicker {
+    font-size: clamp(0.84rem, 1.45vw, 1rem);
+    letter-spacing: 0.2em;
+}
+
+.home-cta__title {
+    max-width: 14ch;
+    color: var(--home-cream);
+    margin-top: 1rem;
+    text-wrap: balance;
+}
+
+.home-cta__highlight {
+    color: var(--prairie-gold);
+    font-style: italic;
+}
+
+.home-cta__body {
+    margin: 1.4rem 0 0;
+    max-width: 38rem;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    line-height: 1.85;
+    color: rgba(244, 239, 228, 0.72);
+}
+
+.home-cta__secondary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1.4rem;
+}
+
+.home-cta__secondary a {
+    color: rgba(244, 239, 228, 0.76);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(221, 185, 74, 0.4);
+    transition: color 180ms ease, border-color 180ms ease;
+}
+
+.home-cta__secondary a:hover,
+.home-cta__secondary a:focus-visible {
+    color: var(--home-gold-soft);
+    border-color: var(--home-gold-soft);
+}
+
+.home-page .site-footer {
+    width: 100%;
+    margin-top: 0;
+    background: var(--site-green-gradient);
+    border-top: 1px solid rgba(221, 185, 74, 0.16);
+    text-shadow: none;
+}
+
+.home-page .site-footer__name {
+    color: var(--prairie-gold);
+}
+
+.home-page .site-footer__nav a,
+.home-page .site-footer__contact a {
+    color: rgba(244, 239, 228, 0.72);
+}
+
+.home-page .site-footer__nav a:hover,
+.home-page .site-footer__contact a:hover {
+    color: var(--home-gold-soft);
+}
+
+.home-page .site-footer__tagline {
+    color: rgba(244, 239, 228, 0.56);
+}
+
+@media (max-width: 860px) {
+    .home-who__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .home-policies__header,
+    .home-policies__footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-policies__count {
+        text-align: center;
+    }
+
+    .home-policies__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .home-policy-card {
+        border-right: none;
+        border-bottom: 1px solid var(--home-cream-line);
+    }
+
+    .home-policy-card:last-child {
+        border-bottom: none;
+    }
+
+    .home-gambit__title,
+    .home-policies__title,
+    .home-cta__title {
+        max-width: none;
+    }
+}
+
+@media (max-width: 640px) {
+    .home-section {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .home-shell {
+        width: min(1100px, 95vw);
+    }
+
+    .home-label,
+    .home-kicker,
+    .home-policies__count {
+        font-size: 0.66rem;
+    }
+
+    .home-copy p,
+    .home-gambit__body,
+    .home-cta__body {
+        font-size: clamp(0.96rem, 4vw, 1.04rem);
+    }
+
+    .home-button {
+        width: 100%;
     }
 }
