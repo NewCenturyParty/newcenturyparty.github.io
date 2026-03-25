@@ -591,6 +591,14 @@ body.has-flyover-menu {
     letter-spacing: 0.04em;
 }
 
+.home-page .intro-subheadline--primary {
+    color: rgba(243, 246, 251, 0.88);
+}
+
+.home-page .intro-subheadline--emphasis {
+    color: rgba(255, 177, 0, 0.8);
+}
+
 .faq-page .intro-title {
     letter-spacing: clamp(0.04em, 1.4vw, 0.08em);
 }
@@ -3355,7 +3363,7 @@ a:focus-visible {
 .site-footer__nav a {
     color: rgba(243, 246, 251, 0.75);
     text-decoration: none;
-    font-size: clamp(0.85rem, 1.8vw, 0.95rem);
+    font-size: clamp(0.92rem, 1.95vw, 1.03rem);
     letter-spacing: 0.08em;
     text-transform: uppercase;
     transition: color 180ms ease;
@@ -3377,7 +3385,7 @@ a:focus-visible {
     text-decoration: underline;
     text-decoration-color: rgba(255, 177, 0, 0.4);
     text-underline-offset: 0.25em;
-    font-size: clamp(0.85rem, 1.8vw, 0.95rem);
+    font-size: clamp(0.92rem, 1.95vw, 1.03rem);
     transition: color 180ms ease, text-decoration-color 180ms ease;
 }
 
@@ -3391,7 +3399,7 @@ a:focus-visible {
     padding-top: clamp(1rem, 3vw, 1.5rem);
     border-top: 1px solid rgba(255, 177, 0, 0.1);
     color: rgba(243, 246, 251, 0.45);
-    font-size: clamp(0.8rem, 1.6vw, 0.9rem);
+    font-size: clamp(0.86rem, 1.75vw, 0.96rem);
     letter-spacing: 0.1em;
     text-transform: uppercase;
 }
@@ -4149,6 +4157,89 @@ a:focus-visible {
     text-shadow: none;
 }
 
+.about-page .about-principles-band {
+    background: var(--site-green-gradient);
+    background-color: var(--evergreen-dark);
+    color: rgba(243, 246, 251, 0.92);
+    text-shadow: none;
+}
+
+.about-page .about-principles-band .content-wrap {
+    align-items: center;
+}
+
+.about-page .about-principles-band .section-prefix,
+.about-page .about-principles-band .about-section-title {
+    text-align: center;
+}
+
+.about-page .about-principles-band .section-prefix {
+    color: rgba(243, 246, 251, 0.72);
+}
+
+.about-page .about-principles-band .section-copy {
+    color: rgba(243, 246, 251, 0.84);
+    text-align: center;
+}
+
+.about-page .about-principles-band .about-section-title,
+.about-page .about-principles-band .howpay-grid--five .section-card h3 {
+    color: var(--prairie-gold);
+}
+
+.about-page .about-principles-band .about-section-title {
+    color: rgba(243, 246, 251, 0.95);
+}
+
+.about-page .about-principles-band .howpay-grid--five .section-card p {
+    border-top-color: rgba(244, 239, 228, 0.18);
+    color: rgba(243, 246, 251, 0.8);
+    max-width: none;
+}
+
+.about-page .about-principles-band .howpay-grid--five .section-card,
+.about-page .about-principles-band .howpay-grid--five .section-card h3,
+.about-page .about-principles-band .howpay-grid--five .section-card p {
+    text-align: center;
+}
+
+.about-page .about-story-copy {
+    width: min(var(--max-width-md), 100%);
+}
+
+.about-page .content-landing[aria-labelledby="about-fable-heading"] .content-wrap {
+    align-items: center;
+    gap: clamp(0.9rem, 2.2vw, 1.5rem);
+}
+
+.about-page .content-landing[aria-labelledby="about-fable-heading"] .section-prefix,
+.about-page .content-landing[aria-labelledby="about-fable-heading"] .about-section-title {
+    text-align: center;
+}
+
+.about-page .content-landing[aria-labelledby="about-fable-heading"] .section-copy {
+    text-align: left;
+}
+
+.about-page .about-section-title {
+    margin: 0;
+    font-family: "Century", "Century Schoolbook", Georgia, serif;
+    font-size: clamp(2.2rem, 5vw, 3.8rem);
+    font-weight: 400;
+    line-height: 1.04;
+    letter-spacing: 0.01em;
+    color: var(--about-green);
+    text-wrap: balance;
+}
+
+.about-page .content-landing[aria-labelledby="about-fable-heading"] .about-section-title {
+    margin-bottom: clamp(0.5rem, 1.4vw, 0.95rem);
+}
+
+.about-page .about-story-copy p:first-of-type {
+    margin-top: 0;
+}
+
 .about-page .howpay-grid--five {
     display: flex;
     flex-direction: column;
@@ -4191,6 +4282,22 @@ a:focus-visible {
     transform: none;
     background: transparent;
     box-shadow: none;
+}
+
+.about-page .about-problem .home-kicker {
+    color: rgba(243, 246, 251, 0.82);
+}
+
+.about-page .about-ncp .home-kicker {
+    color: var(--about-green);
+}
+
+.about-page .about-ncp .home-who__headline {
+    max-width: 14ch;
+}
+
+.about-page .about-ncp__line {
+    margin-top: clamp(0.2rem, 0.8vw, 0.5rem);
 }
 
 .about-page .cta-section__eyebrow {
@@ -5252,10 +5359,14 @@ a:focus-visible {
 .home-label,
 .home-kicker {
     margin: 0;
-    font-size: 0.72rem;
+    font-size: clamp(0.88rem, 1.25vw, 1.04rem);
     letter-spacing: 0.18em;
     text-transform: uppercase;
     color: var(--home-gold);
+}
+
+.home-who .home-kicker {
+    color: var(--home-green);
 }
 
 .home-label {
@@ -5268,8 +5379,8 @@ a:focus-visible {
 }
 
 .home-who {
-    padding-top: clamp(6.5rem, 13vw, 10rem);
-    padding-bottom: clamp(6rem, 12vw, 9rem);
+    padding-top: clamp(4.25rem, 9vw, 6.5rem);
+    padding-bottom: clamp(4rem, 8vw, 6rem);
 }
 
 .home-who__wrap {
@@ -5295,7 +5406,7 @@ a:focus-visible {
     margin: 0;
     max-width: 62ch;
     font-family: "Century", "Century Schoolbook", Georgia, serif;
-    font-size: clamp(1.05rem, 2vw, 1.3rem);
+    font-size: clamp(1.16rem, 2.2vw, 1.42rem);
     font-weight: 400;
     line-height: 1.85;
     color: var(--home-ink);
@@ -5318,7 +5429,7 @@ a:focus-visible {
     margin: 0;
     max-width: 62ch;
     font-family: "Century", "Century Schoolbook", Georgia, serif;
-    font-size: clamp(1rem, 1.8vw, 1.18rem);
+    font-size: clamp(1.1rem, 2vw, 1.28rem);
     font-weight: 400;
     line-height: 1.85;
 }
@@ -5397,23 +5508,23 @@ a:focus-visible {
 }
 
 .home-gambit__title em {
-    color: var(--home-gold-soft);
+    color: var(--prairie-gold);
     font-style: italic;
 }
 
 .home-gambit__quote {
     margin: 1.6rem 0 0;
     max-width: 38rem;
-    font-size: clamp(1.15rem, 2.6vw, 1.8rem);
+    font-size: clamp(1.26rem, 2.9vw, 1.95rem);
     line-height: 1.45;
     font-style: italic;
-    color: var(--home-gold-soft);
+    color: var(--prairie-gold);
 }
 
 .home-gambit__body {
     margin: 1.25rem 0 0;
     max-width: 58ch;
-    font-size: clamp(0.98rem, 1.6vw, 1.08rem);
+    font-size: clamp(1.1rem, 1.95vw, 1.24rem);
     line-height: 1.9;
     color: rgba(244, 239, 228, 0.82);
     text-align: center;
@@ -5423,14 +5534,14 @@ a:focus-visible {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-height: 3.15rem;
+    min-height: 3.7rem;
     margin-top: 2.1rem;
-    padding: 0.9rem 1.6rem;
+    padding: 1.05rem 2rem;
     border: 1px solid currentColor;
     border-radius: 999px;
-    font-size: 0.74rem;
+    font-size: 0.84rem;
     font-weight: 500;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.16em;
     text-transform: uppercase;
     text-decoration: none;
     transition: background-color 180ms ease, color 180ms ease, border-color 180ms ease, transform 180ms ease;
@@ -5472,6 +5583,12 @@ a:focus-visible {
     padding-bottom: 0;
     border-bottom: none;
     text-align: center;
+}
+
+.home-policies__kicker {
+    text-align: center;
+    margin-bottom: clamp(1.4rem, 2.8vw, 1.9rem);
+    color: var(--home-green);
 }
 
 .home-policies__title {
@@ -5550,9 +5667,9 @@ a:focus-visible {
 .home-policy-card h3 + p {
     margin: 1rem 0 0;
     font-family: "Century", "Century Schoolbook", Georgia, serif;
-    font-size: clamp(0.92rem, 1.5vw, 1rem);
+    font-size: clamp(1.02rem, 1.8vw, 1.14rem);
     font-weight: 400;
-    line-height: 1.8;
+    line-height: 1.78;
     color: var(--home-muted);
     transition: color 220ms ease;
 }
@@ -5580,9 +5697,9 @@ a:focus-visible {
     display: grid;
     gap: 0.45rem;
     font-family: "Century", "Century Schoolbook", Georgia, serif;
-    font-size: clamp(0.8rem, 1.2vw, 0.9rem);
+    font-size: clamp(0.94rem, 1.35vw, 1.04rem);
     font-weight: 400;
-    line-height: 1.45;
+    line-height: 1.55;
     color: var(--home-muted);
 }
 
@@ -5612,26 +5729,68 @@ a:focus-visible {
 
 .home-policies__footer {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: 1.5rem;
     margin-top: 2.5rem;
+    text-align: center;
 }
 
 .home-policies__footer p {
     margin: 0;
     max-width: 34rem;
     font-family: "Century", "Century Schoolbook", Georgia, serif;
-    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-size: clamp(1.08rem, 2.2vw, 1.3rem);
     line-height: 1.6;
     font-style: normal;
     font-weight: 400;
     color: var(--home-muted);
+    text-align: center;
 }
 
 .home-policies .home-button {
     font-family: "Century", "Century Schoolbook", Georgia, serif;
     font-weight: 400;
+    margin-top: 0;
+}
+
+.home-timeline {
+    border-top: 1px solid rgba(244, 239, 228, 0.12);
+}
+
+.home-timeline__headline {
+    max-width: 14ch;
+    color: var(--prairie-gold);
+}
+
+.home-timeline__bridge {
+    max-width: 54ch;
+    color: rgba(244, 239, 228, 0.88);
+}
+
+.home-timeline .home-kicker {
+    color: var(--home-cream);
+}
+
+.home-timeline .home-text-link {
+    color: var(--home-cream);
+}
+
+.home-pay {
+    border-top: 1px solid var(--home-cream-line);
+}
+
+.home-pay .home-kicker {
+    color: var(--home-green);
+}
+
+.home-pay__headline {
+    max-width: 12ch;
+}
+
+.home-pay__bridge {
+    max-width: 56ch;
 }
 
 .home-cta__inner {
@@ -5663,7 +5822,7 @@ a:focus-visible {
 .home-cta__body {
     margin: 1.4rem 0 0;
     max-width: 38rem;
-    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-size: clamp(1.12rem, 2.2vw, 1.3rem);
     line-height: 1.85;
     color: rgba(244, 239, 228, 0.72);
 }
@@ -5763,13 +5922,15 @@ a:focus-visible {
     .home-label,
     .home-kicker,
     .home-policies__count {
-        font-size: 0.66rem;
+        font-size: 0.78rem;
     }
 
+    .home-who__bridge,
     .home-copy p,
     .home-gambit__body,
-    .home-cta__body {
-        font-size: clamp(0.96rem, 4vw, 1.04rem);
+    .home-cta__body,
+    .home-policies__footer p {
+        font-size: clamp(1.06rem, 4.2vw, 1.14rem);
     }
 
     .home-button {
