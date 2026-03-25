@@ -981,6 +981,13 @@ body.has-flyover-menu {
     gap: clamp(1.4rem, 3vw, 2.35rem);
 }
 
+.timeline-wrap--centered > .howpay-section-eyebrow,
+.timeline-wrap--centered > h2,
+.timeline-wrap--centered > .timeline-intro {
+    text-align: center;
+    align-self: center;
+}
+
 .timeline-wrap h2 {
     margin: 0;
     font-size: clamp(1.95rem, 6.6vw, 3.15rem);
