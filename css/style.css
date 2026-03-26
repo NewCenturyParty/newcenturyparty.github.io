@@ -34,7 +34,7 @@
     --logo-max: calc(260px * var(--layout-scale));
     font-family: "Libre Baskerville", "Century Schoolbook", "Georgia", serif;
     font-size: 85%;
-    color-scheme: dark;
+    color-scheme: light dark;
 }
 
 * {
@@ -5290,9 +5290,11 @@ a:focus-visible {
         radial-gradient(circle at top right, rgba(196, 154, 42, 0.12), transparent 32%),
         radial-gradient(circle at bottom left, rgba(22, 46, 30, 0.06), transparent 38%),
         linear-gradient(180deg, #f7f2e8 0%, var(--home-cream) 58%, #efe6d4 100%);
+    background-color: var(--home-cream);
     color: var(--home-ink);
     color-scheme: light;
     forced-color-adjust: none;
+    isolation: isolate;
 }
 
 .home-section--cream :is(h1, h2, h3, h4, h5, h6, p, a, li, span, strong, em) {
