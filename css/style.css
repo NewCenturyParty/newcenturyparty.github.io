@@ -5926,9 +5926,27 @@ a:focus-visible {
 }
 
 @media (max-width: 640px) {
+    .content-landing {
+        padding: clamp(3rem, 9vh, 4rem) 1rem;
+    }
+
+    .cta-section {
+        padding: clamp(2.5rem, 8.5vh, 3.75rem) 1rem;
+    }
+
+    .howpay-dark-section {
+        padding: clamp(2.5rem, 7vh, 4rem) 1rem clamp(3rem, 8vh, 4.5rem);
+    }
+
     .home-section {
+        padding-top: clamp(2.4rem, 5vw, 4.25rem);
+        padding-bottom: clamp(2.4rem, 5vw, 4.25rem);
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+
+    .faq-section {
+        padding: clamp(2rem, 8vh, 3rem) 1rem clamp(2.5rem, 9vh, 3.5rem);
     }
 
     .home-shell {
