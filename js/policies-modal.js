@@ -88,6 +88,24 @@
         return digits.padStart(2, '0');
     };
 
+    const enhancePolicyDetailContent = (container) => {
+        if (!container) {
+            return;
+        }
+
+        container.querySelectorAll('table').forEach((table) => {
+            const parent = table.parentElement;
+            if (parent && parent.classList.contains('policy-modal__table-wrap')) {
+                return;
+            }
+
+            const wrapper = document.createElement('div');
+            wrapper.className = 'policy-modal__table-wrap';
+            table.parentNode.insertBefore(wrapper, table);
+            wrapper.appendChild(table);
+        });
+    };
+
     const initPoliciesModal = () => {
         const modal = document.querySelector('.policy-modal');
         if (!modal) {
@@ -125,6 +143,8 @@
             titleEl.textContent = title ? title.textContent.trim() : '';
 
             bodyEl.innerHTML = loadingMarkup;
+            bodyEl.scrollTop = 0;
+            bodyEl.scrollLeft = 0;
 
             modal.removeAttribute('hidden');
             modal.dataset.open = 'true';
@@ -151,6 +171,9 @@
             try {
                 const detailHTML = await fetchPolicyHTML(modal, policyId);
                 bodyEl.innerHTML = detailHTML || fallbackMarkup;
+                enhancePolicyDetailContent(bodyEl);
+                bodyEl.scrollTop = 0;
+                bodyEl.scrollLeft = 0;
             } catch (error) {
                 console.error(error);
                 bodyEl.innerHTML = errorMarkup;
