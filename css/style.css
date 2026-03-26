@@ -5118,9 +5118,9 @@ a:focus-visible {
 .gambit-page .howpay-section-title,
 .gambit-page .section-eyebrow,
 .gambit-page .section-card h3 {
-    overflow-wrap: break-word;
+    overflow-wrap: normal;
     word-break: normal;
-    hyphens: auto;
+    hyphens: none;
 }
 
 @media (max-width: 960px) {
