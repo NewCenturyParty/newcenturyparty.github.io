@@ -3964,7 +3964,7 @@ a:focus-visible {
 .institutions-page .page-wrap,
 .gambit-page .page-wrap,
 .howpay-page .page-wrap {
-    background-color: transparent;
+    background-color: var(--evergreen-dark);
 }
 
 .policies-page .page-wrap::before,
