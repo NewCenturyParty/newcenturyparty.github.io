@@ -3626,6 +3626,12 @@ a:focus-visible {
     line-height: 1.4;
 }
 
+.howpay-closing-quote {
+    font-size: clamp(2.4rem, 6.5vw, 4.25rem);
+    color: var(--howpay-ink);
+    line-height: 1.2;
+}
+
 /* ---------- Revenue Pillars overrides ---------- */
 .howpay-pillars .section-grid {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -3636,7 +3642,7 @@ a:focus-visible {
 }
 
 .howpay-secondary-returns-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: clamp(1rem, 2.8vw, 1.4rem);
 }
 
