@@ -1471,6 +1471,103 @@ body.has-flyover-menu {
     color: rgba(243, 246, 251, 0.9);
 }
 
+.getinvolved-indent {
+    padding-left: clamp(1rem, 4vw, 2.5rem);
+}
+
+.getinvolved-indent p:first-child {
+    margin-top: 0;
+}
+
+.getinvolved-form-embed {
+    width: min(100%, 820px);
+    margin: 0 auto;
+    padding: clamp(1rem, 3vw, 1.5rem);
+    border: 1px solid rgba(255, 177, 0, 0.22);
+    border-radius: 1rem;
+    background: var(--site-green-surface-soft);
+    box-shadow: 0 20px 46px -34px rgba(0, 0, 0, 0.55);
+}
+
+.getinvolved-name .section-copy {
+    text-align: center;
+    justify-items: center;
+}
+
+.getinvolved-name .section-copy p {
+    max-width: 34ch;
+}
+
+.getinvolved-form-note {
+    margin: 0 0 1rem;
+    font-size: clamp(0.92rem, 2vw, 1rem);
+    line-height: 1.7;
+    color: rgba(243, 246, 251, 0.76);
+    text-align: center;
+}
+
+.getinvolved-form-embed iframe {
+    display: block;
+    width: 100%;
+    min-height: 720px;
+    border: 0;
+    border-radius: 0.75rem;
+    background: rgba(255, 255, 255, 0.96);
+}
+
+.getinvolved-contact-panel .section-grid {
+    width: min(var(--max-width-md), 100%);
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.getinvolved-contact-panel .section-card {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.getinvolved-page .getinvolved-contact-panel .home-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 3.7rem;
+    margin-top: 0.75rem;
+    padding: 1.05rem 2rem;
+    border: 1px solid currentColor;
+    border-radius: 999px;
+    font-size: 0.84rem;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: none;
+}
+
+.getinvolved-page .getinvolved-contact-panel .home-button:hover,
+.getinvolved-page .getinvolved-contact-panel .home-button:focus-visible {
+    transform: translateY(-2px);
+    text-decoration: none;
+    outline: none;
+}
+
+.getinvolved-page .getinvolved-contact-panel .home-button--green {
+    color: var(--home-green);
+}
+
+.getinvolved-page .getinvolved-contact-panel .home-button--green:hover,
+.getinvolved-page .getinvolved-contact-panel .home-button--green:focus-visible {
+    background: var(--home-green);
+    border-color: var(--home-green);
+    color: var(--home-cream);
+}
+
+.getinvolved-contact-panel__action {
+    margin-top: auto;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
 .getinvolved-note {
     margin: 0 auto;
     max-width: 60ch;
@@ -1510,17 +1607,15 @@ body.has-flyover-menu {
     color: rgba(243, 246, 251, 0.96);
 }
 
-.getinvolved-connect .funding-grid {
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-}
-
 .getinvolved-page .getinvolved-band--dark {
+    --getinvolved-link-color: var(--prairie-gold);
     background: var(--site-green-gradient);
     background-color: var(--evergreen-dark);
     color: rgba(243, 246, 251, 0.92);
 }
 
 .getinvolved-page .getinvolved-band--cream {
+    --getinvolved-link-color: #000;
     background:
         radial-gradient(circle at top right, rgba(196, 154, 42, 0.12), transparent 32%),
         radial-gradient(circle at bottom left, rgba(22, 46, 30, 0.06), transparent 38%),
@@ -1530,8 +1625,19 @@ body.has-flyover-menu {
     text-shadow: none;
 }
 
-.getinvolved-page .getinvolved-band--cream .section-prefix {
-    color: var(--home-muted);
+.getinvolved-page .howpay-section-prefix {
+    margin: 0;
+    font-size: clamp(1.2rem, 3vw, 1.6rem);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.getinvolved-page .getinvolved-band--dark .howpay-section-prefix {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.getinvolved-page .getinvolved-band--cream .howpay-section-prefix {
+    color: #000;
 }
 
 .getinvolved-page .getinvolved-band--cream .section-eyebrow {
@@ -1541,6 +1647,128 @@ body.has-flyover-menu {
 .getinvolved-page .getinvolved-band--cream .section-copy {
     color: rgba(26, 26, 20, 0.86);
     text-shadow: none;
+}
+
+.getinvolved-page .content-landing {
+    padding: clamp(5rem, 15vh, 7rem) clamp(1.5rem, 6vw, 4rem) clamp(5rem, 15vh, 7rem);
+}
+
+.getinvolved-page .funding-section {
+    padding: clamp(4.75rem, 15vh, 5.75rem) clamp(1.5rem, 6vw, 3.5rem) clamp(5.5rem, 16vh, 7rem);
+}
+
+.getinvolved-page .home-section {
+    padding: clamp(4rem, 9vw, 7rem) clamp(1.25rem, 5vw, 3rem);
+}
+
+.getinvolved-page .home-section--dark {
+    --getinvolved-link-color: var(--prairie-gold);
+}
+
+.getinvolved-page .home-section--cream {
+    --getinvolved-link-color: #000;
+}
+
+.getinvolved-page .home-button,
+.getinvolved-page .policies-hero-link,
+.getinvolved-page .getinvolved-external-link,
+.getinvolved-page .getinvolved-band--cream a:not(.site-flyover__brand):not(.site-flyover__link):not(.policies-logo-link):not(.home-button):not(.policies-hero-link):not(.getinvolved-external-link),
+.getinvolved-page .getinvolved-band--dark a:not(.site-flyover__brand):not(.site-flyover__link):not(.policies-logo-link):not(.home-button):not(.policies-hero-link):not(.getinvolved-external-link),
+.getinvolved-page .home-section--cream a:not(.site-flyover__brand):not(.site-flyover__link):not(.policies-logo-link):not(.home-button):not(.policies-hero-link):not(.getinvolved-external-link),
+.getinvolved-page .home-section--dark a:not(.site-flyover__brand):not(.site-flyover__link):not(.policies-logo-link):not(.home-button):not(.policies-hero-link):not(.getinvolved-external-link) {
+    color: var(--getinvolved-link-color);
+    text-decoration-line: underline;
+    text-decoration-color: var(--getinvolved-link-color);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.16em;
+    text-decoration-skip-ink: auto;
+    transition: color 160ms ease, text-decoration-color 160ms ease;
+}
+
+.getinvolved-page .home-button,
+.getinvolved-page .policies-hero-link,
+.getinvolved-page .getinvolved-external-link {
+    display: inline;
+    width: auto;
+    height: auto;
+    min-height: 0;
+    margin-top: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: none;
+    font: inherit;
+    letter-spacing: inherit;
+    text-transform: none;
+    box-shadow: none;
+}
+
+.getinvolved-page .home-button:hover,
+.getinvolved-page .home-button:focus-visible,
+.getinvolved-page .policies-hero-link:hover,
+.getinvolved-page .policies-hero-link:focus-visible,
+.getinvolved-page .getinvolved-external-link:hover,
+.getinvolved-page .getinvolved-external-link:focus-visible,
+.getinvolved-page .getinvolved-band--cream a:not(.site-flyover__brand):not(.site-flyover__link):not(.policies-logo-link):not(.home-button):not(.policies-hero-link):not(.getinvolved-external-link):hover,
+.getinvolved-page .getinvolved-band--cream a:not(.site-flyover__brand):not(.site-flyover__link):not(.policies-logo-link):not(.home-button):not(.policies-hero-link):not(.getinvolved-external-link):focus-visible,
+.getinvolved-page .getinvolved-band--dark a:not(.site-flyover__brand):not(.site-flyover__link):not(.policies-logo-link):not(.home-button):not(.policies-hero-link):not(.getinvolved-external-link):hover,
+.getinvolved-page .getinvolved-band--dark a:not(.site-flyover__brand):not(.site-flyover__link):not(.policies-logo-link):not(.home-button):not(.policies-hero-link):not(.getinvolved-external-link):focus-visible,
+.getinvolved-page .home-section--cream a:not(.site-flyover__brand):not(.site-flyover__link):not(.policies-logo-link):not(.home-button):not(.policies-hero-link):not(.getinvolved-external-link):hover,
+.getinvolved-page .home-section--cream a:not(.site-flyover__brand):not(.site-flyover__link):not(.policies-logo-link):not(.home-button):not(.policies-hero-link):not(.getinvolved-external-link):focus-visible,
+.getinvolved-page .home-section--dark a:not(.site-flyover__brand):not(.site-flyover__link):not(.policies-logo-link):not(.home-button):not(.policies-hero-link):not(.getinvolved-external-link):hover,
+.getinvolved-page .home-section--dark a:not(.site-flyover__brand):not(.site-flyover__link):not(.policies-logo-link):not(.home-button):not(.policies-hero-link):not(.getinvolved-external-link):focus-visible {
+    color: var(--getinvolved-link-color);
+    text-decoration-color: var(--getinvolved-link-color);
+    background: none;
+    border-color: transparent;
+    transform: none;
+    outline: none;
+}
+
+.getinvolved-page .home-button:focus-visible,
+.getinvolved-page .policies-hero-link:focus-visible,
+.getinvolved-page .getinvolved-external-link:focus-visible,
+.getinvolved-page .getinvolved-band--cream a:not(.site-flyover__brand):not(.site-flyover__link):not(.policies-logo-link):not(.home-button):not(.policies-hero-link):not(.getinvolved-external-link):focus-visible,
+.getinvolved-page .getinvolved-band--dark a:not(.site-flyover__brand):not(.site-flyover__link):not(.policies-logo-link):not(.home-button):not(.policies-hero-link):not(.getinvolved-external-link):focus-visible,
+.getinvolved-page .home-section--cream a:not(.site-flyover__brand):not(.site-flyover__link):not(.policies-logo-link):not(.home-button):not(.policies-hero-link):not(.getinvolved-external-link):focus-visible,
+.getinvolved-page .home-section--dark a:not(.site-flyover__brand):not(.site-flyover__link):not(.policies-logo-link):not(.home-button):not(.policies-hero-link):not(.getinvolved-external-link):focus-visible {
+    outline: 1px solid currentColor;
+    outline-offset: 2px;
+}
+
+.getinvolved-page .page-cta .home-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 3.7rem;
+    margin-top: 2.1rem;
+    padding: 1.05rem 2rem;
+    border: 1px solid currentColor;
+    border-radius: 999px;
+    font-size: 0.84rem;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: none;
+}
+
+.getinvolved-page .page-cta .home-button:hover,
+.getinvolved-page .page-cta .home-button:focus-visible {
+    transform: translateY(-2px);
+    outline: none;
+}
+
+.getinvolved-page .page-cta .home-button--gold {
+    color: var(--home-gold-soft);
+}
+
+.getinvolved-page .page-cta .home-button--gold:hover,
+.getinvolved-page .page-cta .home-button--gold:focus-visible {
+    background: var(--home-gold-soft);
+    border-color: var(--home-gold-soft);
+    color: var(--home-green-deep);
+    text-decoration: none;
 }
 
 .getinvolved-page .getinvolved-band--cream .getinvolved-pullquote {
@@ -1669,7 +1897,7 @@ body.has-flyover-menu {
     gap: clamp(0.55rem, 1.3vw, 0.95rem);
 }
 
-.getinvolved-repository .section-prefix {
+.getinvolved-repository .howpay-section-prefix {
     margin-top: 0;
     margin-bottom: 0;
 }
