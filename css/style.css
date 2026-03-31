@@ -1520,6 +1520,12 @@ body.has-flyover-menu {
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
+.getinvolved-contact-panel .section-eyebrow {
+    font-size: clamp(2.15rem, 9vw, 4.2rem);
+    letter-spacing: clamp(0.045em, 1vw, 0.1em);
+    line-height: 1.05;
+}
+
 .getinvolved-contact-panel .section-card {
     min-height: 100%;
     display: flex;
@@ -2954,6 +2960,11 @@ body.has-flyover-menu {
     .getinvolved-collaborate .section-eyebrow {
         font-size: clamp(1.8rem, 9vw, 2.8rem);
         letter-spacing: clamp(0.045em, 1.2vw, 0.08em);
+    }
+
+    .getinvolved-contact-panel .section-eyebrow {
+        font-size: clamp(1.65rem, 8.8vw, 2.75rem);
+        letter-spacing: clamp(0.035em, 0.9vw, 0.065em);
     }
     
 
