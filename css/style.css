@@ -1518,6 +1518,7 @@ body.has-flyover-menu {
 .getinvolved-contact-panel .section-grid {
     width: min(var(--max-width-md), 100%);
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    align-items: stretch;
 }
 
 .getinvolved-contact-panel .section-eyebrow {
@@ -1528,8 +1529,9 @@ body.has-flyover-menu {
 
 .getinvolved-contact-panel .section-card {
     min-height: 100%;
-    display: flex;
-    flex-direction: column;
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto minmax(0, 1fr) auto;
 }
 
 .getinvolved-page .getinvolved-contact-panel .home-button {
@@ -1568,10 +1570,11 @@ body.has-flyover-menu {
 }
 
 .getinvolved-contact-panel__action {
-    margin-top: auto;
+    margin-top: 0;
     padding-top: 1rem;
     display: flex;
     justify-content: center;
+    align-self: end;
 }
 
 .getinvolved-note {
