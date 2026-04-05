@@ -2474,6 +2474,16 @@ body.has-flyover-menu {
     color: inherit;
 }
 
+.policy-card,
+.policy-card:visited,
+.policy-card:hover,
+.policy-card:focus-visible,
+.policy-card *,
+.policy-card *::before,
+.policy-card *::after {
+    text-decoration: none;
+}
+
 .policy-card:hover,
 .policy-card:focus-visible {
     transform: translateY(-4px);
