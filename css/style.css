@@ -11,9 +11,10 @@
     --home-ink: #1a1a14;
     --home-muted: #5a5a44;
     --text-primary: #f3f6fb;
+    /* Fixed-size radial fields keep the gold glow consistent across sections of different heights. */
     --site-green-gradient:
-        radial-gradient(circle at top right, rgba(221, 185, 74, 0.1), transparent 35%),
-        radial-gradient(circle at bottom left, rgba(221, 185, 74, 0.05), transparent 40%),
+        radial-gradient(1200px 760px at 100% 0%, rgba(221, 185, 74, 0.1) 0%, rgba(221, 185, 74, 0.06) 28%, transparent 62%),
+        radial-gradient(980px 700px at 0% 100%, rgba(221, 185, 74, 0.05) 0%, rgba(221, 185, 74, 0.025) 26%, transparent 60%),
         linear-gradient(160deg, var(--evergreen) 0%, var(--evergreen-dark) 100%);
     --site-green-surface: rgba(18, 36, 23, 0.82);
     --site-green-surface-strong: rgba(18, 36, 23, 0.94);
@@ -74,20 +75,15 @@ body {
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
 }
 
-.policies-page {
-    --page-background:
-        radial-gradient(circle at top right, rgba(221, 185, 74, 0.06), transparent 34%),
-        radial-gradient(circle at bottom left, rgba(221, 185, 74, 0.03), transparent 40%),
-        linear-gradient(160deg, #0e1f14 0%, #07130c 100%);
-    background-color: var(--evergreen-dark);
-    background-image: var(--page-background);
-}
-
-.faq-page {
-    --page-background:
-        radial-gradient(circle at top right, rgba(221, 185, 74, 0.06), transparent 34%),
-        radial-gradient(circle at bottom left, rgba(221, 185, 74, 0.03), transparent 40%),
-        linear-gradient(160deg, #0e1f14 0%, #07130c 100%);
+.policies-page,
+.about-page,
+.getinvolved-page,
+.faq-page,
+.gambit-page,
+.howpay-page,
+.timeline-page,
+.policy-detail-page {
+    --page-background: var(--site-green-gradient);
     background-color: var(--evergreen-dark);
     background-image: var(--page-background);
 }
@@ -99,9 +95,6 @@ body {
     --home-muted: #5a5a44;
     --home-green: var(--evergreen);
     --home-green-deep: var(--evergreen-dark);
-    --page-background: var(--site-green-gradient);
-    background-color: var(--evergreen-dark);
-    background-image: var(--page-background);
 }
 
 body.has-flyover-menu {
@@ -464,7 +457,7 @@ body.has-flyover-menu {
     content: "";
     position: absolute;
     inset: 0;
-    background: var(--site-green-gradient);
+    background: var(--page-background);
     background-color: var(--evergreen-dark);
     pointer-events: none;
     z-index: 0;
@@ -2472,7 +2465,13 @@ body.has-flyover-menu {
     backdrop-filter: blur(3px);
     cursor: pointer;
     position: relative;
+    color: inherit;
+    text-decoration: none;
     transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.policy-card:visited {
+    color: inherit;
 }
 
 .policy-card:hover,
@@ -2658,18 +2657,155 @@ body.has-flyover-menu {
     color: #ffaba0;
 }
 
-.policy-modal__body .policy-detail {
-    margin: 0;
-    padding: 0;
+.policy-detail-page .site-flyover {
+    background-image: var(--page-background);
+    background-color: var(--evergreen-dark);
+    border-bottom-color: rgba(221, 185, 74, 0.08);
+    box-shadow: none;
 }
 
-.policy-modal__body .policy-detail > :first-child {
+.policy-detail-page .page-wrap {
+    padding-top: clamp(6rem, 12vw, 7.5rem);
+    position: relative;
+    width: 100%;
+    background: transparent;
+    background-color: transparent;
+}
+
+.policy-detail-page .page-wrap::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--page-background);
+    background-color: var(--evergreen-dark);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.policy-detail-page .page-wrap > * {
+    position: relative;
+    z-index: 1;
+}
+
+.policy-detail-page .home-section--dark {
+    background: transparent;
+    background-color: transparent;
+}
+
+.policy-detail-page .home-section--dark.page-cta {
+    background: transparent;
+    background-color: transparent;
+}
+
+.policy-detail-hero-shell {
+    padding-bottom: clamp(2.2rem, 6vw, 3.8rem);
+}
+
+.policy-detail-hero {
+    width: min(840px, 92vw);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: clamp(1rem, 3vw, 1.6rem);
+    padding: 0 clamp(1rem, 4vw, 2rem);
+}
+
+.policy-detail-hero .intro-title {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    margin: 0 auto;
+    padding: 0;
+    font-size: clamp(2.7rem, 7vw, 5.25rem);
+    letter-spacing: clamp(0.02em, 0.55vw, 0.05em);
+    line-height: 1.08;
+    text-align: center;
+    text-wrap: balance;
+    overflow-wrap: normal;
+    word-break: normal;
+    hyphens: none;
+}
+
+.policy-detail-hero__eyebrow {
+    margin: 0;
+    font-size: clamp(0.88rem, 2vw, 1rem);
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.62);
+}
+
+.policy-detail-hero__lede {
+    margin: 0;
+    max-width: 38rem;
+    font-size: clamp(1rem, 2.6vw, 1.18rem);
+    line-height: 1.85;
+    color: rgba(243, 246, 251, 0.82);
+}
+
+.policy-detail-divider {
+    width: min(260px, 56vw);
+    margin: clamp(1.6rem, 4vw, 2.4rem) auto 0;
+}
+
+.policy-detail-section {
+    width: 100%;
+    padding: 0 clamp(1.5rem, 6vw, 4rem) clamp(4rem, 10vh, 6rem);
+    display: flex;
+    justify-content: center;
+}
+
+.policy-detail-wrap {
+    width: min(1020px, 94vw);
+    display: grid;
+    min-width: 0;
+}
+
+.policy-page__dialog {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    color: rgba(243, 246, 251, 0.92);
+    line-height: 1.55;
+}
+
+.policy-detail-page .policy-modal__number,
+.policy-detail-page .policy-modal__title {
+    display: none;
+}
+
+.policy-page__body {
+    overflow: visible;
+    width: min(840px, 100%);
+    margin: 0 auto;
+    min-width: 0;
+}
+
+.policy-modal__body .policy-detail,
+.policy-page__body .policy-detail {
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+}
+
+.policy-modal__body .policy-detail > :first-child,
+.policy-page__body .policy-detail > :first-child {
     margin-top: 0;
 }
 
 .policy-modal__body .policy-detail h1,
 .policy-modal__body .policy-detail h2,
-.policy-modal__body .policy-detail h4 {
+.policy-modal__body .policy-detail h4,
+.policy-page__body .policy-detail h1,
+.policy-page__body .policy-detail h2,
+.policy-page__body .policy-detail h4 {
     margin: clamp(1rem, 2vw, 1.25rem) 0 clamp(0.45rem, 1vw, 0.7rem);
     color: var(--prairie-gold);
     line-height: 1.2;
@@ -2677,33 +2813,42 @@ body.has-flyover-menu {
     text-transform: none;
 }
 
-.policy-modal__body .policy-detail h1 {
+.policy-modal__body .policy-detail h1,
+.policy-page__body .policy-detail h1 {
     font-size: clamp(1.3rem, 3.4vw, 1.7rem);
 }
 
-.policy-modal__body .policy-detail h2 {
+.policy-modal__body .policy-detail h2,
+.policy-page__body .policy-detail h2 {
     font-size: clamp(1.16rem, 2.8vw, 1.42rem);
 }
 
-.policy-modal__body .policy-detail h4 {
+.policy-modal__body .policy-detail h4,
+.policy-page__body .policy-detail h4 {
     font-size: clamp(1.02rem, 2.3vw, 1.16rem);
 }
 
-.policy-modal__body .policy-detail h3 {
-    margin: clamp(0.9rem, 2.2vw, 1.2rem) 0 clamp(0.4rem, 1vw, 0.6rem);
-    font-size: clamp(1.2rem, 3vw, 1.45rem);
+.policy-modal__body .policy-detail h3,
+.policy-page__body .policy-detail h3 {
+    margin: clamp(1.4rem, 3vw, 1.9rem) 0 clamp(0.8rem, 1.6vw, 1.05rem);
+    font-size: clamp(1.45rem, 3.2vw, 1.9rem);
+    line-height: 1.18;
+    font-weight: 700;
     text-transform: none;
     letter-spacing: 0.04em;
     color: var(--prairie-gold);
 }
 
-.policy-modal__body .policy-detail p {
+.policy-modal__body .policy-detail p,
+.policy-page__body .policy-detail p {
     margin: 0 0 clamp(0.9rem, 1.8vw, 1.1rem);
+    font-size: clamp(1.05rem, 2vw, 1.18rem);
     color: rgba(243, 246, 251, 0.9);
-    line-height: 1.7;
+    line-height: 1.82;
 }
 
-.policy-modal__body .policy-detail blockquote {
+.policy-modal__body .policy-detail blockquote,
+.policy-page__body .policy-detail blockquote {
     margin: 0 0 clamp(1rem, 1.8vw, 1.2rem);
     padding: clamp(0.8rem, 1.8vw, 1rem) clamp(0.95rem, 2vw, 1.2rem);
     border-left: 3px solid rgba(255, 177, 0, 0.58);
@@ -2711,57 +2856,120 @@ body.has-flyover-menu {
     background: rgba(255, 255, 255, 0.04);
 }
 
-.policy-modal__body .policy-detail hr {
+.policy-repo {
+    margin-top: clamp(2.8rem, 6vw, 4rem);
+    padding-top: clamp(1.4rem, 3vw, 2rem);
+    border-top: 1px solid rgba(255, 177, 0, 0.18);
+    display: grid;
+    gap: clamp(0.7rem, 1.6vw, 1rem);
+    justify-items: center;
+    text-align: center;
+}
+
+.policy-repo__eyebrow {
+    margin: 0;
+    font-family: "DM Mono", "Courier New", monospace;
+    font-size: clamp(0.8rem, 1.5vw, 0.92rem);
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: rgba(243, 246, 251, 0.58);
+}
+
+.policy-repo__body {
+    margin: 0;
+    max-width: 42rem;
+    font-size: clamp(0.98rem, 1.8vw, 1.08rem);
+    line-height: 1.78;
+    color: rgba(243, 246, 251, 0.76);
+}
+
+.policy-repo__actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.85rem;
+    margin-top: 0.35rem;
+}
+
+.policy-repo .home-button {
+    margin-top: 0;
+    text-decoration: none;
+}
+
+.policy-modal__body .policy-detail hr,
+.policy-page__body .policy-detail hr {
     border: 0;
     border-top: 1px solid rgba(255, 255, 255, 0.12);
     margin: clamp(1rem, 2.2vw, 1.4rem) 0;
 }
 
-.policy-modal__body .policy-detail__list {
+.policy-modal__body .policy-detail :is(ul, ol):not(.policy-card__list):not(.policy-card__list--nested),
+.policy-page__body .policy-detail :is(ul, ol):not(.policy-card__list):not(.policy-card__list--nested),
+.policy-modal__body .policy-detail__list,
+.policy-page__body .policy-detail__list {
     margin: 0 0 clamp(1rem, 1.8vw, 1.2rem);
-
+    padding-left: 1.35rem;
     color: rgba(243, 246, 251, 0.88);
-    
+    line-height: 1.82;
 }
 
-.policy-modal__body .policy-detail__list li {
+.policy-modal__body .policy-detail :is(ul, ol):not(.policy-card__list):not(.policy-card__list--nested) :is(ul, ol),
+.policy-page__body .policy-detail :is(ul, ol):not(.policy-card__list):not(.policy-card__list--nested) :is(ul, ol) {
+    margin-top: 0.45rem;
+    margin-bottom: 0.7rem;
+}
+
+.policy-modal__body .policy-detail :is(ul, ol):not(.policy-card__list):not(.policy-card__list--nested) li,
+.policy-page__body .policy-detail :is(ul, ol):not(.policy-card__list):not(.policy-card__list--nested) li,
+.policy-modal__body .policy-detail__list li,
+.policy-page__body .policy-detail__list li {
     margin-bottom: clamp(0.3rem, 1vw, 0.45rem);
 }
 
-.policy-modal__body .policy-detail a {
+.policy-modal__body .policy-detail a:not(.home-button),
+.policy-page__body .policy-detail a:not(.home-button) {
     color: var(--prairie-gold);
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 4px;
 }
 
-.policy-modal__body .policy-detail a:hover,
-.policy-modal__body .policy-detail a:focus-visible {
+.policy-modal__body .policy-detail a:not(.home-button):hover,
+.policy-modal__body .policy-detail a:not(.home-button):focus-visible,
+.policy-page__body .policy-detail a:not(.home-button):hover,
+.policy-page__body .policy-detail a:not(.home-button):focus-visible {
     color: #ffd45a;
 }
 
-.policy-modal__body .policy-card__list {
+.policy-modal__body .policy-card__list,
+.policy-page__body .policy-card__list {
     padding-left: 1.2rem;
     color: rgba(243, 246, 251, 0.88);
     line-height: 1.95;
 }
 
-.policy-modal__body .policy-card__list li + li {
+.policy-modal__body .policy-card__list li + li,
+.policy-page__body .policy-card__list li + li {
     margin-top: clamp(0.65rem, 1.5vw, 0.95rem);
 }
 
-.policy-modal__body .policy-card__list--nested {
+.policy-modal__body .policy-card__list--nested,
+.policy-page__body .policy-card__list--nested {
     padding-left: 1.1rem;
     color: rgba(243, 246, 251, 0.78);
     line-height: 1.85;
 }
 
-.policy-modal__body .policy-card__list--nested li + li {
+.policy-modal__body .policy-card__list--nested li + li,
+.policy-page__body .policy-card__list--nested li + li {
     margin-top: clamp(0.45rem, 1.3vw, 0.7rem);
 }
 
-.policy-modal__table-wrap {
+.policy-modal__table-wrap,
+.policy-page__table-wrap {
     width: 100%;
+    max-width: 100%;
+    min-width: 0;
     margin: 0 0 clamp(1rem, 2vw, 1.25rem);
     overflow-x: auto;
     overflow-y: hidden;
@@ -2772,7 +2980,8 @@ body.has-flyover-menu {
     background: rgba(0, 0, 0, 0.14);
 }
 
-.policy-modal__body table {
+.policy-modal__body table,
+.policy-page__body table {
     width: max-content;
     min-width: 100%;
     margin: 0;
@@ -2782,24 +2991,29 @@ body.has-flyover-menu {
 }
 
 .policy-modal__body th,
-.policy-modal__body td {
+.policy-modal__body td,
+.policy-page__body th,
+.policy-page__body td {
     padding: 0.7rem 0.85rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     text-align: left;
     vertical-align: top;
 }
 
-.policy-modal__body thead th {
+.policy-modal__body thead th,
+.policy-page__body thead th {
     color: var(--prairie-gold);
     background: rgba(255, 255, 255, 0.04);
     white-space: nowrap;
 }
 
-.policy-modal__body tbody td {
+.policy-modal__body tbody td,
+.policy-page__body tbody td {
     color: rgba(243, 246, 251, 0.88);
 }
 
-.policy-modal__body tbody tr:last-child td {
+.policy-modal__body tbody tr:last-child td,
+.policy-page__body tbody tr:last-child td {
     border-bottom: 0;
 }
 
@@ -3163,8 +3377,16 @@ body.has-flyover-menu {
         padding: clamp(1.5rem, 6vw, 2.2rem);
     }
 
+    .policy-page__dialog {
+        padding: clamp(1.5rem, 6vw, 2.2rem);
+    }
+
     .policy-modal__body {
         padding-right: 0.4rem;
+    }
+
+    .policy-detail-section {
+        padding-inline: 1.25rem;
     }
 }
 
@@ -3344,6 +3566,11 @@ body.has-flyover-menu {
         width: min(87vw, 372px);
         max-height: calc(100dvh - env(safe-area-inset-top) - env(safe-area-inset-bottom) - 2rem);
         padding: 0.95rem 0.85rem 1rem;
+    }
+
+    .policy-page__dialog {
+        padding: 1.1rem 0.95rem 1.2rem;
+        border-radius: 1.25rem;
     }
 
     .policy-modal__note {
@@ -4315,26 +4542,6 @@ a:focus-visible {
     --home-gold-soft: #ddb94a;
     --home-ink: var(--about-ink);
     --home-muted: var(--about-muted);
-}
-
-.policies-page .page-wrap,
-.about-page .page-wrap,
-.getinvolved-page .page-wrap,
-.faq-page .page-wrap,
-.institutions-page .page-wrap,
-.gambit-page .page-wrap,
-.howpay-page .page-wrap {
-    background-color: var(--evergreen-dark);
-}
-
-.policies-page .page-wrap::before,
-.about-page .page-wrap::before,
-.getinvolved-page .page-wrap::before,
-.faq-page .page-wrap::before,
-.institutions-page .page-wrap::before,
-.gambit-page .page-wrap::before,
-.howpay-page .page-wrap::before {
-    display: none;
 }
 
 /* ---------- How We Pay alternating cream/dark bands ---------- */
@@ -5598,7 +5805,7 @@ a:focus-visible {
     --home-gold-soft: #ddb94a;
     --home-ink: #1a1a14;
     --home-muted: #5a5a44;
-    --page-background: linear-gradient(180deg, var(--evergreen-dark) 0%, var(--evergreen-dark) 100%);
+    --page-background: var(--site-green-gradient);
     background-color: var(--home-green-deep);
 }
 
@@ -5625,7 +5832,6 @@ a:focus-visible {
     background-image: var(--page-background);
     background-color: var(--evergreen-dark);
     border-bottom-color: rgba(221, 185, 74, 0.08);
-    box-shadow: none;
 }
 
 /* Match the 21 Policies flyover with the page gradient and reduce top seam on mobile scroll. */
@@ -5633,7 +5839,6 @@ a:focus-visible {
     background-image: var(--page-background);
     background-color: var(--evergreen-dark);
     border-bottom-color: rgba(221, 185, 74, 0.08);
-    box-shadow: none;
 }
 
 .home-shell {
@@ -5667,51 +5872,16 @@ a:focus-visible {
     color: var(--home-cream);
 }
 
-/* Non-home pages use the page-wide gradient layer; keep hero wrappers transparent to avoid seam lines. */
+/* Non-home green pages should read from the shared page background instead of repainting local gradients. */
+.about-page .home-section--dark,
 .faq-page .home-section--dark,
 .getinvolved-page .home-section--dark,
 .institutions-page .home-section--dark,
 .gambit-page .home-section--dark,
-.howpay-page .home-section--dark {
-    background: transparent;
-    background-color: transparent;
-}
-
-/* Gambit hero matches the homepage dark hero treatment. */
-.gambit-page .home-section--dark {
-    background: var(--site-green-gradient);
-    background-color: var(--evergreen-dark);
-}
-
-/* How We Pay hero should match the homepage dark hero treatment. */
-.howpay-page .home-section--dark {
-    background: var(--site-green-gradient);
-    background-color: var(--evergreen-dark);
-}
-
-/* Get Involved hero should match the homepage dark hero treatment. */
-.getinvolved-page .getinvolved-hero-shell.home-section--dark {
-    background: var(--site-green-gradient);
-    background-color: var(--evergreen-dark);
-}
-
-/* Policies page uses one shared body gradient; keep hero transparent. */
-.policies-page .home-section--dark {
-    background: transparent;
-    background-color: transparent;
-}
-
-.policies-page .home-section--dark.page-cta,
-.faq-page .home-section--dark.page-cta,
-.getinvolved-page .home-section--dark.page-cta,
-.gambit-page .home-section--dark.page-cta,
-.howpay-page .home-section--dark.page-cta {
-    background: var(--site-green-gradient);
-    background-color: var(--evergreen-dark);
-}
-
-/* Keep page-wrap transparent so the shared body gradient remains continuous. */
-.policies-page .page-wrap {
+.howpay-page .home-section--dark,
+.policies-page .home-section--dark,
+.timeline-page .home-section--dark,
+.policy-detail-page .home-section--dark {
     background: transparent;
     background-color: transparent;
 }
@@ -6322,17 +6492,34 @@ a:focus-visible {
         margin-right: 0;
     }
 
-    .policy-modal__body .policy-detail h1 {
+    .policy-page__dialog {
+        padding: 0;
+    }
+
+    .policy-detail-section {
+        padding: 0 1rem clamp(3.2rem, 10vh, 4.5rem);
+    }
+
+    .policy-detail-hero {
+        width: min(92vw, 620px);
+        gap: 0.85rem;
+    }
+
+    .policy-modal__body .policy-detail h1,
+    .policy-page__body .policy-detail h1 {
         font-size: clamp(1.12rem, 4.6vw, 1.3rem);
     }
 
-    .policy-modal__body .policy-detail h2 {
+    .policy-modal__body .policy-detail h2,
+    .policy-page__body .policy-detail h2 {
         font-size: clamp(1.02rem, 4.2vw, 1.16rem);
     }
 
     .policy-modal__body .policy-detail h3,
-    .policy-modal__body .policy-detail h4 {
-        font-size: clamp(0.98rem, 4vw, 1.1rem);
+    .policy-modal__body .policy-detail h4,
+    .policy-page__body .policy-detail h3,
+    .policy-page__body .policy-detail h4 {
+        font-size: clamp(1.12rem, 4.4vw, 1.32rem);
         letter-spacing: 0.025em;
     }
 
@@ -6340,13 +6527,19 @@ a:focus-visible {
     .policy-modal__body .policy-detail li,
     .policy-modal__body .policy-card__list,
     .policy-modal__body .policy-card__list--nested,
+    .policy-page__body .policy-detail p,
+    .policy-page__body .policy-detail li,
+    .policy-page__body .policy-card__list,
+    .policy-page__body .policy-card__list--nested,
     .policy-modal__status {
-        font-size: clamp(0.92rem, 3.8vw, 1rem);
-        line-height: 1.62;
+        font-size: clamp(0.98rem, 3.8vw, 1.04rem);
+        line-height: 1.72;
     }
 
     .policy-modal__body th,
-    .policy-modal__body td {
+    .policy-modal__body td,
+    .policy-page__body th,
+    .policy-page__body td {
         padding: 0.62rem 0.72rem;
         font-size: 0.82rem;
     }
@@ -6401,15 +6594,6 @@ a:focus-visible {
    TIMELINE PAGE
    ========================================================================== */
 
-.timeline-page {
-    --page-background:
-        radial-gradient(circle at top right, rgba(221, 185, 74, 0.06), transparent 34%),
-        radial-gradient(circle at bottom left, rgba(221, 185, 74, 0.03), transparent 40%),
-        linear-gradient(160deg, #0e1f14 0%, #07130c 100%);
-    background-color: var(--evergreen-dark);
-    background-image: var(--page-background);
-}
-
 .timeline-page .page-wrap {
     padding-top: clamp(6rem, 12vw, 7.5rem);
     position: relative;
@@ -6421,7 +6605,7 @@ a:focus-visible {
     content: "";
     position: absolute;
     inset: 0;
-    background: var(--site-green-gradient);
+    background: var(--page-background);
     background-color: var(--evergreen-dark);
     pointer-events: none;
     z-index: 0;
@@ -6438,13 +6622,13 @@ a:focus-visible {
 }
 
 .timeline-page .timeline-hero-shell.home-section--dark {
-    background: var(--site-green-gradient);
-    background-color: var(--evergreen-dark);
+    background: transparent;
+    background-color: transparent;
 }
 
 .timeline-page .home-section--dark.page-cta {
-    background: var(--site-green-gradient);
-    background-color: var(--evergreen-dark);
+    background: transparent;
+    background-color: transparent;
 }
 
 .timeline-band--cream {
@@ -6842,5 +7026,108 @@ a:focus-visible {
 
     .timeline-summary__term {
         min-width: unset;
+    }
+}
+
+/* ==========================================================================
+   GREEN BACKGROUND NORMALIZATION
+   ==========================================================================
+   Keep all green-site pages on the same exact background token as S21P/Xanatos.
+   This block intentionally sits at the end of the file so it wins over older
+   duplicate page-shell rules above.
+   ========================================================================== */
+
+.home-page,
+.policies-page,
+.about-page,
+.getinvolved-page,
+.faq-page,
+.gambit-page,
+.howpay-page,
+.timeline-page,
+.policy-detail-page {
+    --page-background: var(--site-green-gradient);
+}
+
+.home-page,
+.policies-page,
+.about-page,
+.getinvolved-page,
+.faq-page,
+.gambit-page,
+.howpay-page,
+.timeline-page,
+.policy-detail-page {
+    background-color: var(--evergreen-dark);
+    background-image: var(--page-background);
+}
+
+.home-page .site-flyover,
+.policies-page .site-flyover,
+.about-page .site-flyover,
+.getinvolved-page .site-flyover,
+.faq-page .site-flyover,
+.gambit-page .site-flyover,
+.howpay-page .site-flyover,
+.timeline-page .site-flyover,
+.policy-detail-page .site-flyover {
+    background-image: var(--page-background);
+    background-color: var(--evergreen-dark);
+    border-bottom-color: rgba(221, 185, 74, 0.08);
+}
+
+.policies-page .page-wrap,
+.about-page .page-wrap,
+.getinvolved-page .page-wrap,
+.faq-page .page-wrap,
+.institutions-page .page-wrap,
+.gambit-page .page-wrap,
+.howpay-page .page-wrap,
+.timeline-page .page-wrap,
+.policy-detail-page .page-wrap {
+    position: relative;
+    width: 100%;
+    background: transparent;
+    background-color: transparent;
+}
+
+.policies-page .page-wrap::before,
+.about-page .page-wrap::before,
+.getinvolved-page .page-wrap::before,
+.faq-page .page-wrap::before,
+.institutions-page .page-wrap::before,
+.gambit-page .page-wrap::before,
+.howpay-page .page-wrap::before,
+.timeline-page .page-wrap::before,
+.policy-detail-page .page-wrap::before {
+    content: "";
+    display: block;
+    position: absolute;
+    inset: 0;
+    background: var(--page-background);
+    background-color: var(--evergreen-dark);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.policies-page .page-wrap > *,
+.about-page .page-wrap > *,
+.getinvolved-page .page-wrap > *,
+.faq-page .page-wrap > *,
+.institutions-page .page-wrap > *,
+.gambit-page .page-wrap > *,
+.howpay-page .page-wrap > *,
+.timeline-page .page-wrap > *,
+.policy-detail-page .page-wrap > * {
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 720px) {
+    :root {
+        --site-green-gradient:
+            radial-gradient(760px 520px at 112% -8%, rgba(221, 185, 74, 0.045) 0%, rgba(221, 185, 74, 0.02) 24%, transparent 58%),
+            radial-gradient(620px 460px at -10% 108%, rgba(221, 185, 74, 0.02) 0%, rgba(221, 185, 74, 0.01) 22%, transparent 54%),
+            linear-gradient(160deg, var(--evergreen) 0%, var(--evergreen-dark) 100%);
     }
 }
